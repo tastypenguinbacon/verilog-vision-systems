@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 22.03.2017 14:39:11
+// Create Date: 22.03.2017 16:19:08
 // Design Name: 
-// Module Name: tb_statemachine
+// Module Name: tb_receiver
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,8 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module tb_statemachine(
-        output out
+module tb_receiver(
     );
     reg clk = 0;
     reg[10:0] cnt = 11'b0; 
@@ -29,6 +28,7 @@ module tb_statemachine(
     reg rst = 0;
     reg[7:0] data;
     
+    wire out;
     integer file;
     integer outfile;
     
@@ -64,17 +64,35 @@ module tb_statemachine(
                 .data(data),
                 .txd(out)
             );
-    reg[7:0] output_buffer;
-    always @(posedge send) begin 
-        #6 output_buffer[0] = out;
-        #2 output_buffer[1] = out;
-        #2 output_buffer[2] = out;
-        #2 output_buffer[3] = out;
-        #2 output_buffer[4] = out;
-        #2 output_buffer[5] = out;
-        #2 output_buffer[6] = out;
-        #2 output_buffer[7] = out;
-        if (output_buffer != 8'hff)
-            $fwrite(outfile, "%c", output_buffer);
+            
+    wire[7:0] rec_data;
+    wire received = 1'b0;
+    
+    receiver rec (
+    .clk(clk),
+    .rst(rst),
+    .rxd(out),
+    .data(rec_data),
+    .received(received)
+    );
+    
+    always @(posedge received) begin
+        if (rec_data != 8'hff)
+                $fwrite(outfile, "%c", rec_data);
     end
+            
+    
+//    reg[7:0] output_buffer;
+//    always @(posedge send) begin 
+//        #6 output_buffer[0] = out;
+//        #2 output_buffer[1] = out;
+//        #2 output_buffer[2] = out;
+//        #2 output_buffer[3] = out;
+//        #2 output_buffer[4] = out;
+//        #2 output_buffer[5] = out;
+//        #2 output_buffer[6] = out;
+//        #2 output_buffer[7] = out;
+//        if (output_buffer != 8'hff)
+//            $fwrite(outfile, "%c", output_buffer);
+//    end
 endmodule

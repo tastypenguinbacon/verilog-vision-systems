@@ -2,7 +2,6 @@
 using namespace std;
 
 void cudo(char character) {
-	putchar('1');
 	for (int i = 0; i < 8; i++) {
 		if (character % 2) {
 			putchar('1');

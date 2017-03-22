@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 22.03.2017 11:23:55
+// Create Date: 22.03.2017 16:05:51
 // Design Name: 
-// Module Name: statemachine
+// Module Name: receiver
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,54 +20,52 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module statemachine(
+module receiver(
         input clk,
         input rst, 
-        input send,
-        input[7:0] data,
-        output txd
+        input rxd,
+        output[7:0] data,
+        output received
     );
     localparam STATE0 = 2'd0;
     localparam STATE1 = 2'd1;
     localparam STATE2 = 2'd2;
-    localparam STATE3 = 2'd3;
     
-    reg[7:0] saved_data;
-    reg prevsend = 0;
+    reg[7:0] data_reg = 8'b0;
+    reg prevrxd = 0;
     reg[1:0] state = STATE0;
-    reg out = 1'b0;
     reg[2:0] index = 3'b0;
+    reg received_reg = 0;
     
     always @(posedge clk) begin 
         if (rst) begin
             state = STATE0;
-            saved_data = 8'b0;
+            data_reg = 8'b0;
             index = 3'b0;
         end else begin
            case(state)
                 STATE0: begin
-                    if (prevsend == 0 && send == 1) begin
-                        state = STATE1;
-                        saved_data = data;
+                    received_reg = 0;
+                    data_reg = 8'b0;
+                    if (prevrxd == 0 && rxd == 1) begin
+                        state = STATE1;    
                     end
                 end
                 STATE1: begin
-                    out = 1'b1;
-                    state = STATE2;
+                    data_reg[index] = rxd;
+                    index = index + 1;
+                    if (index == 0) begin
+                        state = STATE2;
+                    end
                 end
                 STATE2: begin
-                    out = saved_data[index];
-                    index = index + 1;
-                    if (index == 3'b0) 
-                        state = STATE3;
-                end
-                STATE3: begin
-                    out = 1'b0;
+                    received_reg = 1;                    
                     state = STATE0;
                 end
            endcase
         end
-        prevsend = send;
+        prevrxd = rxd;
     end
-    assign txd = out;
+    assign data = data_reg;
+    assign received = received_reg;
 endmodule
