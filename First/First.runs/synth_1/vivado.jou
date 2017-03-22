@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 15 00:01:00 2017
+# Process ID: 14424
+# Current directory: /home/pingwin/Dokumenty/Verilog/First/First.runs/synth_1
+# Command line: vivado -log big_and.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source big_and.tcl
+# Log file: /home/pingwin/Dokumenty/Verilog/First/First.runs/synth_1/big_and.vds
+# Journal file: /home/pingwin/Dokumenty/Verilog/First/First.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source big_and.tcl -notrace

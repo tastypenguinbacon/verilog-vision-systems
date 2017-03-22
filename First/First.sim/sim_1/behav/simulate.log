@@ -1,0 +1,3 @@
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+$finish called at time : 40 ns : File "/home/pingwin/Dokumenty/Verilog/First/First.srcs/sim_1/new/tb_delay.v" Line 40
