@@ -1,0 +1,8 @@
+Output 0 for input 0000010000, expected 1
+Output 0 for input 0000100000, expected 1
+Output 0 for input 0010000000, expected 1
+Output 0 for input 0010010000, expected 1
+Output 0 for input 0010100000, expected 1
+Output 0 for input 0100000000, expected 1
+Output 0 for input 0100010000, expected 1
+Output 0 for input 0100100000, expected 1
