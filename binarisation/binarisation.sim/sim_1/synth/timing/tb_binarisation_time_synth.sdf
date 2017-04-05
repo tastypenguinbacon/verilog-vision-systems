@@ -1,0 +1,664 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "binarisation")
+(DATE "Wed Apr  5 16:49:24 2017")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2016.4")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE b/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (158.0:197.0:197.0) (158.0:197.0:197.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (146.0:183.0:183.0) (31.0:31.0:31.0))
+      (SETUPHOLD (negedge CE) (posedge C) (146.0:183.0:183.0) (31.0:31.0:31.0))
+      (SETUPHOLD (posedge D) (posedge C) (-41.0:-36.0:-36.0) (191.0:191.0:191.0))
+      (SETUPHOLD (negedge D) (posedge C) (-41.0:-36.0:-36.0) (191.0:191.0:191.0))
+      (SETUPHOLD (posedge R) (posedge C) (292.0:364.0:364.0) (18.0:18.0:18.0))
+      (SETUPHOLD (negedge R) (posedge C) (292.0:364.0:364.0) (18.0:18.0:18.0))
+    )
+)
+(CELL 
+  (CELLTYPE "BUFG")
+  (INSTANCE clk_IBUF_BUFG_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (113.0:120.0:120.0) (113.0:120.0:120.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE clk_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE de_in_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE de_in_temp_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (158.0:197.0:197.0) (158.0:197.0:197.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (146.0:183.0:183.0) (31.0:31.0:31.0))
+      (SETUPHOLD (negedge CE) (posedge C) (146.0:183.0:183.0) (31.0:31.0:31.0))
+      (SETUPHOLD (posedge D) (posedge C) (-41.0:-36.0:-36.0) (191.0:191.0:191.0))
+      (SETUPHOLD (negedge D) (posedge C) (-41.0:-36.0:-36.0) (191.0:191.0:191.0))
+      (SETUPHOLD (posedge R) (posedge C) (292.0:364.0:364.0) (18.0:18.0:18.0))
+      (SETUPHOLD (negedge R) (posedge C) (292.0:364.0:364.0) (18.0:18.0:18.0))
+    )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE de_out_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2218.9:2461.8:2461.8) (2218.9:2461.8:2461.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE g/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (158.0:197.0:197.0) (158.0:197.0:197.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (146.0:183.0:183.0) (31.0:31.0:31.0))
+      (SETUPHOLD (negedge CE) (posedge C) (146.0:183.0:183.0) (31.0:31.0:31.0))
+      (SETUPHOLD (posedge D) (posedge C) (-41.0:-36.0:-36.0) (191.0:191.0:191.0))
+      (SETUPHOLD (negedge D) (posedge C) (-41.0:-36.0:-36.0) (191.0:191.0:191.0))
+      (SETUPHOLD (posedge R) (posedge C) (292.0:364.0:364.0) (18.0:18.0:18.0))
+      (SETUPHOLD (negedge R) (posedge C) (292.0:364.0:364.0) (18.0:18.0:18.0))
+    )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE h_sync_in_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE h_sync_in_temp_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (158.0:197.0:197.0) (158.0:197.0:197.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (146.0:183.0:183.0) (31.0:31.0:31.0))
+      (SETUPHOLD (negedge CE) (posedge C) (146.0:183.0:183.0) (31.0:31.0:31.0))
+      (SETUPHOLD (posedge D) (posedge C) (-41.0:-36.0:-36.0) (191.0:191.0:191.0))
+      (SETUPHOLD (negedge D) (posedge C) (-41.0:-36.0:-36.0) (191.0:191.0:191.0))
+      (SETUPHOLD (posedge R) (posedge C) (292.0:364.0:364.0) (18.0:18.0:18.0))
+      (SETUPHOLD (negedge R) (posedge C) (292.0:364.0:364.0) (18.0:18.0:18.0))
+    )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE h_sync_out_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2218.9:2461.8:2461.8) (2218.9:2461.8:2461.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[0\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[10\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[11\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[12\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[13\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[14\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[15\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[16\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[17\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[18\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[19\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[1\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[20\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[21\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[22\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[23\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[2\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[3\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[4\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[5\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[6\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[7\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[8\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pixel_in_IBUF\[9\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE pixel_out_OBUF\[0\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2218.9:2461.8:2461.8) (2218.9:2461.8:2461.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE pixel_out_OBUF\[0\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I1 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I0 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE pixel_out_OBUF\[1\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2218.9:2461.8:2461.8) (2218.9:2461.8:2461.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE pixel_out_OBUF\[1\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I1 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I0 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE pixel_out_OBUF\[2\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2218.9:2461.8:2461.8) (2218.9:2461.8:2461.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE pixel_out_OBUF\[2\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I1 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I0 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE pixel_out_OBUF\[3\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2218.9:2461.8:2461.8) (2218.9:2461.8:2461.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE pixel_out_OBUF\[3\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I1 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I0 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE pixel_out_OBUF\[4\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2218.9:2461.8:2461.8) (2218.9:2461.8:2461.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE pixel_out_OBUF\[4\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I1 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I0 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE pixel_out_OBUF\[5\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2218.9:2461.8:2461.8) (2218.9:2461.8:2461.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE pixel_out_OBUF\[5\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I1 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I0 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE pixel_out_OBUF\[6\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2218.9:2461.8:2461.8) (2218.9:2461.8:2461.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE pixel_out_OBUF\[6\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I1 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I0 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE pixel_out_OBUF\[7\]_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2218.9:2461.8:2461.8) (2218.9:2461.8:2461.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE pixel_out_OBUF\[7\]_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I1 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+      (IOPATH I0 O (42.0:53.0:53.0) (42.0:53.0:53.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE r/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (158.0:197.0:197.0) (158.0:197.0:197.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (146.0:183.0:183.0) (31.0:31.0:31.0))
+      (SETUPHOLD (negedge CE) (posedge C) (146.0:183.0:183.0) (31.0:31.0:31.0))
+      (SETUPHOLD (posedge D) (posedge C) (-41.0:-36.0:-36.0) (191.0:191.0:191.0))
+      (SETUPHOLD (negedge D) (posedge C) (-41.0:-36.0:-36.0) (191.0:191.0:191.0))
+      (SETUPHOLD (posedge R) (posedge C) (292.0:364.0:364.0) (18.0:18.0:18.0))
+      (SETUPHOLD (negedge R) (posedge C) (292.0:364.0:364.0) (18.0:18.0:18.0))
+    )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE v_sync_in_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (753.9:829.8:829.8) (753.9:829.8:829.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE v_sync_in_temp_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (158.0:197.0:197.0) (158.0:197.0:197.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (146.0:183.0:183.0) (31.0:31.0:31.0))
+      (SETUPHOLD (negedge CE) (posedge C) (146.0:183.0:183.0) (31.0:31.0:31.0))
+      (SETUPHOLD (posedge D) (posedge C) (-41.0:-36.0:-36.0) (191.0:191.0:191.0))
+      (SETUPHOLD (negedge D) (posedge C) (-41.0:-36.0:-36.0) (191.0:191.0:191.0))
+      (SETUPHOLD (posedge R) (posedge C) (292.0:364.0:364.0) (18.0:18.0:18.0))
+      (SETUPHOLD (negedge R) (posedge C) (292.0:364.0:364.0) (18.0:18.0:18.0))
+    )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE v_sync_out_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2218.9:2461.8:2461.8) (2218.9:2461.8:2461.8))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "binarisation")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT b/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[0\]_inst_i_1/I0 (586.4:632.0:632.0) (586.4:632.0:632.0))
+      (INTERCONNECT b/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[1\]_inst_i_1/I0 (586.4:632.0:632.0) (586.4:632.0:632.0))
+      (INTERCONNECT b/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[2\]_inst_i_1/I0 (586.4:632.0:632.0) (586.4:632.0:632.0))
+      (INTERCONNECT b/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[3\]_inst_i_1/I0 (586.4:632.0:632.0) (586.4:632.0:632.0))
+      (INTERCONNECT b/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[4\]_inst_i_1/I0 (586.4:632.0:632.0) (586.4:632.0:632.0))
+      (INTERCONNECT b/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[5\]_inst_i_1/I0 (586.4:632.0:632.0) (586.4:632.0:632.0))
+      (INTERCONNECT b/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[6\]_inst_i_1/I0 (586.4:632.0:632.0) (586.4:632.0:632.0))
+      (INTERCONNECT b/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[7\]_inst_i_1/I0 (586.4:632.0:632.0) (586.4:632.0:632.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O de_in_temp_reg/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O h_sync_in_temp_reg/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O v_sync_in_temp_reg/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O b/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O g/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O r/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT clk_IBUF_inst/O clk_IBUF_BUFG_inst/I (554.4:583.6:583.6) (554.4:583.6:583.6))
+      (INTERCONNECT de_in_IBUF_inst/O de_in_temp_reg/D (650.4:703.6:703.6) (650.4:703.6:703.6))
+      (INTERCONNECT de_in_temp_reg/Q de_out_OBUF_inst/I (638.4:688.6:688.6) (638.4:688.6:688.6))
+      (INTERCONNECT g/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[0\]_inst_i_1/I1 (413.5:450.0:450.0) (413.5:450.0:450.0))
+      (INTERCONNECT g/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[1\]_inst_i_1/I1 (413.5:450.0:450.0) (413.5:450.0:450.0))
+      (INTERCONNECT g/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[2\]_inst_i_1/I1 (413.5:450.0:450.0) (413.5:450.0:450.0))
+      (INTERCONNECT g/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[3\]_inst_i_1/I1 (413.5:450.0:450.0) (413.5:450.0:450.0))
+      (INTERCONNECT g/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[4\]_inst_i_1/I1 (413.5:450.0:450.0) (413.5:450.0:450.0))
+      (INTERCONNECT g/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[5\]_inst_i_1/I1 (413.5:450.0:450.0) (413.5:450.0:450.0))
+      (INTERCONNECT g/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[6\]_inst_i_1/I1 (413.5:450.0:450.0) (413.5:450.0:450.0))
+      (INTERCONNECT g/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[7\]_inst_i_1/I1 (413.5:450.0:450.0) (413.5:450.0:450.0))
+      (INTERCONNECT h_sync_in_IBUF_inst/O h_sync_in_temp_reg/D (650.4:703.6:703.6) (650.4:703.6:703.6))
+      (INTERCONNECT h_sync_in_temp_reg/Q h_sync_out_OBUF_inst/I (638.4:688.6:688.6) (638.4:688.6:688.6))
+      (INTERCONNECT pixel_in_IBUF\[15\]_inst/O g/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/D (650.4:703.6:703.6) (650.4:703.6:703.6))
+      (INTERCONNECT pixel_in_IBUF\[23\]_inst/O r/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/D (650.4:703.6:703.6) (650.4:703.6:703.6))
+      (INTERCONNECT pixel_in_IBUF\[7\]_inst/O b/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/D (650.4:703.6:703.6) (650.4:703.6:703.6))
+      (INTERCONNECT pixel_out_OBUF\[0\]_inst_i_1/O pixel_out_OBUF\[0\]_inst/I (554.4:583.6:583.6) (554.4:583.6:583.6))
+      (INTERCONNECT pixel_out_OBUF\[1\]_inst_i_1/O pixel_out_OBUF\[1\]_inst/I (554.4:583.6:583.6) (554.4:583.6:583.6))
+      (INTERCONNECT pixel_out_OBUF\[2\]_inst_i_1/O pixel_out_OBUF\[2\]_inst/I (554.4:583.6:583.6) (554.4:583.6:583.6))
+      (INTERCONNECT pixel_out_OBUF\[3\]_inst_i_1/O pixel_out_OBUF\[3\]_inst/I (554.4:583.6:583.6) (554.4:583.6:583.6))
+      (INTERCONNECT pixel_out_OBUF\[4\]_inst_i_1/O pixel_out_OBUF\[4\]_inst/I (554.4:583.6:583.6) (554.4:583.6:583.6))
+      (INTERCONNECT pixel_out_OBUF\[5\]_inst_i_1/O pixel_out_OBUF\[5\]_inst/I (554.4:583.6:583.6) (554.4:583.6:583.6))
+      (INTERCONNECT pixel_out_OBUF\[6\]_inst_i_1/O pixel_out_OBUF\[6\]_inst/I (554.4:583.6:583.6) (554.4:583.6:583.6))
+      (INTERCONNECT pixel_out_OBUF\[7\]_inst_i_1/O pixel_out_OBUF\[7\]_inst/I (554.4:583.6:583.6) (554.4:583.6:583.6))
+      (INTERCONNECT r/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[0\]_inst_i_1/I2 (310.9:342.0:342.0) (310.9:342.0:342.0))
+      (INTERCONNECT r/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[1\]_inst_i_1/I2 (310.9:342.0:342.0) (310.9:342.0:342.0))
+      (INTERCONNECT r/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[2\]_inst_i_1/I2 (310.9:342.0:342.0) (310.9:342.0:342.0))
+      (INTERCONNECT r/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[3\]_inst_i_1/I2 (310.9:342.0:342.0) (310.9:342.0:342.0))
+      (INTERCONNECT r/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[4\]_inst_i_1/I2 (310.9:342.0:342.0) (310.9:342.0:342.0))
+      (INTERCONNECT r/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[5\]_inst_i_1/I2 (310.9:342.0:342.0) (310.9:342.0:342.0))
+      (INTERCONNECT r/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[6\]_inst_i_1/I2 (310.9:342.0:342.0) (310.9:342.0:342.0))
+      (INTERCONNECT r/U0/synth_options\.dist_mem_inst/gen_rom\.rom_inst/a_reg_reg\[7\]/Q pixel_out_OBUF\[7\]_inst_i_1/I2 (310.9:342.0:342.0) (310.9:342.0:342.0))
+      (INTERCONNECT v_sync_in_IBUF_inst/O v_sync_in_temp_reg/D (650.4:703.6:703.6) (650.4:703.6:703.6))
+      (INTERCONNECT v_sync_in_temp_reg/Q v_sync_out_OBUF_inst/I (638.4:688.6:688.6) (638.4:688.6:688.6))
+      )
+    )
+)
+)

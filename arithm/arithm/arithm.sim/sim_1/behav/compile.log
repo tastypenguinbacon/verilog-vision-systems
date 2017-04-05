@@ -1,0 +1,14 @@
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/arithm/arithm/arithm.srcs/sources_1/new/delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/arithm/arithm/arithm.srcs/sources_1/new/cudo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cudo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/arithm/arithm/arithm.srcs/sources_1/new/tb_cudo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cudo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/arithm/arithm/arithm.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/arithm/arithm/arithm.srcs/sources_1/ip/mult_gen_0_1/sim/mult_gen_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mult_gen_0
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/arithm/arithm/arithm.srcs/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity c_addsub_0

@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../weird_summator.srcs/sources_1/ip/sum_right_2/sim/sum_right_2.vhd"
+vhdl xil_defaultlib  "../../../weird_summator.srcs/sources_1/ip/sum_right_1/sim/sum_right_1.vhd"
+vhdl xil_defaultlib  "../../../weird_summator.srcs/sources_1/ip/sum_middle/sim/sum_middle.vhd"
+vhdl xil_defaultlib  "../../../weird_summator.srcs/sources_1/ip/sum_left/sim/sum_left.vhd"
+vhdl xil_defaultlib  "../../../weird_summator.srcs/sources_1/ip/mul_right/sim/mul_right.vhd"
+vhdl xil_defaultlib  "../../../weird_summator.srcs/sources_1/ip/mul_left/sim/mul_left.vhd"
+
+# Do not sort compile order
+nosort

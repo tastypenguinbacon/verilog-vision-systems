@@ -1,0 +1,3 @@
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+$finish called at time : 64 ns : File "/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sim_1/new/tb_system.v" Line 47

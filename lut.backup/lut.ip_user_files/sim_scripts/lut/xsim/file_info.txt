@@ -1,0 +1,2 @@
+lut.v,verilog,xil_defaultlib,../../../../lut.srcs/sources_1/ip/lut/sim/lut.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

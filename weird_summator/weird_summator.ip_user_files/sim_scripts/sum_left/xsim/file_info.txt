@@ -1,0 +1,1 @@
+sum_left.vhd,vhdl,xil_defaultlib,../../../../weird_summator.srcs/sources_1/ip/sum_left/sim/sum_left.vhd,

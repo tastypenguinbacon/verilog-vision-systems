@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_cudo_behav/xsimk -simmode gui -wdb tb_cudo_behav.wdb -simrunnum 0 -socket 56681
+Design successfully loaded
+Design Loading Memory Usage: 50872 KB (Peak: 51764 KB)
+Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 140808 KB (Peak: 198144 KB)
+Simulation CPU Usage: 30 ms

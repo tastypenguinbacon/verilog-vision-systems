@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 29 09:30:34 2017
+# Process ID: 18521
+# Current directory: /home/pingwin/Dokumenty/Verilog/arithm/arithm/arithm.runs/mult_gen_0_synth_1
+# Command line: vivado -log mult_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mult_gen_0.tcl
+# Log file: /home/pingwin/Dokumenty/Verilog/arithm/arithm/arithm.runs/mult_gen_0_synth_1/mult_gen_0.vds
+# Journal file: /home/pingwin/Dokumenty/Verilog/arithm/arithm/arithm.runs/mult_gen_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source mult_gen_0.tcl -notrace

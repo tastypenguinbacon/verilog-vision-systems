@@ -1,0 +1,14 @@
+0.6
+2016.4
+Jan 23 2017
+19:19:20
+/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.sim/sim_1/behav/glbl.v,1485222234,verilog,,,,glbl,,,,,,,,
+/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sim_1/new/tb_system.v,1491380967,verilog,,,,tb_system,,,,,,,,
+/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sources_1/ip/mul_left/sim/mul_left.vhd,1490798502,vhdl,,,,mul_left,,,,,,,,
+/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sources_1/ip/mul_right/sim/mul_right.vhd,1490798501,vhdl,,,,mul_right,,,,,,,,
+/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sources_1/ip/sum_left/sim/sum_left.vhd,1491383337,vhdl,,,,sum_left,,,,,,,,
+/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sources_1/ip/sum_middle/sim/sum_middle.vhd,1490798501,vhdl,,,,sum_middle,,,,,,,,
+/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sources_1/ip/sum_right_1/sim/sum_right_1.vhd,1490798501,vhdl,,,,sum_right_1,,,,,,,,
+/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sources_1/ip/sum_right_2/sim/sum_right_2.vhd,1491380517,vhdl,,,,sum_right_2,,,,,,,,
+/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sources_1/new/delay.v,1491381225,verilog,,,,delay,,,,,,,,
+/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sources_1/new/system.v,1491380811,verilog,,,,system,,,,,,,,

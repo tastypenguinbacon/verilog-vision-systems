@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sources_1/ip/sum_right_2/sim/sum_right_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sum_right_2
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sources_1/ip/sum_right_1/sim/sum_right_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sum_right_1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sources_1/ip/sum_middle/sim/sum_middle.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sum_middle
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sources_1/ip/sum_left/sim/sum_left.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sum_left
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sources_1/ip/mul_right/sim/mul_right.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mul_right
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/weird_summator/weird_summator.srcs/sources_1/ip/mul_left/sim/mul_left.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mul_left
