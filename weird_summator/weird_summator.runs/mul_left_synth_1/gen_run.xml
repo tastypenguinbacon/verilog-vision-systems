@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="mul_left_synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1490799698">
-  <File Type="PA-TCL" Name="mul_left.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="mul_left_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="mul_left_utilization_synth.rpt"/>
   <File Type="RDS-RDS" Name="mul_left.vds"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="mul_left_timing_summary_synth.rpt"/>
   <File Type="VDS-TIMING-PB" Name="mul_left_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="mul_left.tcl"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="mul_left_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="mul_left.dcp"/>
   <File Type="RDS-UTIL-PB" Name="mul_left_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="mul_left_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="mul_left_drc_synth.rpt"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mul_left">
     <File Path="$PSRCDIR/sources_1/ip/mul_left/mul_left.xci">
       <FileInfo>

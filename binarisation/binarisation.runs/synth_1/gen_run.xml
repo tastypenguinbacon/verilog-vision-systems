@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1491403581">
-  <File Type="RDS-DCP" Name="binarisation.dcp"/>
+  <File Type="RDS-UTIL" Name="binarisation_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="binarisation_drc_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="binarisation_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="binarisation.dcp"/>
   <File Type="VDS-TIMINGSUMMARY" Name="binarisation_timing_summary_synth.rpt"/>
   <File Type="VDS-TIMING-PB" Name="binarisation_timing_summary_synth.pb"/>
   <File Type="RDS-RDS" Name="binarisation.vds"/>
   <File Type="PA-TCL" Name="binarisation.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="binarisation_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="binarisation_utilization_synth.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/binarisation.v">

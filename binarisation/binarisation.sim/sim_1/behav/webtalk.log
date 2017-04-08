@@ -2,13 +2,12 @@
 # Webtalk v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Wed Apr  5 17:30:41 2017
-# Process ID: 21094
+# Start of session at: Wed Apr  5 19:57:45 2017
+# Process ID: 10025
 # Current directory: /home/pingwin/Dokumenty/Verilog/binarisation/binarisation.sim/sim_1/behav
 # Command line: wbtcv -mode batch -source /home/pingwin/Dokumenty/Verilog/binarisation/binarisation.sim/sim_1/behav/xsim.dir/tb_binarisation_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/pingwin/Dokumenty/Verilog/binarisation/binarisation.sim/sim_1/behav/webtalk.log
 # Journal file: /home/pingwin/Dokumenty/Verilog/binarisation/binarisation.sim/sim_1/behav/webtalk.jou
 #-----------------------------------------------------------
 source /home/pingwin/Dokumenty/Verilog/binarisation/binarisation.sim/sim_1/behav/xsim.dir/tb_binarisation_behav/webtalk/xsim_webtalk.tcl -notrace
-webtalk_transmit: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:30 . Memory (MB): peak = 214.961 ; gain = 0.000 ; free physical = 1363 ; free virtual = 3916
-INFO: [Common 17-206] Exiting Webtalk at Wed Apr  5 17:31:11 2017...
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr  5 19:57:45 2017...
