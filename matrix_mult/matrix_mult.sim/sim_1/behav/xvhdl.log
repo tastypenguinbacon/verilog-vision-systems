@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/matrix_mult/matrix_mult.srcs/sources_1/ip/Z_sum_1/sim/Z_sum.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Z_sum
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/matrix_mult/matrix_mult.srcs/sources_1/ip/Y_sum/sim/Y_sum.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Y_sum
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/matrix_mult/matrix_mult.srcs/sources_1/ip/A_2_2/sim/A_2_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity A_2_2
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/matrix_mult/matrix_mult.srcs/sources_1/ip/A_1_2/sim/A_1_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity A_1_2
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/matrix_mult/matrix_mult.srcs/sources_1/ip/A_1_1/sim/A_1_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity A_1_1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/matrix_mult/matrix_mult.srcs/sources_1/ip/A_2_1/sim/A_2_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity A_2_1

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_matrix_mult_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_matrix_mult" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="549263874fs"></ZoomEndTime>
+      <Cursor1Time time="270668000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="64"></NameColumnWidth>
+      <ValueColumnWidth column_width="63"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wvobject type="array" fp_name="/tb_matrix_mult/\-0.11|z0c8s ">
+      <obj_property name="ElementShortName">\-0.11|z0c8s [8:0]</obj_property>
+      <obj_property name="ObjectShortName">\-0.11|z0c8s [8:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_matrix_mult/\2.3|z2c8u ">
+      <obj_property name="ElementShortName">\2.3|z2c8u [9:0]</obj_property>
+      <obj_property name="ObjectShortName">\2.3|z2c8u [9:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_matrix_mult/\3.14|z2c8u ">
+      <obj_property name="ElementShortName">\3.14|z2c8u [9:0]</obj_property>
+      <obj_property name="ObjectShortName">\3.14|z2c8u [9:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_matrix_mult/\-11.25|z5c2s ">
+      <obj_property name="ElementShortName">\-11.25|z5c2s [7:0]</obj_property>
+      <obj_property name="ObjectShortName">\-11.25|z5c2s [7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">2</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+</wave_config>

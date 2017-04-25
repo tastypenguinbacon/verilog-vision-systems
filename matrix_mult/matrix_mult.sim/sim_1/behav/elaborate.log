@@ -1,0 +1,88 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /home/pingwin/VIVADO/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto c9c54a91ab284416a3bd6deec6a83fa4 --debug typical --relax --mt 8 -L xbip_utils_v3_0_7 -L c_reg_fd_v12_0_3 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_3 -L xbip_dsp48_addsub_v3_0_3 -L xbip_addsub_v3_0_3 -L c_addsub_v12_0_10 -L xil_defaultlib -L xbip_bram18k_v3_0_3 -L mult_gen_v12_0_12 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_matrix_mult_behav xil_defaultlib.tb_matrix_mult xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port ce [/home/pingwin/Dokumenty/Verilog/matrix_mult/matrix_mult.srcs/sources_1/new/matrix_mult.v:48]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port ce [/home/pingwin/Dokumenty/Verilog/matrix_mult/matrix_mult.srcs/sources_1/new/matrix_mult.v:49]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port ce [/home/pingwin/Dokumenty/Verilog/matrix_mult/matrix_mult.srcs/sim_1/new/tb_matrix_mult.v:62]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port ce [/home/pingwin/Dokumenty/Verilog/matrix_mult/matrix_mult.srcs/sim_1/new/tb_matrix_mult.v:63]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package mult_gen_v12_0_12.mult_gen_v12_0_12_viv_comp
+Compiling package xbip_utils_v3_0_7.xbip_utils_v3_0_7_pkg
+Compiling package mult_gen_v12_0_12.mult_gen_v12_0_12_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_viv_comp
+Compiling package xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv_comp
+Compiling package xbip_addsub_v3_0_3.xbip_addsub_v3_0_3_viv_comp
+Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_pkg
+Compiling package c_addsub_v12_0_10.c_addsub_v12_0_10_pkg_legacy
+Compiling package c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv_comp
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.op_resize [\op_resize(ai_width=12,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.luts [\luts(c_xdevicefamily="kintex7",...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.mult_gen_v12_0_12_viv [\mult_gen_v12_0_12_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.mult_gen_v12_0_12 [\mult_gen_v12_0_12(c_xdevicefami...]
+Compiling architecture a_1_1_arch of entity xil_defaultlib.A_1_1 [a_1_1_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.op_resize [\op_resize(ai_width=12,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.luts [\luts(c_xdevicefamily="kintex7",...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.mult_gen_v12_0_12_viv [\mult_gen_v12_0_12_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.mult_gen_v12_0_12 [\mult_gen_v12_0_12(c_xdevicefami...]
+Compiling architecture a_1_2_arch of entity xil_defaultlib.A_1_2 [a_1_2_default]
+Compiling architecture a_2_1_arch of entity xil_defaultlib.A_2_1 [a_2_1_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.delay_line [\delay_line(c_xdevicefamily="kin...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.op_resize [\op_resize(ai_width=12,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.luts [\luts(c_xdevicefamily="kintex7",...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.mult_gen_v12_0_12_viv [\mult_gen_v12_0_12_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_12.mult_gen_v12_0_12 [\mult_gen_v12_0_12(c_xdevicefami...]
+Compiling architecture a_2_2_arch of entity xil_defaultlib.A_2_2 [a_2_2_default]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_sync_pri...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_width=7,...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_width=8,...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_10.c_addsub_v12_0_10 [\c_addsub_v12_0_10(c_xdevicefami...]
+Compiling architecture y_sum_arch of entity xil_defaultlib.Y_sum [y_sum_default]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_width=9,...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_10.c_addsub_v12_0_10 [\c_addsub_v12_0_10(c_xdevicefami...]
+Compiling architecture z_sum_arch of entity xil_defaultlib.Z_sum [z_sum_default]
+Compiling module xil_defaultlib.matrix_mult
+Compiling module xil_defaultlib.tb_matrix_mult
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_matrix_mult_behav
