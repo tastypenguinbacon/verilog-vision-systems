@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Apr 26 17:10:13 2017
+# Process ID: 23251
+# Current directory: /home/pingwin/Dokumenty/Verilog/rgb2ycbcr/rgb2ycbcr.runs/long_short_synth_1
+# Command line: vivado -log long_short.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source long_short.tcl
+# Log file: /home/pingwin/Dokumenty/Verilog/rgb2ycbcr/rgb2ycbcr.runs/long_short_synth_1/long_short.vds
+# Journal file: /home/pingwin/Dokumenty/Verilog/rgb2ycbcr/rgb2ycbcr.runs/long_short_synth_1/vivado.jou
+#-----------------------------------------------------------
+source long_short.tcl -notrace

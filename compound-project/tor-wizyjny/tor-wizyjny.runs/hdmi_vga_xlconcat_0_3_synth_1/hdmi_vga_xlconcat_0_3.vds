@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed May 31 16:53:05 2017
+# Process ID: 20258
+# Current directory: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.runs/hdmi_vga_xlconcat_0_3_synth_1
+# Command line: vivado -log hdmi_vga_xlconcat_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hdmi_vga_xlconcat_0_3.tcl
+# Log file: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.runs/hdmi_vga_xlconcat_0_3_synth_1/hdmi_vga_xlconcat_0_3.vds
+# Journal file: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.runs/hdmi_vga_xlconcat_0_3_synth_1/vivado.jou
+#-----------------------------------------------------------
+source hdmi_vga_xlconcat_0_3.tcl -notrace
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - /home/pingwin/VIVADO/Vivado/2016.4/data/boards/board_files/arty-s7-50/B.0/board.xml
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1074.738 ; gain = 143.086 ; free physical = 1504 ; free virtual = 3774
+INFO: [Synth 8-638] synthesizing module 'hdmi_vga_xlconcat_0_3' [/home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconcat_0_3/synth/hdmi_vga_xlconcat_0_3.v:58]
+INFO: [Synth 8-638] synthesizing module 'xlconcat' [/home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'xlconcat' (1#1) [/home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/2e37/xlconcat.v:14]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_vga_xlconcat_0_3' (2#1) [/home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconcat_0_3/synth/hdmi_vga_xlconcat_0_3.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1115.207 ; gain = 183.555 ; free physical = 1428 ; free virtual = 3698
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1115.207 ; gain = 183.555 ; free physical = 1412 ; free virtual = 3682
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1315.566 ; gain = 0.000 ; free physical = 887 ; free virtual = 3154
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1315.566 ; gain = 383.914 ; free physical = 703 ; free virtual = 2972
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1315.566 ; gain = 383.914 ; free physical = 703 ; free virtual = 2972
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1315.566 ; gain = 383.914 ; free physical = 703 ; free virtual = 2972
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1315.566 ; gain = 383.914 ; free physical = 703 ; free virtual = 2972
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1315.566 ; gain = 383.914 ; free physical = 703 ; free virtual = 2972
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1354.566 ; gain = 422.914 ; free physical = 607 ; free virtual = 2872
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1354.566 ; gain = 422.914 ; free physical = 607 ; free virtual = 2872
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1363.582 ; gain = 431.930 ; free physical = 599 ; free virtual = 2863
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 1363.582 ; gain = 431.930 ; free physical = 599 ; free virtual = 2863
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 1363.582 ; gain = 431.930 ; free physical = 599 ; free virtual = 2863
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 1363.582 ; gain = 431.930 ; free physical = 599 ; free virtual = 2863
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 1363.582 ; gain = 431.930 ; free physical = 599 ; free virtual = 2863
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1363.582 ; gain = 431.930 ; free physical = 598 ; free virtual = 2863
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1363.582 ; gain = 431.930 ; free physical = 598 ; free virtual = 2863
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1363.582 ; gain = 431.930 ; free physical = 598 ; free virtual = 2863
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1368.582 ; gain = 369.426 ; free physical = 521 ; free virtual = 2785

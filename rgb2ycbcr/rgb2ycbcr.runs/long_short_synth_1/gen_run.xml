@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="long_short_synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1493219413">
+  <File Type="VDS-TIMING-PB" Name="long_short_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="long_short_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="long_short.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="long_short_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="long_short_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="long_short_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="long_short.vds"/>
+  <File Type="PA-TCL" Name="long_short.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/long_short">
+    <File Path="$PSRCDIR/sources_1/ip/long_short/long_short.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="long_short"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/long_short">
+    <File Path="$PSRCDIR/sources_1/ip/long_short/long_short.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="long_short"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

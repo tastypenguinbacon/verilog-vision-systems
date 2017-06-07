@@ -1,0 +1,299 @@
+
+*** Running vivado
+    with args -log binarisation_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source binarisation_0.tcl
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source binarisation_0.tcl -notrace
+WARNING: [Board 49-69] Validation failed for board file /home/pingwin/VIVADO/Vivado/2016.4/data/boards/board_files/arty-s7-50/B.0/board.xml:
+ Pin Map file does not provide LOC constraints for shield_dp0_dp9_tri_i_0COMP : digilentinc.com:arty-s7-50:part0:1.0
+
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - /home/pingwin/VIVADO/Vivado/2016.4/data/boards/board_files/arty-s7-50/B.0/board.xml
+Command: synth_design -top binarisation_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24164 
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1073.734 ; gain = 142.086 ; free physical = 1964 ; free virtual = 4865
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'binarisation_0' [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/binarisation_0/synth/binarisation_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'binarisation' [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/binarisation_0/src/binarisation.v:23]
+	Parameter Cb_low bound to: 8'b01100100 
+	Parameter Cb_high bound to: 8'b10001100 
+	Parameter Cr_low bound to: 8'b11111111 
+	Parameter Cr_high bound to: 8'b11111111 
+INFO: [Synth 8-256] done synthesizing module 'binarisation' (1#1) [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/binarisation_0/src/binarisation.v:23]
+INFO: [Synth 8-256] done synthesizing module 'binarisation_0' (2#1) [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/binarisation_0/synth/binarisation_0.v:56]
+WARNING: [Synth 8-3331] design binarisation has unconnected port clk
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[23]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[22]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[21]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[20]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[19]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[18]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[17]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[16]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[15]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[14]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[13]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[12]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[11]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[10]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[9]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[8]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[7]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[6]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[5]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[4]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[3]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[2]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[1]
+WARNING: [Synth 8-3331] design binarisation has unconnected port pixel_in[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1115.203 ; gain = 183.555 ; free physical = 1922 ; free virtual = 4823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1115.203 ; gain = 183.555 ; free physical = 1922 ; free virtual = 4823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1123.207 ; gain = 191.559 ; free physical = 1922 ; free virtual = 4823
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1123.207 ; gain = 191.559 ; free physical = 1922 ; free virtual = 4823
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3330] design binarisation_0 has an empty top module
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[23] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[22] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[21] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[20] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[19] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[18] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[17] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[16] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[15] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[14] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[13] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[12] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[11] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[10] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[9] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[8] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[7] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[6] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[5] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[4] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[3] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[2] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[1] driven by constant 0
+INFO: [Synth 8-3917] design binarisation_0 has port pixel_out[0] driven by constant 0
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port clk
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[23]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[22]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[21]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[20]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[19]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[18]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[17]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[16]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[15]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[14]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[13]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[12]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[11]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[10]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[9]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[8]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[7]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[6]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[5]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[4]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[3]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[2]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[1]
+WARNING: [Synth 8-3331] design binarisation_0 has unconnected port pixel_in[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1190.527 ; gain = 258.879 ; free physical = 1856 ; free virtual = 4759
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1190.527 ; gain = 258.879 ; free physical = 1856 ; free virtual = 4759
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1198.535 ; gain = 266.887 ; free physical = 1848 ; free virtual = 4751
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1198.535 ; gain = 266.887 ; free physical = 1848 ; free virtual = 4751
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1198.535 ; gain = 266.887 ; free physical = 1848 ; free virtual = 4751
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1198.535 ; gain = 266.887 ; free physical = 1848 ; free virtual = 4751
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1198.535 ; gain = 266.887 ; free physical = 1848 ; free virtual = 4751
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1198.535 ; gain = 266.887 ; free physical = 1848 ; free virtual = 4751
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1198.535 ; gain = 266.887 ; free physical = 1848 ; free virtual = 4751
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1198.535 ; gain = 266.887 ; free physical = 1848 ; free virtual = 4751
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 51 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1198.535 ; gain = 186.797 ; free physical = 1848 ; free virtual = 4751
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1198.543 ; gain = 266.895 ; free physical = 1848 ; free virtual = 4751
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 52 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1285.535 ; gain = 286.383 ; free physical = 1767 ; free virtual = 4669
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/binarisation_0_synth_1/binarisation_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1672.055 ; gain = 386.520 ; free physical = 1436 ; free virtual = 4340
+INFO: [Common 17-1381] The checkpoint '/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/binarisation_0_synth_1/binarisation_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1672.055 ; gain = 0.000 ; free physical = 1434 ; free virtual = 4339
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  7 17:57:47 2017...

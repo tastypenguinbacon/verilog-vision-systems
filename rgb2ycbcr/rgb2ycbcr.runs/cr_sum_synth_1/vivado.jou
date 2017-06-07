@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Apr 26 17:59:48 2017
+# Process ID: 25714
+# Current directory: /home/pingwin/Dokumenty/Verilog/rgb2ycbcr/rgb2ycbcr.runs/cr_sum_synth_1
+# Command line: vivado -log cr_sum.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cr_sum.tcl
+# Log file: /home/pingwin/Dokumenty/Verilog/rgb2ycbcr/rgb2ycbcr.runs/cr_sum_synth_1/cr_sum.vds
+# Journal file: /home/pingwin/Dokumenty/Verilog/rgb2ycbcr/rgb2ycbcr.runs/cr_sum_synth_1/vivado.jou
+#-----------------------------------------------------------
+source cr_sum.tcl -notrace

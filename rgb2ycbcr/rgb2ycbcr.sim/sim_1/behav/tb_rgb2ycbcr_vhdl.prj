@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/ip/y_sum/sim/y_sum.vhd"
+vhdl xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/ip/two_signed/sim/two_signed.vhd"
+vhdl xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/ip/signed_mul/sim/signed_mul.vhd"
+vhdl xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/ip/long_short/sim/long_short.vhd"
+vhdl xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/ip/cr_sum/sim/cr_sum.vhd"
+vhdl xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/ip/cb_sum/sim/cb_sum.vhd"
+vhdl xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/ip/unsigned_mul/sim/unsigned_mul.vhd"
+vhdl xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/ip/long_long/sim/long_long.vhd"
+
+# Do not sort compile order
+nosort

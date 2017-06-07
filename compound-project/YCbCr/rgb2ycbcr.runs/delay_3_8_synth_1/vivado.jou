@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed May 24 23:46:42 2017
+# Process ID: 17642
+# Current directory: /home/pingwin/Dokumenty/Verilog/compound-project/YCbCr/rgb2ycbcr.runs/delay_3_8_synth_1
+# Command line: vivado -log delay_3_8.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source delay_3_8.tcl
+# Log file: /home/pingwin/Dokumenty/Verilog/compound-project/YCbCr/rgb2ycbcr.runs/delay_3_8_synth_1/delay_3_8.vds
+# Journal file: /home/pingwin/Dokumenty/Verilog/compound-project/YCbCr/rgb2ycbcr.runs/delay_3_8_synth_1/vivado.jou
+#-----------------------------------------------------------
+source delay_3_8.tcl -notrace

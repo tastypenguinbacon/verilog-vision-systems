@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jun  7 17:57:04 2017
+# Process ID: 24149
+# Current directory: /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/binarisation_0_synth_1
+# Command line: vivado -log binarisation_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source binarisation_0.tcl
+# Log file: /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/binarisation_0_synth_1/binarisation_0.vds
+# Journal file: /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/binarisation_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source binarisation_0.tcl -notrace

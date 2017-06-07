@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/ip/delay_3_8/src/delay.v"
+verilog xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/ip/delay_3_8/sim/delay_3_8.v"
+verilog xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/ip/delay_5_3/sim/delay_5_3.v"
+verilog xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/new/cb_row.v"
+verilog xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/new/rgb2ycbcr.v"
+verilog xil_defaultlib  "../../../rgb2ycbcr.srcs/sim_1/new/tb_rgb2ycbcr.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

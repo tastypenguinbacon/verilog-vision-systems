@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/ip/mul_8u_11s/sim/mul_8u_11s.vhd"
+vhdl xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/ip/sum_11s_11s/sim/sum_11s_11s.vhd"
+vhdl xil_defaultlib  "../../../rgb2ycbcr.srcs/sources_1/ip/sum_10s_10s/sim/sum_10s_10s.vhd"
+
+# Do not sort compile order
+nosort

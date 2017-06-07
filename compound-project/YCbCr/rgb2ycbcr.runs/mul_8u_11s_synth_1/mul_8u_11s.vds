@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed May 24 14:53:35 2017
+# Process ID: 21076
+# Current directory: /home/pingwin/Dokumenty/Verilog/compound-project/YCbCr/rgb2ycbcr.runs/mul_8u_11s_synth_1
+# Command line: vivado -log mul_8u_11s.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mul_8u_11s.tcl
+# Log file: /home/pingwin/Dokumenty/Verilog/compound-project/YCbCr/rgb2ycbcr.runs/mul_8u_11s_synth_1/mul_8u_11s.vds
+# Journal file: /home/pingwin/Dokumenty/Verilog/compound-project/YCbCr/rgb2ycbcr.runs/mul_8u_11s_synth_1/vivado.jou
+#-----------------------------------------------------------
+source mul_8u_11s.tcl -notrace
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - /home/pingwin/VIVADO/Vivado/2016.4/data/boards/board_files/arty-s7-50/B.0/board.xml
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP mul_8u_11s, cache-ID = 9e6682005083f434.
