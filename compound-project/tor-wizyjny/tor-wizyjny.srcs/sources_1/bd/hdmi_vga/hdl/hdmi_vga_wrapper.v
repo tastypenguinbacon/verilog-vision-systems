@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-//Date        : Wed May 31 20:10:13 2017
+//Date        : Wed Jun  7 19:37:53 2017
 //Host        : mothership running 64-bit Ubuntu 16.10
 //Command     : generate_target hdmi_vga_wrapper.bd
 //Design      : hdmi_vga_wrapper

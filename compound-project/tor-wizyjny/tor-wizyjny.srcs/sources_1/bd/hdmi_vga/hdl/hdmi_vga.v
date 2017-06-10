@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-//Date        : Wed May 31 20:24:00 2017
+//Date        : Wed Jun  7 19:37:53 2017
 //Host        : mothership running 64-bit Ubuntu 16.10
 //Command     : generate_target hdmi_vga.bd
 //Design      : hdmi_vga
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "hdmi_vga,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi_vga,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=11,numReposBlks=11,numNonXlnxBlks=5,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "hdmi_vga.hwdef" *) 
+(* HW_HANDOFF = "hdmi_vga.hwdef" *) (* core_generation_info = "hdmi_vga,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi_vga,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=5,numReposBlks=5,numNonXlnxBlks=3,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) 
 module hdmi_vga
    (hdmi_hpd,
     hdmi_in_clk_n,
@@ -48,10 +48,6 @@ module hdmi_vga
   output [4:0]vga_pRed;
   output vga_pVSync;
 
-  wire binarisation_0_de_out;
-  wire binarisation_0_h_sync_out;
-  wire [23:0]binarisation_0_pixel_out;
-  wire binarisation_0_v_sync_out;
   wire clk_wiz_0_clk_out1;
   wire dvi2rgb_0_DDC_SCL_I;
   wire dvi2rgb_0_DDC_SCL_O;
@@ -68,25 +64,17 @@ module hdmi_vga
   wire hdmi_in_1_CLK_P;
   wire [2:0]hdmi_in_1_DATA_N;
   wire [2:0]hdmi_in_1_DATA_P;
-  wire mux_0_de_out;
-  wire mux_0_h_sync_out;
-  wire [23:0]mux_0_out;
-  wire mux_0_v_sync_out;
   wire [4:0]rgb2vga_0_vga_pBlue;
   wire [5:0]rgb2vga_0_vga_pGreen;
   wire rgb2vga_0_vga_pHSync;
   wire [4:0]rgb2vga_0_vga_pRed;
   wire rgb2vga_0_vga_pVSync;
-  wire rgb2ycbcr_0_de_out;
-  wire rgb2ycbcr_0_h_sync_out;
-  wire [23:0]rgb2ycbcr_0_pixel_out;
-  wire rgb2ycbcr_0_v_sync_out;
   wire [2:0]sw_1;
   wire sys_clock_1;
-  wire [7:0]xlconcat_0_dout;
-  wire [7:0]xlconcat_1_dout;
-  wire [7:0]xlconcat_2_dout;
-  wire [191:0]xlconcat_3_dout;
+  wire vb_0_de_out;
+  wire vb_0_h_sync_out;
+  wire [23:0]vb_0_pixel_out;
+  wire vb_0_v_sync_out;
   wire [0:0]xlconstant_0_dout;
 
   assign dvi2rgb_0_DDC_SCL_I = hdmi_in_ddc_scl_i;
@@ -107,16 +95,6 @@ module hdmi_vga
   assign vga_pHSync = rgb2vga_0_vga_pHSync;
   assign vga_pRed[4:0] = rgb2vga_0_vga_pRed;
   assign vga_pVSync = rgb2vga_0_vga_pVSync;
-  hdmi_vga_binarisation_0_0 binarisation_0
-       (.clk(dvi2rgb_0_PixelClk),
-        .de_in(rgb2ycbcr_0_de_out),
-        .de_out(binarisation_0_de_out),
-        .h_sync_in(rgb2ycbcr_0_h_sync_out),
-        .h_sync_out(binarisation_0_h_sync_out),
-        .pixel_in(rgb2ycbcr_0_pixel_out),
-        .pixel_out(binarisation_0_pixel_out),
-        .v_sync_in(rgb2ycbcr_0_v_sync_out),
-        .v_sync_out(binarisation_0_v_sync_out));
   hdmi_vga_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(sys_clock_1),
         .clk_out1(clk_wiz_0_clk_out1),
@@ -140,78 +118,28 @@ module hdmi_vga
         .vid_pHSync(dvi2rgb_0_vid_pHSync),
         .vid_pVDE(dvi2rgb_0_vid_pVDE),
         .vid_pVSync(dvi2rgb_0_vid_pVSync));
-  hdmi_vga_mux_0_0 mux_0
-       (.clk(dvi2rgb_0_PixelClk),
-        .de_in(xlconcat_0_dout),
-        .de_out(mux_0_de_out),
-        .h_sync_in(xlconcat_2_dout),
-        .h_sync_out(mux_0_h_sync_out),
-        .in(xlconcat_3_dout),
-        .out(mux_0_out),
-        .select(sw_1),
-        .v_sync_in(xlconcat_1_dout),
-        .v_sync_out(mux_0_v_sync_out));
   hdmi_vga_rgb2vga_0_0 rgb2vga_0
        (.PixelClk(dvi2rgb_0_PixelClk),
-        .rgb_pData(mux_0_out),
-        .rgb_pHSync(mux_0_h_sync_out),
-        .rgb_pVDE(mux_0_de_out),
-        .rgb_pVSync(mux_0_v_sync_out),
+        .rgb_pData(vb_0_pixel_out),
+        .rgb_pHSync(vb_0_h_sync_out),
+        .rgb_pVDE(vb_0_de_out),
+        .rgb_pVSync(vb_0_v_sync_out),
         .vga_pBlue(rgb2vga_0_vga_pBlue),
         .vga_pGreen(rgb2vga_0_vga_pGreen),
         .vga_pHSync(rgb2vga_0_vga_pHSync),
         .vga_pRed(rgb2vga_0_vga_pRed),
         .vga_pVSync(rgb2vga_0_vga_pVSync));
-  hdmi_vga_rgb2ycbcr_0_0 rgb2ycbcr_0
+  hdmi_vga_vb_0_0 vb_0
        (.clk(dvi2rgb_0_PixelClk),
         .de_in(dvi2rgb_0_vid_pVDE),
-        .de_out(rgb2ycbcr_0_de_out),
+        .de_out(vb_0_de_out),
         .h_sync_in(dvi2rgb_0_vid_pHSync),
-        .h_sync_out(rgb2ycbcr_0_h_sync_out),
+        .h_sync_out(vb_0_h_sync_out),
         .pixel_in(dvi2rgb_0_vid_pData),
-        .pixel_out(rgb2ycbcr_0_pixel_out),
+        .pixel_out(vb_0_pixel_out),
+        .select(sw_1),
         .v_sync_in(dvi2rgb_0_vid_pVSync),
-        .v_sync_out(rgb2ycbcr_0_v_sync_out));
-  hdmi_vga_xlconcat_0_2 xlconcat_0
-       (.In0(rgb2ycbcr_0_de_out),
-        .In1(binarisation_0_de_out),
-        .In2(dvi2rgb_0_vid_pVDE),
-        .In3(1'b0),
-        .In4(1'b0),
-        .In5(1'b0),
-        .In6(1'b0),
-        .In7(1'b0),
-        .dout(xlconcat_0_dout));
-  hdmi_vga_xlconcat_0_1 xlconcat_1
-       (.In0(rgb2ycbcr_0_v_sync_out),
-        .In1(binarisation_0_v_sync_out),
-        .In2(dvi2rgb_0_vid_pVSync),
-        .In3(1'b0),
-        .In4(1'b0),
-        .In5(1'b0),
-        .In6(1'b0),
-        .In7(1'b0),
-        .dout(xlconcat_1_dout));
-  hdmi_vga_xlconcat_0_3 xlconcat_2
-       (.In0(rgb2ycbcr_0_h_sync_out),
-        .In1(binarisation_0_h_sync_out),
-        .In2(dvi2rgb_0_vid_pHSync),
-        .In3(1'b0),
-        .In4(1'b0),
-        .In5(1'b0),
-        .In6(1'b0),
-        .In7(1'b0),
-        .dout(xlconcat_2_dout));
-  hdmi_vga_xlconcat_0_4 xlconcat_3
-       (.In0(rgb2ycbcr_0_pixel_out),
-        .In1(binarisation_0_pixel_out),
-        .In2(dvi2rgb_0_vid_pData),
-        .In3({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .In4({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .In5({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .In6({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .In7({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .dout(xlconcat_3_dout));
+        .v_sync_out(vb_0_v_sync_out));
   hdmi_vga_xlconstant_0_0 xlconstant_0
        (.dout(xlconstant_0_dout));
 endmodule

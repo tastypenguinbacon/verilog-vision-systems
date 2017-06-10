@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May 31 20:24:01 2017" VIVADOVERSION="2016.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jun  7 19:37:55 2017" VIVADOVERSION="2016.4">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo:part0:1.0" DEVICE="7z010" NAME="hdmi_vga" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -51,7 +51,7 @@
     </PORT>
     <PORT DIR="I" LEFT="2" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="mux_0" PORT="select"/>
+        <CONNECTION INSTANCE="vb_0" PORT="select"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -78,65 +78,6 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE FULLNAME="/binarisation_0" HWVERSION="1.0" INSTANCE="binarisation_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="binarisation" VLNV="user.org:user:binarisation:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="Cb_low" VALUE="&quot;01100100&quot;"/>
-        <PARAMETER NAME="Cb_high" VALUE="&quot;11111111&quot;"/>
-        <PARAMETER NAME="Cr_low" VALUE="&quot;01001100&quot;"/>
-        <PARAMETER NAME="Cr_high" VALUE="&quot;11111111&quot;"/>
-        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_binarisation_0_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="dvi2rgb_0_PixelClk">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="PixelClk"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="de_in" SIGIS="undef" SIGNAME="rgb2ycbcr_0_de_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2ycbcr_0" PORT="de_out"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="h_sync_in" SIGIS="undef" SIGNAME="rgb2ycbcr_0_h_sync_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2ycbcr_0" PORT="h_sync_out"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="v_sync_in" SIGIS="undef" SIGNAME="rgb2ycbcr_0_v_sync_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2ycbcr_0" PORT="v_sync_out"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="23" NAME="pixel_in" RIGHT="0" SIGIS="undef" SIGNAME="rgb2ycbcr_0_pixel_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2ycbcr_0" PORT="pixel_out"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="de_out" SIGIS="undef" SIGNAME="binarisation_0_de_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconcat_0" PORT="In1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="h_sync_out" SIGIS="undef" SIGNAME="binarisation_0_h_sync_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconcat_2" PORT="In1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="v_sync_out" SIGIS="undef" SIGNAME="binarisation_0_v_sync_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconcat_1" PORT="In1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="23" NAME="pixel_out" RIGHT="0" SIGIS="undef" SIGNAME="binarisation_0_pixel_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconcat_3" PORT="In1"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
     <MODULE FULLNAME="/clk_wiz_0" HWVERSION="5.3" INSTANCE="clk_wiz_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_wiz" VLNV="xilinx.com:ip:clk_wiz:5.3">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=clk_wiz;v=v5_3;d=pg065-clk-wiz.pdf"/>
@@ -761,34 +702,28 @@
         </PORT>
         <PORT DIR="O" LEFT="23" NAME="vid_pData" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pData">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2ycbcr_0" PORT="pixel_in"/>
-            <CONNECTION INSTANCE="xlconcat_3" PORT="In2"/>
+            <CONNECTION INSTANCE="vb_0" PORT="pixel_in"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="vid_pVDE" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVDE">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2ycbcr_0" PORT="de_in"/>
-            <CONNECTION INSTANCE="xlconcat_0" PORT="In2"/>
+            <CONNECTION INSTANCE="vb_0" PORT="de_in"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="vid_pHSync" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pHSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2ycbcr_0" PORT="h_sync_in"/>
-            <CONNECTION INSTANCE="xlconcat_2" PORT="In2"/>
+            <CONNECTION INSTANCE="vb_0" PORT="h_sync_in"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="vid_pVSync" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVSync">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2ycbcr_0" PORT="v_sync_in"/>
-            <CONNECTION INSTANCE="xlconcat_1" PORT="In2"/>
+            <CONNECTION INSTANCE="vb_0" PORT="v_sync_in"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="PixelClk" SIGIS="clk" SIGNAME="dvi2rgb_0_PixelClk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rgb2vga_0" PORT="PixelClk"/>
-            <CONNECTION INSTANCE="rgb2ycbcr_0" PORT="clk"/>
-            <CONNECTION INSTANCE="mux_0" PORT="clk"/>
-            <CONNECTION INSTANCE="binarisation_0" PORT="clk"/>
+            <CONNECTION INSTANCE="vb_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="aPixelClkLckd" SIGIS="undef"/>
@@ -833,66 +768,6 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE FULLNAME="/mux_0" HWVERSION="1.0" INSTANCE="mux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux" VLNV="user.org:user:mux:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_mux_0_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="2" NAME="select" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="sw"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="191" NAME="in" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_3_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconcat_3" PORT="dout"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="7" NAME="h_sync_in" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_2_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconcat_2" PORT="dout"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="7" NAME="v_sync_in" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_1_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconcat_1" PORT="dout"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="7" NAME="de_in" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconcat_0" PORT="dout"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="dvi2rgb_0_PixelClk">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="PixelClk"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="23" NAME="out" RIGHT="0" SIGIS="undef" SIGNAME="mux_0_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pData"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="h_sync_out" SIGIS="undef" SIGNAME="mux_0_h_sync_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pHSync"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="v_sync_out" SIGIS="undef" SIGNAME="mux_0_v_sync_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVSync"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="de_out" SIGIS="undef" SIGNAME="mux_0_de_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVDE"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
     <MODULE FULLNAME="/rgb2vga_0" HWVERSION="1.0" INSTANCE="rgb2vga_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2vga" VLNV="digilentinc.com:ip:rgb2vga:1.0">
       <DOCUMENTS>
         <DOCUMENT SOURCE="/home/pingwin/Dokumenty/Verilog/compound-project/ip-repository/rgb2vga_v1_0/docs/rgb2vga_v1_0.pdf"/>
@@ -906,24 +781,24 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="23" NAME="rgb_pData" RIGHT="0" SIGIS="undef" SIGNAME="mux_0_out">
+        <PORT DIR="I" LEFT="23" NAME="rgb_pData" RIGHT="0" SIGIS="undef" SIGNAME="vb_0_pixel_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="mux_0" PORT="out"/>
+            <CONNECTION INSTANCE="vb_0" PORT="pixel_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rgb_pVDE" SIGIS="undef" SIGNAME="mux_0_de_out">
+        <PORT DIR="I" NAME="rgb_pVDE" SIGIS="undef" SIGNAME="vb_0_de_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="mux_0" PORT="de_out"/>
+            <CONNECTION INSTANCE="vb_0" PORT="de_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rgb_pHSync" SIGIS="undef" SIGNAME="mux_0_h_sync_out">
+        <PORT DIR="I" NAME="rgb_pHSync" SIGIS="undef" SIGNAME="vb_0_h_sync_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="mux_0" PORT="h_sync_out"/>
+            <CONNECTION INSTANCE="vb_0" PORT="h_sync_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rgb_pVSync" SIGIS="undef" SIGNAME="mux_0_v_sync_out">
+        <PORT DIR="I" NAME="rgb_pVSync" SIGIS="undef" SIGNAME="vb_0_v_sync_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="mux_0" PORT="v_sync_out"/>
+            <CONNECTION INSTANCE="vb_0" PORT="v_sync_out"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="PixelClk" SIGIS="clk" SIGNAME="dvi2rgb_0_PixelClk">
@@ -968,13 +843,18 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE FULLNAME="/rgb2ycbcr_0" HWVERSION="1.0" INSTANCE="rgb2ycbcr_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2ycbcr" VLNV="user.org:user:rgb2ycbcr:1.0">
+    <MODULE FULLNAME="/vb_0" HWVERSION="1.0" INSTANCE="vb_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="vb" VLNV="user.org:user:vb:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_rgb2ycbcr_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_vb_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
+        <PORT DIR="I" LEFT="2" NAME="select" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="dvi2rgb_0_PixelClk">
           <CONNECTIONS>
             <CONNECTION INSTANCE="dvi2rgb_0" PORT="PixelClk"/>
@@ -1000,304 +880,24 @@
             <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pData"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="de_out" SIGIS="undef" SIGNAME="rgb2ycbcr_0_de_out">
+        <PORT DIR="O" NAME="de_out" SIGIS="undef" SIGNAME="vb_0_de_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconcat_0" PORT="In0"/>
-            <CONNECTION INSTANCE="binarisation_0" PORT="de_in"/>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVDE"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="h_sync_out" SIGIS="undef" SIGNAME="rgb2ycbcr_0_h_sync_out">
+        <PORT DIR="O" NAME="h_sync_out" SIGIS="undef" SIGNAME="vb_0_h_sync_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconcat_2" PORT="In0"/>
-            <CONNECTION INSTANCE="binarisation_0" PORT="h_sync_in"/>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pHSync"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="v_sync_out" SIGIS="undef" SIGNAME="rgb2ycbcr_0_v_sync_out">
+        <PORT DIR="O" NAME="v_sync_out" SIGIS="undef" SIGNAME="vb_0_v_sync_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconcat_1" PORT="In0"/>
-            <CONNECTION INSTANCE="binarisation_0" PORT="v_sync_in"/>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pVSync"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="23" NAME="pixel_out" RIGHT="0" SIGIS="undef" SIGNAME="rgb2ycbcr_0_pixel_out">
+        <PORT DIR="O" LEFT="23" NAME="pixel_out" RIGHT="0" SIGIS="undef" SIGNAME="vb_0_pixel_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconcat_3" PORT="In0"/>
-            <CONNECTION INSTANCE="binarisation_0" PORT="pixel_in"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE FULLNAME="/xlconcat_0" HWVERSION="2.1" INSTANCE="xlconcat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="IN0_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN1_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="dout_width" VALUE="8"/>
-        <PARAMETER NAME="NUM_PORTS" VALUE="8"/>
-        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_xlconcat_0_2"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="rgb2ycbcr_0_de_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2ycbcr_0" PORT="de_out"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="binarisation_0_de_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="binarisation_0" PORT="de_out"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="In2" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVDE">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pVDE"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="In3" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="In4" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="In5" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="In6" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="In7" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="7" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="mux_0" PORT="de_in"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE FULLNAME="/xlconcat_1" HWVERSION="2.1" INSTANCE="xlconcat_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="IN0_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN1_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="dout_width" VALUE="8"/>
-        <PARAMETER NAME="NUM_PORTS" VALUE="8"/>
-        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_xlconcat_0_1"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="rgb2ycbcr_0_v_sync_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2ycbcr_0" PORT="v_sync_out"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="binarisation_0_v_sync_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="binarisation_0" PORT="v_sync_out"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="In2" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pVSync">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pVSync"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="In3" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="In4" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="In5" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="In6" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="In7" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="7" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_1_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="mux_0" PORT="v_sync_in"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE FULLNAME="/xlconcat_2" HWVERSION="2.1" INSTANCE="xlconcat_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="IN0_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN1_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="dout_width" VALUE="8"/>
-        <PARAMETER NAME="NUM_PORTS" VALUE="8"/>
-        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_xlconcat_0_3"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="0" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="rgb2ycbcr_0_h_sync_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2ycbcr_0" PORT="h_sync_out"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="binarisation_0_h_sync_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="binarisation_0" PORT="h_sync_out"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="In2" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pHSync">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pHSync"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="0" NAME="In3" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="In4" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="In5" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="In6" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="0" NAME="In7" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="7" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_2_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="mux_0" PORT="h_sync_in"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE FULLNAME="/xlconcat_3" HWVERSION="2.1" INSTANCE="xlconcat_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="IN0_WIDTH" VALUE="24"/>
-        <PARAMETER NAME="IN1_WIDTH" VALUE="24"/>
-        <PARAMETER NAME="IN2_WIDTH" VALUE="24"/>
-        <PARAMETER NAME="IN3_WIDTH" VALUE="24"/>
-        <PARAMETER NAME="IN4_WIDTH" VALUE="24"/>
-        <PARAMETER NAME="IN5_WIDTH" VALUE="24"/>
-        <PARAMETER NAME="IN6_WIDTH" VALUE="24"/>
-        <PARAMETER NAME="IN7_WIDTH" VALUE="24"/>
-        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="dout_width" VALUE="192"/>
-        <PARAMETER NAME="NUM_PORTS" VALUE="8"/>
-        <PARAMETER NAME="Component_Name" VALUE="hdmi_vga_xlconcat_0_4"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="23" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="rgb2ycbcr_0_pixel_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rgb2ycbcr_0" PORT="pixel_out"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="23" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="binarisation_0_pixel_out">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="binarisation_0" PORT="pixel_out"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="23" NAME="In2" RIGHT="0" SIGIS="undef" SIGNAME="dvi2rgb_0_vid_pData">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="dvi2rgb_0" PORT="vid_pData"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="23" NAME="In3" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="23" NAME="In4" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="23" NAME="In5" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="23" NAME="In6" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="23" NAME="In7" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="191" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_3_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="mux_0" PORT="in"/>
+            <CONNECTION INSTANCE="rgb2vga_0" PORT="rgb_pData"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

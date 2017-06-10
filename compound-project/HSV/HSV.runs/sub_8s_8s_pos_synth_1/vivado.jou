@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Jun 10 15:52:53 2017
+# Process ID: 29205
+# Current directory: /home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.runs/sub_8s_8s_pos_synth_1
+# Command line: vivado -log sub_8s_8s_pos.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sub_8s_8s_pos.tcl
+# Log file: /home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.runs/sub_8s_8s_pos_synth_1/sub_8s_8s_pos.vds
+# Journal file: /home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.runs/sub_8s_8s_pos_synth_1/vivado.jou
+#-----------------------------------------------------------
+source sub_8s_8s_pos.tcl -notrace

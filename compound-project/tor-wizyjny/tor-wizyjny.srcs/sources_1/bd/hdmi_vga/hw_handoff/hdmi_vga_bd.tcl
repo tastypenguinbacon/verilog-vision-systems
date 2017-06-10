@@ -170,13 +170,6 @@ CONFIG.FREQ_HZ {125000000} \
   set vga_pRed [ create_bd_port -dir O -from 4 -to 0 vga_pRed ]
   set vga_pVSync [ create_bd_port -dir O vga_pVSync ]
 
-  # Create instance: binarisation_0, and set properties
-  set binarisation_0 [ create_bd_cell -type ip -vlnv user.org:user:binarisation:1.0 binarisation_0 ]
-  set_property -dict [ list \
-CONFIG.Cb_high {"11111111"} \
-CONFIG.Cr_low {"01001100"} \
- ] $binarisation_0
-
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.3 clk_wiz_0 ]
   set_property -dict [ list \
@@ -205,64 +198,11 @@ CONFIG.MMCM_COMPENSATION.VALUE_SRC {DEFAULT} \
 CONFIG.kEdidFileName {720p_edid.txt} \
  ] $dvi2rgb_0
 
-  # Create instance: mux_0, and set properties
-  set mux_0 [ create_bd_cell -type ip -vlnv user.org:user:mux:1.0 mux_0 ]
-
   # Create instance: rgb2vga_0, and set properties
   set rgb2vga_0 [ create_bd_cell -type ip -vlnv digilentinc.com:ip:rgb2vga:1.0 rgb2vga_0 ]
 
-  # Create instance: rgb2ycbcr_0, and set properties
-  set rgb2ycbcr_0 [ create_bd_cell -type ip -vlnv user.org:user:rgb2ycbcr:1.0 rgb2ycbcr_0 ]
-
-  # Create instance: xlconcat_0, and set properties
-  set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
-  set_property -dict [ list \
-CONFIG.IN0_WIDTH {1} \
-CONFIG.IN1_WIDTH {1} \
-CONFIG.IN2_WIDTH {1} \
-CONFIG.IN3_WIDTH {1} \
-CONFIG.IN4_WIDTH {1} \
-CONFIG.IN5_WIDTH {1} \
-CONFIG.IN6_WIDTH {1} \
-CONFIG.IN7_WIDTH {1} \
-CONFIG.NUM_PORTS {8} \
- ] $xlconcat_0
-
-  # Create instance: xlconcat_1, and set properties
-  set xlconcat_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_1 ]
-  set_property -dict [ list \
-CONFIG.IN0_WIDTH {1} \
-CONFIG.IN1_WIDTH {1} \
-CONFIG.NUM_PORTS {8} \
- ] $xlconcat_1
-
-  # Create instance: xlconcat_2, and set properties
-  set xlconcat_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_2 ]
-  set_property -dict [ list \
-CONFIG.IN0_WIDTH {1} \
-CONFIG.IN1_WIDTH {1} \
-CONFIG.IN2_WIDTH {1} \
-CONFIG.IN3_WIDTH {1} \
-CONFIG.IN4_WIDTH {1} \
-CONFIG.IN5_WIDTH {1} \
-CONFIG.IN6_WIDTH {1} \
-CONFIG.IN7_WIDTH {1} \
-CONFIG.NUM_PORTS {8} \
- ] $xlconcat_2
-
-  # Create instance: xlconcat_3, and set properties
-  set xlconcat_3 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_3 ]
-  set_property -dict [ list \
-CONFIG.IN0_WIDTH {24} \
-CONFIG.IN1_WIDTH {24} \
-CONFIG.IN2_WIDTH {24} \
-CONFIG.IN3_WIDTH {24} \
-CONFIG.IN4_WIDTH {24} \
-CONFIG.IN5_WIDTH {24} \
-CONFIG.IN6_WIDTH {24} \
-CONFIG.IN7_WIDTH {24} \
-CONFIG.NUM_PORTS {8} \
- ] $xlconcat_3
+  # Create instance: vb_0, and set properties
+  set vb_0 [ create_bd_cell -type ip -vlnv user.org:user:vb:1.0 vb_0 ]
 
   # Create instance: xlconstant_0, and set properties
   set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
@@ -275,35 +215,23 @@ CONFIG.CONST_VAL {0} \
   connect_bd_intf_net -intf_net hdmi_in_1 [get_bd_intf_ports hdmi_in] [get_bd_intf_pins dvi2rgb_0/TMDS]
 
   # Create port connections
-  connect_bd_net -net binarisation_0_de_out [get_bd_pins binarisation_0/de_out] [get_bd_pins xlconcat_0/In1]
-  connect_bd_net -net binarisation_0_h_sync_out [get_bd_pins binarisation_0/h_sync_out] [get_bd_pins xlconcat_2/In1]
-  connect_bd_net -net binarisation_0_pixel_out [get_bd_pins binarisation_0/pixel_out] [get_bd_pins xlconcat_3/In1]
-  connect_bd_net -net binarisation_0_v_sync_out [get_bd_pins binarisation_0/v_sync_out] [get_bd_pins xlconcat_1/In1]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins dvi2rgb_0/RefClk]
-  connect_bd_net -net dvi2rgb_0_PixelClk [get_bd_pins binarisation_0/clk] [get_bd_pins dvi2rgb_0/PixelClk] [get_bd_pins mux_0/clk] [get_bd_pins rgb2vga_0/PixelClk] [get_bd_pins rgb2ycbcr_0/clk]
-  connect_bd_net -net dvi2rgb_0_vid_pData [get_bd_pins dvi2rgb_0/vid_pData] [get_bd_pins rgb2ycbcr_0/pixel_in] [get_bd_pins xlconcat_3/In2]
-  connect_bd_net -net dvi2rgb_0_vid_pHSync [get_bd_pins dvi2rgb_0/vid_pHSync] [get_bd_pins rgb2ycbcr_0/h_sync_in] [get_bd_pins xlconcat_2/In2]
-  connect_bd_net -net dvi2rgb_0_vid_pVDE [get_bd_pins dvi2rgb_0/vid_pVDE] [get_bd_pins rgb2ycbcr_0/de_in] [get_bd_pins xlconcat_0/In2]
-  connect_bd_net -net dvi2rgb_0_vid_pVSync [get_bd_pins dvi2rgb_0/vid_pVSync] [get_bd_pins rgb2ycbcr_0/v_sync_in] [get_bd_pins xlconcat_1/In2]
-  connect_bd_net -net mux_0_de_out [get_bd_pins mux_0/de_out] [get_bd_pins rgb2vga_0/rgb_pVDE]
-  connect_bd_net -net mux_0_h_sync_out [get_bd_pins mux_0/h_sync_out] [get_bd_pins rgb2vga_0/rgb_pHSync]
-  connect_bd_net -net mux_0_out [get_bd_pins mux_0/out] [get_bd_pins rgb2vga_0/rgb_pData]
-  connect_bd_net -net mux_0_v_sync_out [get_bd_pins mux_0/v_sync_out] [get_bd_pins rgb2vga_0/rgb_pVSync]
+  connect_bd_net -net dvi2rgb_0_PixelClk [get_bd_pins dvi2rgb_0/PixelClk] [get_bd_pins rgb2vga_0/PixelClk] [get_bd_pins vb_0/clk]
+  connect_bd_net -net dvi2rgb_0_vid_pData [get_bd_pins dvi2rgb_0/vid_pData] [get_bd_pins vb_0/pixel_in]
+  connect_bd_net -net dvi2rgb_0_vid_pHSync [get_bd_pins dvi2rgb_0/vid_pHSync] [get_bd_pins vb_0/h_sync_in]
+  connect_bd_net -net dvi2rgb_0_vid_pVDE [get_bd_pins dvi2rgb_0/vid_pVDE] [get_bd_pins vb_0/de_in]
+  connect_bd_net -net dvi2rgb_0_vid_pVSync [get_bd_pins dvi2rgb_0/vid_pVSync] [get_bd_pins vb_0/v_sync_in]
   connect_bd_net -net rgb2vga_0_vga_pBlue [get_bd_ports vga_pBlue] [get_bd_pins rgb2vga_0/vga_pBlue]
   connect_bd_net -net rgb2vga_0_vga_pGreen [get_bd_ports vga_pGreen] [get_bd_pins rgb2vga_0/vga_pGreen]
   connect_bd_net -net rgb2vga_0_vga_pHSync [get_bd_ports vga_pHSync] [get_bd_pins rgb2vga_0/vga_pHSync]
   connect_bd_net -net rgb2vga_0_vga_pRed [get_bd_ports vga_pRed] [get_bd_pins rgb2vga_0/vga_pRed]
   connect_bd_net -net rgb2vga_0_vga_pVSync [get_bd_ports vga_pVSync] [get_bd_pins rgb2vga_0/vga_pVSync]
-  connect_bd_net -net rgb2ycbcr_0_de_out [get_bd_pins binarisation_0/de_in] [get_bd_pins rgb2ycbcr_0/de_out] [get_bd_pins xlconcat_0/In0]
-  connect_bd_net -net rgb2ycbcr_0_h_sync_out [get_bd_pins binarisation_0/h_sync_in] [get_bd_pins rgb2ycbcr_0/h_sync_out] [get_bd_pins xlconcat_2/In0]
-  connect_bd_net -net rgb2ycbcr_0_pixel_out [get_bd_pins binarisation_0/pixel_in] [get_bd_pins rgb2ycbcr_0/pixel_out] [get_bd_pins xlconcat_3/In0]
-  connect_bd_net -net rgb2ycbcr_0_v_sync_out [get_bd_pins binarisation_0/v_sync_in] [get_bd_pins rgb2ycbcr_0/v_sync_out] [get_bd_pins xlconcat_1/In0]
-  connect_bd_net -net sw_1 [get_bd_ports sw] [get_bd_pins mux_0/select]
+  connect_bd_net -net sw_1 [get_bd_ports sw] [get_bd_pins vb_0/select]
   connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net xlconcat_0_dout [get_bd_pins mux_0/de_in] [get_bd_pins xlconcat_0/dout]
-  connect_bd_net -net xlconcat_1_dout [get_bd_pins mux_0/v_sync_in] [get_bd_pins xlconcat_1/dout]
-  connect_bd_net -net xlconcat_2_dout [get_bd_pins mux_0/h_sync_in] [get_bd_pins xlconcat_2/dout]
-  connect_bd_net -net xlconcat_3_dout [get_bd_pins mux_0/in] [get_bd_pins xlconcat_3/dout]
+  connect_bd_net -net vb_0_de_out [get_bd_pins rgb2vga_0/rgb_pVDE] [get_bd_pins vb_0/de_out]
+  connect_bd_net -net vb_0_h_sync_out [get_bd_pins rgb2vga_0/rgb_pHSync] [get_bd_pins vb_0/h_sync_out]
+  connect_bd_net -net vb_0_pixel_out [get_bd_pins rgb2vga_0/rgb_pData] [get_bd_pins vb_0/pixel_out]
+  connect_bd_net -net vb_0_v_sync_out [get_bd_pins rgb2vga_0/rgb_pVSync] [get_bd_pins vb_0/v_sync_out]
   connect_bd_net -net xlconstant_0_dout [get_bd_ports hdmi_hpd] [get_bd_pins clk_wiz_0/reset] [get_bd_pins dvi2rgb_0/aRst] [get_bd_pins dvi2rgb_0/pRst] [get_bd_pins xlconstant_0/dout]
 
   # Create address segments
@@ -323,49 +251,31 @@ preplace portBus vga_pGreen -pg 1 -y 230 -defaultsOSRD
 preplace portBus vga_pRed -pg 1 -y 210 -defaultsOSRD
 preplace portBus vga_pBlue -pg 1 -y 250 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 1 -y 490 -defaultsOSRD
-preplace inst binarisation_0 -pg 1 -lvl 4 -y 700 -defaultsOSRD
-preplace inst mux_0 -pg 1 -lvl 6 -y 260 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 5 -y 240 -defaultsOSRD
-preplace inst xlconcat_1 -pg 1 -lvl 5 -y 520 -defaultsOSRD
-preplace inst xlconcat_2 -pg 1 -lvl 5 -y 20 -defaultsOSRD
-preplace inst xlconcat_3 -pg 1 -lvl 5 -y -220 -defaultsOSRD
-preplace inst rgb2ycbcr_0 -pg 1 -lvl 4 -y 480 -defaultsOSRD
+preplace inst vb_0 -pg 1 -lvl 4 -y 330 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 2 -y 300 -defaultsOSRD
-preplace inst dvi2rgb_0 -pg 1 -lvl 3 -y 310 -defaultsOSRD
-preplace inst rgb2vga_0 -pg 1 -lvl 7 -y 260 -defaultsOSRD
-preplace netloc binarisation_0_de_out 1 4 1 1060
-preplace netloc mux_0_de_out 1 6 1 N
-preplace netloc rgb2vga_0_vga_pRed 1 7 1 2100
-preplace netloc rgb2ycbcr_0_h_sync_out 1 3 2 630 -50 990
-preplace netloc rgb2ycbcr_0_pixel_out 1 3 2 620 -290 1000
-preplace netloc rgb2vga_0_vga_pGreen 1 7 1 2100
-preplace netloc mux_0_v_sync_out 1 6 1 N
-preplace netloc binarisation_0_h_sync_out 1 4 1 1050
-preplace netloc dvi2rgb_0_vid_pVDE 1 3 2 590 340 1020J
-preplace netloc xlconcat_1_dout 1 5 1 1530
-preplace netloc rgb2ycbcr_0_v_sync_out 1 3 2 640 570 980
-preplace netloc rgb2ycbcr_0_de_out 1 3 2 650 170 970
-preplace netloc mux_0_out 1 6 1 N
+preplace inst dvi2rgb_0 -pg 1 -lvl 3 -y 360 -defaultsOSRD
+preplace inst rgb2vga_0 -pg 1 -lvl 5 -y 270 -defaultsOSRD
+preplace netloc rgb2vga_0_vga_pRed 1 5 1 1700
+preplace netloc vb_0_h_sync_out 1 4 1 1160
+preplace netloc rgb2vga_0_vga_pGreen 1 5 1 1710
+preplace netloc dvi2rgb_0_vid_pVDE 1 3 1 590
 preplace netloc sys_clock_1 1 0 2 NJ 310 N
-preplace netloc hdmi_in_1 1 0 3 NJ 230 NJ 230 320J
-preplace netloc xlconcat_3_dout 1 5 1 1540
-preplace netloc dvi2rgb_0_DDC 1 3 5 580J -100 NJ -100 NJ -100 NJ -100 2100J
-preplace netloc binarisation_0_v_sync_out 1 4 1 1070
-preplace netloc dvi2rgb_0_vid_pHSync 1 3 2 610 300 1010J
-preplace netloc xlconcat_0_dout 1 5 1 1510
-preplace netloc xlconstant_0_dout 1 1 7 80 240 310 190 570J 380 NJ 380 NJ 380 NJ 380 NJ
-preplace netloc dvi2rgb_0_vid_pVSync 1 3 2 580 320 1010
-preplace netloc dvi2rgb_0_vid_pData 1 3 2 600 280 980J
-preplace netloc rgb2vga_0_vga_pVSync 1 7 1 2100
-preplace netloc rgb2vga_0_vga_pHSync 1 7 1 2100
+preplace netloc hdmi_in_1 1 0 3 NJ 230 NJ 230 310J
+preplace netloc vb_0_pixel_out 1 4 1 1170
+preplace netloc dvi2rgb_0_DDC 1 3 3 580J 170 NJ 170 1700J
+preplace netloc dvi2rgb_0_vid_pHSync 1 3 1 570
+preplace netloc xlconstant_0_dout 1 1 5 80 490 310 490 NJ 490 NJ 490 1720J
+preplace netloc dvi2rgb_0_vid_pVSync 1 3 1 600
+preplace netloc dvi2rgb_0_vid_pData 1 3 1 560
+preplace netloc rgb2vga_0_vga_pVSync 1 5 1 1740
+preplace netloc rgb2vga_0_vga_pHSync 1 5 1 1730
 preplace netloc clk_wiz_0_clk_out1 1 2 1 300
-preplace netloc binarisation_0_pixel_out 1 4 1 1040
-preplace netloc sw_1 1 0 6 -120J 180 NJ 180 NJ 180 NJ 180 1030J 370 1520
-preplace netloc xlconcat_2_dout 1 5 1 1530
-preplace netloc mux_0_h_sync_out 1 6 1 N
-preplace netloc dvi2rgb_0_PixelClk 1 3 4 560J 360 NJ 360 1540J 360 1790J
-preplace netloc rgb2vga_0_vga_pBlue 1 7 1 2100
-levelinfo -pg 1 -140 10 220 440 840 1410 1670 1950 2120 -top -340 -bot 1050
+preplace netloc sw_1 1 0 4 NJ 210 NJ 210 NJ 210 590
+preplace netloc vb_0_v_sync_out 1 4 1 1180
+preplace netloc vb_0_de_out 1 4 1 N
+preplace netloc dvi2rgb_0_PixelClk 1 3 2 580J 430 1190J
+preplace netloc rgb2vga_0_vga_pBlue 1 5 1 1720
+levelinfo -pg 1 -140 10 220 440 1030 1550 2170 -top -460 -bot 1050
 ",
 }
 

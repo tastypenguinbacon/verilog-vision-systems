@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-// Date        : Wed Jun  7 17:57:47 2017
+// Date        : Wed Jun  7 19:35:57 2017
 // Host        : mothership running 64-bit Ubuntu 16.10
 // Command     : write_verilog -force -mode funcsim
 //               /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/binarisation_0/binarisation_0_sim_netlist.v
@@ -34,40 +34,122 @@ module binarisation_0
   output v_sync_out;
   output [23:0]pixel_out;
 
-  wire \<const0> ;
   wire de_in;
   wire h_sync_in;
+  wire [23:0]pixel_in;
+  wire [23:23]\^pixel_out ;
   wire v_sync_in;
 
   assign de_out = de_in;
   assign h_sync_out = h_sync_in;
-  assign pixel_out[23] = \<const0> ;
-  assign pixel_out[22] = \<const0> ;
-  assign pixel_out[21] = \<const0> ;
-  assign pixel_out[20] = \<const0> ;
-  assign pixel_out[19] = \<const0> ;
-  assign pixel_out[18] = \<const0> ;
-  assign pixel_out[17] = \<const0> ;
-  assign pixel_out[16] = \<const0> ;
-  assign pixel_out[15] = \<const0> ;
-  assign pixel_out[14] = \<const0> ;
-  assign pixel_out[13] = \<const0> ;
-  assign pixel_out[12] = \<const0> ;
-  assign pixel_out[11] = \<const0> ;
-  assign pixel_out[10] = \<const0> ;
-  assign pixel_out[9] = \<const0> ;
-  assign pixel_out[8] = \<const0> ;
-  assign pixel_out[7] = \<const0> ;
-  assign pixel_out[6] = \<const0> ;
-  assign pixel_out[5] = \<const0> ;
-  assign pixel_out[4] = \<const0> ;
-  assign pixel_out[3] = \<const0> ;
-  assign pixel_out[2] = \<const0> ;
-  assign pixel_out[1] = \<const0> ;
-  assign pixel_out[0] = \<const0> ;
+  assign pixel_out[23] = \^pixel_out [23];
+  assign pixel_out[22] = \^pixel_out [23];
+  assign pixel_out[21] = \^pixel_out [23];
+  assign pixel_out[20] = \^pixel_out [23];
+  assign pixel_out[19] = \^pixel_out [23];
+  assign pixel_out[18] = \^pixel_out [23];
+  assign pixel_out[17] = \^pixel_out [23];
+  assign pixel_out[16] = \^pixel_out [23];
+  assign pixel_out[15] = \^pixel_out [23];
+  assign pixel_out[14] = \^pixel_out [23];
+  assign pixel_out[13] = \^pixel_out [23];
+  assign pixel_out[12] = \^pixel_out [23];
+  assign pixel_out[11] = \^pixel_out [23];
+  assign pixel_out[10] = \^pixel_out [23];
+  assign pixel_out[9] = \^pixel_out [23];
+  assign pixel_out[8] = \^pixel_out [23];
+  assign pixel_out[7] = \^pixel_out [23];
+  assign pixel_out[6] = \^pixel_out [23];
+  assign pixel_out[5] = \^pixel_out [23];
+  assign pixel_out[4] = \^pixel_out [23];
+  assign pixel_out[3] = \^pixel_out [23];
+  assign pixel_out[2] = \^pixel_out [23];
+  assign pixel_out[1] = \^pixel_out [23];
+  assign pixel_out[0] = \^pixel_out [23];
   assign v_sync_out = v_sync_in;
-  GND GND
-       (.G(\<const0> ));
+  binarisation_0_binarisation inst
+       (.pixel_in(pixel_in[15:0]),
+        .pixel_out(\^pixel_out ));
+endmodule
+
+(* ORIG_REF_NAME = "binarisation" *) 
+module binarisation_0_binarisation
+   (pixel_out,
+    pixel_in);
+  output [0:0]pixel_out;
+  input [15:0]pixel_in;
+
+  wire [15:0]pixel_in;
+  wire [0:0]pixel_out;
+  wire \pixel_out[0]_INST_0_i_1_n_0 ;
+  wire \pixel_out[0]_INST_0_i_2_n_0 ;
+  wire \pixel_out[0]_INST_0_i_3_n_0 ;
+  wire \pixel_out[0]_INST_0_i_4_n_0 ;
+  wire \pixel_out[0]_INST_0_i_5_n_0 ;
+  wire \pixel_out[0]_INST_0_i_6_n_0 ;
+
+  LUT6 #(
+    .INIT(64'h8880000000000000)) 
+    \pixel_out[0]_INST_0 
+       (.I0(\pixel_out[0]_INST_0_i_1_n_0 ),
+        .I1(\pixel_out[0]_INST_0_i_2_n_0 ),
+        .I2(\pixel_out[0]_INST_0_i_3_n_0 ),
+        .I3(\pixel_out[0]_INST_0_i_4_n_0 ),
+        .I4(\pixel_out[0]_INST_0_i_5_n_0 ),
+        .I5(\pixel_out[0]_INST_0_i_6_n_0 ),
+        .O(pixel_out));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFF7)) 
+    \pixel_out[0]_INST_0_i_1 
+       (.I0(pixel_in[13]),
+        .I1(pixel_in[10]),
+        .I2(pixel_in[9]),
+        .I3(pixel_in[8]),
+        .I4(pixel_in[12]),
+        .I5(pixel_in[11]),
+        .O(\pixel_out[0]_INST_0_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT3 #(
+    .INIT(8'hA1)) 
+    \pixel_out[0]_INST_0_i_2 
+       (.I0(pixel_in[13]),
+        .I1(pixel_in[12]),
+        .I2(pixel_in[14]),
+        .O(\pixel_out[0]_INST_0_i_2_n_0 ));
+  LUT5 #(
+    .INIT(32'h7FFFFFFE)) 
+    \pixel_out[0]_INST_0_i_3 
+       (.I0(pixel_in[3]),
+        .I1(pixel_in[4]),
+        .I2(pixel_in[0]),
+        .I3(pixel_in[1]),
+        .I4(pixel_in[2]),
+        .O(\pixel_out[0]_INST_0_i_3_n_0 ));
+  LUT3 #(
+    .INIT(8'h6F)) 
+    \pixel_out[0]_INST_0_i_4 
+       (.I0(pixel_in[6]),
+        .I1(pixel_in[4]),
+        .I2(pixel_in[5]),
+        .O(\pixel_out[0]_INST_0_i_4_n_0 ));
+  LUT5 #(
+    .INIT(32'h28282800)) 
+    \pixel_out[0]_INST_0_i_5 
+       (.I0(pixel_in[7]),
+        .I1(pixel_in[14]),
+        .I2(pixel_in[15]),
+        .I3(pixel_in[5]),
+        .I4(pixel_in[6]),
+        .O(\pixel_out[0]_INST_0_i_5_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT4 #(
+    .INIT(16'hFBEF)) 
+    \pixel_out[0]_INST_0_i_6 
+       (.I0(pixel_in[12]),
+        .I1(pixel_in[11]),
+        .I2(pixel_in[13]),
+        .I3(pixel_in[10]),
+        .O(\pixel_out[0]_INST_0_i_6_n_0 ));
 endmodule
 `ifndef GLBL
 `define GLBL

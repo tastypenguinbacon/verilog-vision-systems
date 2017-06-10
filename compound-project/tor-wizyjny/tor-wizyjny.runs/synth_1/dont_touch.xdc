@@ -18,25 +18,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_clk_wi
 # IP: bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_0/hdmi_vga_xlconstant_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_xlconstant_0_0 || ORIG_REF_NAME==hdmi_vga_xlconstant_0_0}]
 
-# IP: bd/hdmi_vga/ip/hdmi_vga_rgb2ycbcr_0_0/hdmi_vga_rgb2ycbcr_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_rgb2ycbcr_0_0 || ORIG_REF_NAME==hdmi_vga_rgb2ycbcr_0_0}]
-
-# IP: bd/hdmi_vga/ip/hdmi_vga_mux_0_0/hdmi_vga_mux_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_mux_0_0 || ORIG_REF_NAME==hdmi_vga_mux_0_0}]
-
-# IP: bd/hdmi_vga/ip/hdmi_vga_xlconcat_0_1/hdmi_vga_xlconcat_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_xlconcat_0_1 || ORIG_REF_NAME==hdmi_vga_xlconcat_0_1}]
-
-# IP: bd/hdmi_vga/ip/hdmi_vga_xlconcat_0_2/hdmi_vga_xlconcat_0_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_xlconcat_0_2 || ORIG_REF_NAME==hdmi_vga_xlconcat_0_2}]
-
-# IP: bd/hdmi_vga/ip/hdmi_vga_xlconcat_0_3/hdmi_vga_xlconcat_0_3.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_xlconcat_0_3 || ORIG_REF_NAME==hdmi_vga_xlconcat_0_3}]
-
-# IP: bd/hdmi_vga/ip/hdmi_vga_xlconcat_0_4/hdmi_vga_xlconcat_0_4.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_xlconcat_0_4 || ORIG_REF_NAME==hdmi_vga_xlconcat_0_4}]
-
-# IP: bd/hdmi_vga/ip/hdmi_vga_binarisation_0_0/hdmi_vga_binarisation_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_binarisation_0_0 || ORIG_REF_NAME==hdmi_vga_binarisation_0_0}]
+# IP: bd/hdmi_vga/ip/hdmi_vga_vb_0_0/hdmi_vga_vb_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_vb_0_0 || ORIG_REF_NAME==hdmi_vga_vb_0_0}]
 
 # XDC: bd/hdmi_vga/hdmi_vga_ooc.xdc

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="binarisation_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1496851024">
+<GenRun Id="binarisation_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1496856916">
   <File Type="VDS-TIMING-PB" Name="binarisation_0_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="binarisation_0_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="binarisation_0.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="binarisation_0_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="binarisation_0_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="binarisation_0_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="binarisation_0.vds"/>
   <File Type="PA-TCL" Name="binarisation_0.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="binarisation_0_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="binarisation_0_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="binarisation_0_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="binarisation_0.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/binarisation_0">
     <File Path="$PSRCDIR/sources_1/ip/binarisation_0/binarisation_0.xci">
       <FileInfo>

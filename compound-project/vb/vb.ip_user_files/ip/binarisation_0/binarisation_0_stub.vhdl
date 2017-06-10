@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
--- Date        : Wed Jun  7 17:57:47 2017
+-- Date        : Wed Jun  7 19:35:57 2017
 -- Host        : mothership running 64-bit Ubuntu 16.10
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/binarisation_0/binarisation_0_stub.vhdl

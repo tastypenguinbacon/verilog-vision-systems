@@ -45,6 +45,8 @@ proc step_failed { step } {
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 set_msg_config -id {HDL-1065} -limit 10000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -70,20 +72,8 @@ set rc [catch {
   set_property netlist_only true [get_files /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.dcp]
   add_files -quiet /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_0/hdmi_vga_xlconstant_0_0.dcp
   set_property netlist_only true [get_files /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_0/hdmi_vga_xlconstant_0_0.dcp]
-  add_files -quiet /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_rgb2ycbcr_0_0/hdmi_vga_rgb2ycbcr_0_0.dcp
-  set_property netlist_only true [get_files /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_rgb2ycbcr_0_0/hdmi_vga_rgb2ycbcr_0_0.dcp]
-  add_files -quiet /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_mux_0_0/hdmi_vga_mux_0_0.dcp
-  set_property netlist_only true [get_files /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_mux_0_0/hdmi_vga_mux_0_0.dcp]
-  add_files -quiet /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconcat_0_1/hdmi_vga_xlconcat_0_1.dcp
-  set_property netlist_only true [get_files /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconcat_0_1/hdmi_vga_xlconcat_0_1.dcp]
-  add_files -quiet /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconcat_0_2/hdmi_vga_xlconcat_0_2.dcp
-  set_property netlist_only true [get_files /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconcat_0_2/hdmi_vga_xlconcat_0_2.dcp]
-  add_files -quiet /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconcat_0_3/hdmi_vga_xlconcat_0_3.dcp
-  set_property netlist_only true [get_files /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconcat_0_3/hdmi_vga_xlconcat_0_3.dcp]
-  add_files -quiet /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconcat_0_4/hdmi_vga_xlconcat_0_4.dcp
-  set_property netlist_only true [get_files /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_xlconcat_0_4/hdmi_vga_xlconcat_0_4.dcp]
-  add_files -quiet /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_binarisation_0_0/hdmi_vga_binarisation_0_0.dcp
-  set_property netlist_only true [get_files /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_binarisation_0_0/hdmi_vga_binarisation_0_0.dcp]
+  add_files -quiet /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/hdmi_vga_vb_0_0.dcp
+  set_property netlist_only true [get_files /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/hdmi_vga_vb_0_0.dcp]
   read_xdc -ref hdmi_vga_dvi2rgb_0_0 -cells U0 /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb.xdc
   set_property processing_order EARLY [get_files /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_dvi2rgb_0_0/src/dvi2rgb.xdc]
   read_xdc -prop_thru_buffers -ref hdmi_vga_clk_wiz_0_0 -cells inst /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_board.xdc

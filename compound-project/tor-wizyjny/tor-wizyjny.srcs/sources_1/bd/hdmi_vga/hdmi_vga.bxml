@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="hdmi_vga" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1496255041"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1496255041"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1496255041"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1496857075"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1496857075"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1496857075"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/hdmi_vga_rgb2vga_0_0/hdmi_vga_rgb2vga_0_0.xci" Type="IP">
         <Instance HierarchyPath="rgb2vga_0"/>
@@ -45,56 +45,8 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/hdmi_vga_rgb2ycbcr_0_0/hdmi_vga_rgb2ycbcr_0_0.xci" Type="IP">
-        <Instance HierarchyPath="rgb2ycbcr_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/hdmi_vga_mux_0_0/hdmi_vga_mux_0_0.xci" Type="IP">
-        <Instance HierarchyPath="mux_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/hdmi_vga_xlconcat_0_1/hdmi_vga_xlconcat_0_1.xci" Type="IP">
-        <Instance HierarchyPath="xlconcat_1"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/hdmi_vga_xlconcat_0_2/hdmi_vga_xlconcat_0_2.xci" Type="IP">
-        <Instance HierarchyPath="xlconcat_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/hdmi_vga_xlconcat_0_3/hdmi_vga_xlconcat_0_3.xci" Type="IP">
-        <Instance HierarchyPath="xlconcat_2"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/hdmi_vga_xlconcat_0_4/hdmi_vga_xlconcat_0_4.xci" Type="IP">
-        <Instance HierarchyPath="xlconcat_3"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/hdmi_vga_binarisation_0_0/hdmi_vga_binarisation_0_0.xci" Type="IP">
-        <Instance HierarchyPath="binarisation_0"/>
+      <File Name="ip/hdmi_vga_vb_0_0/hdmi_vga_vb_0_0.xci" Type="IP">
+        <Instance HierarchyPath="vb_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
