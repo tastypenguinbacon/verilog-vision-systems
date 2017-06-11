@@ -33,8 +33,13 @@ module hsv_delay # (
             assign out = in;
         end else begin
             reg[WIDTH-1:0] delay_line[DELAY-1:0];
+            integer j;
+            initial begin 
+                for (j = 0; j < DELAY; j = j + 1) begin 
+                    delay_line[j] = 0;
+                end
+            end
             assign out = delay_line[DELAY - 1];         //todo
-            
             integer i;
             
             always @(posedge clk) begin

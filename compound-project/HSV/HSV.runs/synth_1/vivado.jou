@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Jun 11 02:04:52 2017
+# Process ID: 23795
+# Current directory: /home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.runs/synth_1
+# Command line: vivado -log h_calculation.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source h_calculation.tcl
+# Log file: /home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.runs/synth_1/h_calculation.vds
+# Journal file: /home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source h_calculation.tcl -notrace

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="rgb2hsv_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="rgb2hsv_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="50867444fs"></ZoomStartTime>
+      <ZoomEndTime time="109826512fs"></ZoomEndTime>
+      <Cursor1Time time="100000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="203"></NameColumnWidth>
+      <ValueColumnWidth column_width="63"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="35" />
+   <wvobject type="logic" fp_name="/rgb2hsv_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rgb2hsv_tb/de_in">
+      <obj_property name="ElementShortName">de_in</obj_property>
+      <obj_property name="ObjectShortName">de_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rgb2hsv_tb/h_sync_in">
+      <obj_property name="ElementShortName">h_sync_in</obj_property>
+      <obj_property name="ObjectShortName">h_sync_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rgb2hsv_tb/v_sync_in">
+      <obj_property name="ElementShortName">v_sync_in</obj_property>
+      <obj_property name="ObjectShortName">v_sync_in</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/pixel_in">
+      <obj_property name="ElementShortName">pixel_in[23:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_in[23:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rgb2hsv_tb/de_out">
+      <obj_property name="ElementShortName">de_out</obj_property>
+      <obj_property name="ObjectShortName">de_out</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rgb2hsv_tb/h_sync_out">
+      <obj_property name="ElementShortName">h_sync_out</obj_property>
+      <obj_property name="ObjectShortName">h_sync_out</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rgb2hsv_tb/v_sync_out">
+      <obj_property name="ElementShortName">v_sync_out</obj_property>
+      <obj_property name="ObjectShortName">v_sync_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/H">
+      <obj_property name="ElementShortName">H[7:0]</obj_property>
+      <obj_property name="ObjectShortName">H[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/S">
+      <obj_property name="ElementShortName">S[7:0]</obj_property>
+      <obj_property name="ObjectShortName">S[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/V">
+      <obj_property name="ElementShortName">V[7:0]</obj_property>
+      <obj_property name="ObjectShortName">V[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/R">
+      <obj_property name="ElementShortName">R[7:0]</obj_property>
+      <obj_property name="ObjectShortName">R[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/G">
+      <obj_property name="ElementShortName">G[7:0]</obj_property>
+      <obj_property name="ObjectShortName">G[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/B">
+      <obj_property name="ElementShortName">B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/max_rgb">
+      <obj_property name="ElementShortName">max_rgb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">max_rgb[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/min_rgb">
+      <obj_property name="ElementShortName">min_rgb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">min_rgb[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/sel">
+      <obj_property name="ElementShortName">sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/del_r">
+      <obj_property name="ElementShortName">del_r[7:0]</obj_property>
+      <obj_property name="ObjectShortName">del_r[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/del_g">
+      <obj_property name="ElementShortName">del_g[7:0]</obj_property>
+      <obj_property name="ObjectShortName">del_g[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/del_b">
+      <obj_property name="ElementShortName">del_b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">del_b[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/a">
+      <obj_property name="ElementShortName">a[7:0]</obj_property>
+      <obj_property name="ObjectShortName">a[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/b">
+      <obj_property name="ElementShortName">b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">b[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/to_add">
+      <obj_property name="ElementShortName">to_add[7:0]</obj_property>
+      <obj_property name="ObjectShortName">to_add[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rgb2hsv_tb/bypass">
+      <obj_property name="ElementShortName">bypass</obj_property>
+      <obj_property name="ObjectShortName">bypass</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/subtracted_a_b">
+      <obj_property name="ElementShortName">subtracted_a_b[8:0]</obj_property>
+      <obj_property name="ObjectShortName">subtracted_a_b[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/subtracted_max_min">
+      <obj_property name="ElementShortName">subtracted_max_min[7:0]</obj_property>
+      <obj_property name="ObjectShortName">subtracted_max_min[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/divided">
+      <obj_property name="ElementShortName">divided[23:0]</obj_property>
+      <obj_property name="ObjectShortName">divided[23:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/temp1">
+      <obj_property name="ElementShortName">temp1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">temp1[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/temp2">
+      <obj_property name="ElementShortName">temp2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">temp2[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/interesting_part">
+      <obj_property name="ElementShortName">interesting_part[9:0]</obj_property>
+      <obj_property name="ObjectShortName">interesting_part[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/product">
+      <obj_property name="ElementShortName">product[16:0]</obj_property>
+      <obj_property name="ObjectShortName">product[16:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/temp_ans">
+      <obj_property name="ElementShortName">temp_ans[8:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_ans[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/to_add_delayed">
+      <obj_property name="ElementShortName">to_add_delayed[7:0]</obj_property>
+      <obj_property name="ObjectShortName">to_add_delayed[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/rgb2hsv_tb/bypass_delayed">
+      <obj_property name="ElementShortName">bypass_delayed</obj_property>
+      <obj_property name="ObjectShortName">bypass_delayed</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/rgb2hsv_tb/fckin_die">
+      <obj_property name="ElementShortName">fckin_die[23:0]</obj_property>
+      <obj_property name="ObjectShortName">fckin_die[23:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">8</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+</wave_config>

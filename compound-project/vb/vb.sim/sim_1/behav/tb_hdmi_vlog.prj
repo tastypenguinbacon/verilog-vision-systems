@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../vb.srcs/sources_1/ip/rgb2ycbcr_0/src/delay_5_3/src/delay.v"
+verilog xil_defaultlib  "../../../vb.srcs/sources_1/ip/rgb2ycbcr_0/src/delay_5_3/sim/delay_5_3.v"
+verilog xil_defaultlib  "../../../vb.srcs/sources_1/ip/rgb2ycbcr_0/src/delay_3_8/sim/delay_3_8.v"
+verilog xil_defaultlib  "../../../vb.srcs/sources_1/ip/rgb2ycbcr_0/src/cb_row.v"
+verilog xil_defaultlib  "../../../vb.srcs/sources_1/ip/rgb2ycbcr_0/src/rgb2ycbcr.v"
+verilog xil_defaultlib  "../../../vb.srcs/sources_1/ip/rgb2ycbcr_0/sim/rgb2ycbcr_0.v"
+verilog xil_defaultlib  "../../../vb.srcs/sources_1/ip/multiplexer/src/mux.v"
+verilog xil_defaultlib  "../../../vb.srcs/sources_1/ip/multiplexer/sim/multiplexer.v"
+verilog xil_defaultlib  "../../../vb.srcs/sources_1/ip/draw_shape_0/src/draw_shape.v"
+verilog xil_defaultlib  "../../../vb.srcs/sources_1/ip/draw_shape_0/sim/draw_shape_0.v"
+verilog xil_defaultlib  "../../../vb.srcs/sources_1/ip/binarisation_0/src/binarisation.v"
+verilog xil_defaultlib  "../../../vb.srcs/sources_1/ip/binarisation_0/sim/binarisation_0.v"
+verilog xil_defaultlib  "../../../vb.srcs/sources_1/new/vb.v"
+verilog xil_defaultlib  "../../../vb.srcs/tb_src/hdmi_out.v"
+verilog xil_defaultlib  "../../../vb.srcs/tb_src/hdmi_in.v"
+verilog xil_defaultlib  "../../../vb.srcs/tb_src/tb_hdmi.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

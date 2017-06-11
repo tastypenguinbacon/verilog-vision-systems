@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.srcs/sources_1/new/switcher.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switcher
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.srcs/sources_1/new/selector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selector
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.srcs/sources_1/new/hsv_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hsv_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.srcs/sources_1/new/s_calculation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module s_calculation
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.srcs/sources_1/new/minimum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minimum
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.srcs/sources_1/new/maximum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maximum
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.srcs/sources_1/new/h_calculation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module h_calculation
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.srcs/sources_1/new/rgb2hsv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgb2hsv
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.srcs/sim_1/new/rgb2hsv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgb2hsv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/HSV/HSV.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

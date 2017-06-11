@@ -1,0 +1,349 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date             : Sun Jun 11 02:06:02 2017
+| Host             : mothership running 64-bit Ubuntu 16.10
+| Command          : report_power -file h_calculation_power_routed.rpt -pb h_calculation_power_summary_routed.pb -rpx h_calculation_power_routed.rpx
+| Design           : h_calculation
+| Device           : xc7z010clg400-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 12.847 (Junction temp exceeded!) |
+| Dynamic (W)              | 12.099                           |
+| Device Static (W)        | 0.748                            |
+| Effective TJA (C/W)      | 11.5                             |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Slice Logic             |     2.062 |     1762 |       --- |             --- |
+|   LUT as Logic          |     1.301 |      361 |     17600 |            2.05 |
+|   CARRY4                |     0.434 |      104 |      4400 |            2.36 |
+|   Register              |     0.317 |      966 |     35200 |            2.74 |
+|   BUFG                  |     0.006 |        1 |        32 |            3.13 |
+|   LUT as Shift Register |     0.004 |        6 |      6000 |            0.10 |
+|   Others                |     0.000 |      303 |       --- |             --- |
+| Signals                 |     2.273 |     1124 |       --- |             --- |
+| I/O                     |     7.764 |       49 |       100 |           49.00 |
+| Static Power            |     0.748 |          |           |                 |
+| Total                   |    12.847 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     4.628 |       4.499 |      0.129 |
+| Vccaux    |       1.800 |     0.663 |       0.622 |      0.040 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     3.601 |       3.600 |      0.001 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.011 |       0.000 |      0.011 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccpint   |       1.000 |     0.473 |       0.000 |      0.473 |
+| Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
+| Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
+| Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio0 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco_mio1 |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++---------------------------------------------------------------------+-----------+
+| Name                                                                | Power (W) |
++---------------------------------------------------------------------+-----------+
+| h_calculation                                                       |    12.099 |
+|   add                                                               |     0.099 |
+|     U0                                                              |     0.099 |
+|       xst_addsub                                                    |     0.099 |
+|         i_baseblox.i_baseblox_addsub                                |     0.099 |
+|           no_pipelining.the_addsub                                  |     0.099 |
+|             i_lut6.i_lut6_addsub                                    |     0.099 |
+|               i_q.i_simple.qreg                                     |     0.038 |
+|   bypass_del                                                        |     0.155 |
+|   div                                                               |     2.908 |
+|     U0                                                              |     2.908 |
+|       i_synth                                                       |     2.908 |
+|         i_nonzero_fract.i_synth                                     |     2.908 |
+|           i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider           |     2.908 |
+|             i_sdivider.divider_blk                                  |     2.646 |
+|               div_loop[0].adder_gen.reg_req.adsu_mod                |     0.036 |
+|                 add1                                                |     0.036 |
+|                   no_pipelining.the_addsub                          |     0.036 |
+|                     i_q_simple.qreg                                 |     0.023 |
+|               div_loop[0].divisor_gen.divisor_dc1.del_divisor_msbs  |     0.020 |
+|               div_loop[0].num_stages.numerator_gen.del_numer        |     0.017 |
+|               div_loop[10].adder_gen.reg_req.adsu_mod               |     0.069 |
+|                 add1                                                |     0.069 |
+|                   no_pipelining.the_addsub                          |     0.069 |
+|                     i_q_simple.qreg                                 |     0.027 |
+|               div_loop[10].divisor_gen.divisor_dc1.del_divisor_msbs |     0.020 |
+|               div_loop[10].num_stages.numerator_gen.del_numer       |     0.009 |
+|               div_loop[10].quot_gen.quot_reg.i_div1.quot_out        |     0.015 |
+|               div_loop[11].adder_gen.reg_req.adsu_mod               |     0.063 |
+|                 add1                                                |     0.063 |
+|                   no_pipelining.the_addsub                          |     0.063 |
+|                     i_q_simple.qreg                                 |     0.020 |
+|               div_loop[11].divisor_gen.divisor_dc1.del_divisor_msbs |     0.018 |
+|               div_loop[11].num_stages.numerator_gen.del_numer       |     0.009 |
+|               div_loop[11].quot_gen.quot_reg.i_div1.quot_out        |     0.022 |
+|               div_loop[12].adder_gen.reg_req.adsu_mod               |     0.068 |
+|                 add1                                                |     0.068 |
+|                   no_pipelining.the_addsub                          |     0.068 |
+|                     i_q_simple.qreg                                 |     0.026 |
+|               div_loop[12].divisor_gen.divisor_dc1.del_divisor_msbs |     0.022 |
+|               div_loop[12].num_stages.numerator_gen.del_numer       |     0.007 |
+|               div_loop[12].quot_gen.quot_reg.i_div1.quot_out        |     0.023 |
+|               div_loop[13].adder_gen.reg_req.adsu_mod               |     0.063 |
+|                 add1                                                |     0.063 |
+|                   no_pipelining.the_addsub                          |     0.063 |
+|                     i_q_simple.qreg                                 |     0.020 |
+|               div_loop[13].divisor_gen.divisor_dc1.del_divisor_msbs |     0.017 |
+|               div_loop[13].num_stages.numerator_gen.del_numer       |     0.005 |
+|               div_loop[13].quot_gen.quot_reg.i_div1.quot_out        |     0.025 |
+|               div_loop[14].adder_gen.reg_req.adsu_mod               |     0.073 |
+|                 add1                                                |     0.073 |
+|                   no_pipelining.the_addsub                          |     0.073 |
+|                     i_q_simple.qreg                                 |     0.030 |
+|               div_loop[14].divisor_gen.divisor_dc1.del_divisor_msbs |     0.017 |
+|               div_loop[14].num_stages.numerator_gen.del_numer       |     0.003 |
+|               div_loop[14].quot_gen.quot_reg.i_div1.quot_out        |     0.026 |
+|               div_loop[15].adder_gen.reg_req.adsu_mod               |     0.064 |
+|                 add1                                                |     0.064 |
+|                   no_pipelining.the_addsub                          |     0.064 |
+|                     i_q_simple.qreg                                 |     0.022 |
+|               div_loop[15].divisor_gen.divisor_dc1.del_divisor_msbs |     0.021 |
+|               div_loop[15].num_stages.numerator_gen.del_numer       |     0.001 |
+|               div_loop[15].quot_gen.quot_reg.i_div1.quot_out        |     0.028 |
+|               div_loop[16].adder_gen.reg_req.adsu_mod               |     0.067 |
+|                 add1                                                |     0.067 |
+|                   no_pipelining.the_addsub                          |     0.067 |
+|                     i_q_simple.qreg                                 |     0.028 |
+|               div_loop[16].divisor_gen.divisor_dc1.del_divisor_msbs |     0.017 |
+|               div_loop[16].quot_gen.quot_reg.i_div1.quot_out        |     0.034 |
+|               div_loop[17].adder_gen.reg_req.adsu_mod               |     0.064 |
+|                 add1                                                |     0.064 |
+|                   no_pipelining.the_addsub                          |     0.064 |
+|                     i_q_simple.qreg                                 |     0.025 |
+|               div_loop[17].divisor_gen.divisor_dc1.del_divisor_msbs |     0.016 |
+|               div_loop[17].quot_gen.quot_reg.i_div1.quot_out        |     0.032 |
+|               div_loop[18].adder_gen.reg_req.adsu_mod               |     0.071 |
+|                 add1                                                |     0.071 |
+|                   no_pipelining.the_addsub                          |     0.071 |
+|                     i_q_simple.qreg                                 |     0.033 |
+|               div_loop[18].divisor_gen.divisor_dc1.del_divisor_msbs |     0.017 |
+|               div_loop[18].quot_gen.quot_reg.i_div1.quot_out        |     0.032 |
+|               div_loop[19].adder_gen.reg_req.adsu_mod               |     0.062 |
+|                 add1                                                |     0.062 |
+|                   no_pipelining.the_addsub                          |     0.062 |
+|                     i_q_simple.qreg                                 |     0.024 |
+|               div_loop[19].divisor_gen.divisor_dc1.del_divisor_msbs |     0.020 |
+|               div_loop[19].quot_gen.quot_reg.i_div1.quot_out        |     0.039 |
+|               div_loop[1].adder_gen.reg_req.adsu_mod                |     0.063 |
+|                 add1                                                |     0.063 |
+|                   no_pipelining.the_addsub                          |     0.063 |
+|                     i_q_simple.qreg                                 |     0.021 |
+|               div_loop[1].divisor_gen.divisor_dc1.del_divisor_msbs  |     0.016 |
+|               div_loop[1].num_stages.numerator_gen.del_numer        |     0.019 |
+|               div_loop[1].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|               div_loop[20].adder_gen.reg_req.adsu_mod               |     0.072 |
+|                 add1                                                |     0.072 |
+|                   no_pipelining.the_addsub                          |     0.072 |
+|                     i_q_simple.qreg                                 |     0.033 |
+|               div_loop[20].divisor_gen.divisor_dc1.del_divisor_msbs |     0.015 |
+|               div_loop[20].quot_gen.quot_reg.i_div1.quot_out        |     0.034 |
+|               div_loop[21].adder_gen.reg_req.adsu_mod               |     0.070 |
+|                 add1                                                |     0.070 |
+|                   no_pipelining.the_addsub                          |     0.070 |
+|                     i_q_simple.qreg                                 |     0.032 |
+|               div_loop[21].divisor_gen.divisor_dc1.del_divisor_msbs |     0.018 |
+|               div_loop[21].quot_gen.quot_reg.i_div1.quot_out        |     0.040 |
+|               div_loop[22].adder_gen.reg_req.adsu_mod               |     0.031 |
+|                 add1                                                |     0.031 |
+|                   no_pipelining.the_addsub                          |     0.031 |
+|                     i_q_simple.qreg                                 |     0.003 |
+|               div_loop[22].divisor_gen.divisor_dc1.del_divisor_msbs |     0.009 |
+|               div_loop[22].quot_gen.quot_reg.i_div1.quot_out        |     0.042 |
+|               div_loop[23].quot_gen.quot_reg.i_div1.quot_out        |     0.027 |
+|               div_loop[2].adder_gen.reg_req.adsu_mod                |     0.068 |
+|                 add1                                                |     0.068 |
+|                   no_pipelining.the_addsub                          |     0.068 |
+|                     i_q_simple.qreg                                 |     0.027 |
+|               div_loop[2].divisor_gen.divisor_dc1.del_divisor_msbs  |     0.017 |
+|               div_loop[2].num_stages.numerator_gen.del_numer        |     0.020 |
+|               div_loop[2].quot_gen.quot_reg.i_div1.quot_out         |     0.004 |
+|               div_loop[3].adder_gen.reg_req.adsu_mod                |     0.064 |
+|                 add1                                                |     0.064 |
+|                   no_pipelining.the_addsub                          |     0.064 |
+|                     i_q_simple.qreg                                 |     0.025 |
+|               div_loop[3].divisor_gen.divisor_dc1.del_divisor_msbs  |     0.018 |
+|               div_loop[3].num_stages.numerator_gen.del_numer        |     0.022 |
+|               div_loop[3].quot_gen.quot_reg.i_div1.quot_out         |     0.005 |
+|               div_loop[4].adder_gen.reg_req.adsu_mod                |     0.061 |
+|                 add1                                                |     0.061 |
+|                   no_pipelining.the_addsub                          |     0.061 |
+|                     i_q_simple.qreg                                 |     0.019 |
+|               div_loop[4].divisor_gen.divisor_dc1.del_divisor_msbs  |     0.018 |
+|               div_loop[4].num_stages.numerator_gen.del_numer        |     0.014 |
+|               div_loop[4].quot_gen.quot_reg.i_div1.quot_out         |     0.008 |
+|               div_loop[5].adder_gen.reg_req.adsu_mod                |     0.068 |
+|                 add1                                                |     0.068 |
+|                   no_pipelining.the_addsub                          |     0.068 |
+|                     i_q_simple.qreg                                 |     0.026 |
+|               div_loop[5].divisor_gen.divisor_dc1.del_divisor_msbs  |     0.017 |
+|               div_loop[5].num_stages.numerator_gen.del_numer        |     0.018 |
+|               div_loop[5].quot_gen.quot_reg.i_div1.quot_out         |     0.008 |
+|               div_loop[6].adder_gen.reg_req.adsu_mod                |     0.061 |
+|                 add1                                                |     0.061 |
+|                   no_pipelining.the_addsub                          |     0.061 |
+|                     i_q_simple.qreg                                 |     0.018 |
+|               div_loop[6].divisor_gen.divisor_dc1.del_divisor_msbs  |     0.021 |
+|               div_loop[6].num_stages.numerator_gen.del_numer        |     0.018 |
+|               div_loop[6].quot_gen.quot_reg.i_div1.quot_out         |     0.012 |
+|               div_loop[7].adder_gen.reg_req.adsu_mod                |     0.073 |
+|                 add1                                                |     0.073 |
+|                   no_pipelining.the_addsub                          |     0.073 |
+|                     i_q_simple.qreg                                 |     0.030 |
+|               div_loop[7].divisor_gen.divisor_dc1.del_divisor_msbs  |     0.018 |
+|               div_loop[7].num_stages.numerator_gen.del_numer        |     0.017 |
+|               div_loop[7].quot_gen.quot_reg.i_div1.quot_out         |     0.013 |
+|               div_loop[8].adder_gen.reg_req.adsu_mod                |     0.063 |
+|                 add1                                                |     0.063 |
+|                   no_pipelining.the_addsub                          |     0.063 |
+|                     i_q_simple.qreg                                 |     0.021 |
+|               div_loop[8].divisor_gen.divisor_dc1.del_divisor_msbs  |     0.021 |
+|               div_loop[8].num_stages.numerator_gen.del_numer        |     0.016 |
+|               div_loop[8].quot_gen.quot_reg.i_div1.quot_out         |     0.016 |
+|               div_loop[9].adder_gen.reg_req.adsu_mod                |     0.063 |
+|                 add1                                                |     0.063 |
+|                   no_pipelining.the_addsub                          |     0.063 |
+|                     i_q_simple.qreg                                 |     0.020 |
+|               div_loop[9].divisor_gen.divisor_dc1.del_divisor_msbs  |     0.016 |
+|               div_loop[9].num_stages.numerator_gen.del_numer        |     0.012 |
+|               div_loop[9].quot_gen.quot_reg.i_div1.quot_out         |     0.019 |
+|               reg_quot_out.reg_quot                                 |     0.040 |
+|             sgned_input.cmp_dividend                                |     0.026 |
+|               twos_comp                                             |     0.026 |
+|             sgned_input.cmp_divisor                                 |     0.083 |
+|               twos_comp                                             |     0.083 |
+|             sign_pipeline.i_unrolled.sign_pipe                      |     0.087 |
+|             signed_output.cmp_quot                                  |     0.060 |
+|               twos_comp                                             |     0.060 |
+|             signed_output.remd_fract.cmp_remd                       |     0.006 |
+|               twos_comp                                             |     0.006 |
+|   mul                                                               |     0.662 |
+|     U0                                                              |     0.662 |
+|       i_mult                                                        |     0.662 |
+|         gLUT.gLUT_speed.iLUT                                        |     0.662 |
+|   rgb_delay                                                         |     0.032 |
+|   select                                                            |     0.048 |
+|   sub1                                                              |     0.095 |
+|     U0                                                              |     0.095 |
+|       xst_addsub                                                    |     0.095 |
+|         i_baseblox.i_baseblox_addsub                                |     0.095 |
+|           no_pipelining.the_addsub                                  |     0.095 |
+|             i_lut6.i_lut6_addsub                                    |     0.095 |
+|               i_q.i_simple.qreg                                     |     0.064 |
+|   sub2                                                              |     0.058 |
+|     U0                                                              |     0.058 |
+|       xst_addsub                                                    |     0.058 |
+|         i_baseblox.i_baseblox_addsub                                |     0.058 |
+|           no_pipelining.the_addsub                                  |     0.058 |
+|             i_lut6.i_lut6_addsub                                    |     0.058 |
+|               i_q.i_simple.qreg                                     |     0.029 |
+|   sw                                                                |     0.061 |
+|   to_add_del                                                        |    <0.001 |
++---------------------------------------------------------------------+-----------+
+
+

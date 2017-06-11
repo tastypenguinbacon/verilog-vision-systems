@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../HSV.srcs/sources_1/ip/s_calculation_divider/sim/s_calculation_divider.vhd"
+vhdl xil_defaultlib  "../../../HSV.srcs/sources_1/ip/sub_8u_8u_signed/sim/sub_8u_8u_signed.vhd"
+vhdl xil_defaultlib  "../../../HSV.srcs/sources_1/ip/sub_8u_8u_pos/sim/sub_8u_8u_pos.vhd"
+vhdl xil_defaultlib  "../../../HSV.srcs/sources_1/ip/mul_8u_16u/sim/mul_8u_16u.vhd"
+vhdl xil_defaultlib  "../../../HSV.srcs/sources_1/ip/mul_10s_7u/sim/mul_10s_7u.vhd"
+vhdl xil_defaultlib  "../../../HSV.srcs/sources_1/ip/h_calculation_divider/sim/h_calculation_divider.vhd"
+vhdl xil_defaultlib  "../../../HSV.srcs/sources_1/ip/add_9s_8u/sim/add_9s_8u.vhd"
+
+# Do not sort compile order
+nosort

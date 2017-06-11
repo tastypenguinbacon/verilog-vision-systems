@@ -41,22 +41,22 @@ module rgb2hsv(clk, de_in, h_sync_in, v_sync_in, pixel_in,
     wire[7:0] V;
 
     localparam max_min_delay = 1;
-    localparam s_calculation_delay = 1;
-    localparam v_calculation_delay = 1;
+    localparam s_calculation_delay = 22;
+    localparam h_calculation_delay = 36;
     
-    hsv_delay #(.WIDTH(3), .DELAY(3)) sync_delay({de_in, h_sync_in, v_sync_in}, clk, 
+    hsv_delay #(.WIDTH(3), .DELAY(h_calculation_delay + 1)) sync_delay({de_in, h_sync_in, v_sync_in}, clk, 
         {de_out, h_sync_out, v_sync_out});
 
     wire[7:0] max_rgb;
     wire[7:0] min_rgb;
-    maximum(clk, R, G, B, max_rgb);
-    minimum(clk, R, G, B, min_rgb); 
+    maximum mx(clk, R, G, B, max_rgb);
+    minimum mi(clk, R, G, B, min_rgb); 
 
     wire[7:0] temp_s;
     s_calculation scalc(clk, min_rgb, max_rgb, temp_s);
 
-    hsv_delay # (.WIDTH(8), .DELAY(4)) V_delay (max_rgb, clk, V); 
-    hsv_delay # (.WIDTH(8), .DELAY(4)) H_delay (temp_s, clk, S);
+    hsv_delay # (.WIDTH(8), .DELAY(h_calculation_delay)) V_delay (max_rgb, clk, V); 
+    hsv_delay # (.WIDTH(8), .DELAY(h_calculation_delay - s_calculation_delay + 1)) H_delay (temp_s, clk, S);
     
     wire[7:0] delayed_r; 
     wire[7:0] delayed_g;

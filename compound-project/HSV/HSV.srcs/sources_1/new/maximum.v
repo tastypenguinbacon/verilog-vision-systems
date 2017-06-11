@@ -7,7 +7,7 @@ module maximum(clk, R, G, B, out);
     input[7:0] B;
     output[7:0] out;
 
-    reg[7:0] temp;
+    reg[7:0] temp = 0;
 
     always @(posedge clk) begin
         temp = R > G && R > B ? R : G > B ? G : B;

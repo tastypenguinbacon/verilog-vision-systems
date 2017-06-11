@@ -46,20 +46,21 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: user.org:user:divider_32_20:1.0
--- IP Revision: 3
+-- IP VLNV: xilinx.com:ip:div_gen:5.1
+-- IP Revision: 11
 
 -- The following code must appear in the VHDL architecture header.
 
 ------------- Begin Cut here for COMPONENT Declaration ------ COMP_TAG
 COMPONENT s_calculation_divider
   PORT (
-    clk : IN STD_LOGIC;
-    start : IN STD_LOGIC;
-    dividend : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    divisor : IN STD_LOGIC_VECTOR(19 DOWNTO 0);
-    quotient : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-    qv : OUT STD_LOGIC
+    aclk : IN STD_LOGIC;
+    s_axis_divisor_tvalid : IN STD_LOGIC;
+    s_axis_divisor_tdata : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    s_axis_dividend_tvalid : IN STD_LOGIC;
+    s_axis_dividend_tdata : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    m_axis_dout_tvalid : OUT STD_LOGIC;
+    m_axis_dout_tdata : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
 END COMPONENT;
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------
@@ -70,12 +71,17 @@ END COMPONENT;
 ------------- Begin Cut here for INSTANTIATION Template ----- INST_TAG
 your_instance_name : s_calculation_divider
   PORT MAP (
-    clk => clk,
-    start => start,
-    dividend => dividend,
-    divisor => divisor,
-    quotient => quotient,
-    qv => qv
+    aclk => aclk,
+    s_axis_divisor_tvalid => s_axis_divisor_tvalid,
+    s_axis_divisor_tdata => s_axis_divisor_tdata,
+    s_axis_dividend_tvalid => s_axis_dividend_tvalid,
+    s_axis_dividend_tdata => s_axis_dividend_tdata,
+    m_axis_dout_tvalid => m_axis_dout_tvalid,
+    m_axis_dout_tdata => m_axis_dout_tdata
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ---------
+
+-- You must compile the wrapper file s_calculation_divider.vhd when simulating
+-- the core, s_calculation_divider. When compiling the wrapper file, be sure to
+-- reference the VHDL simulation library.
 

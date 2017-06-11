@@ -1,0 +1,426 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Jun 11 20:18:24 2017
+# Process ID: 26818
+# Current directory: /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/draw_shape_0_synth_1
+# Command line: vivado -log draw_shape_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source draw_shape_0.tcl
+# Log file: /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/draw_shape_0_synth_1/draw_shape_0.vds
+# Journal file: /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/draw_shape_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source draw_shape_0.tcl -notrace
+WARNING: [Board 49-69] Validation failed for board file /home/pingwin/VIVADO/Vivado/2016.4/data/boards/board_files/arty-s7-50/B.0/board.xml:
+ Pin Map file does not provide LOC constraints for shield_dp0_dp9_tri_i_0COMP : digilentinc.com:arty-s7-50:part0:1.0
+
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - /home/pingwin/VIVADO/Vivado/2016.4/data/boards/board_files/arty-s7-50/B.0/board.xml
+Command: synth_design -top draw_shape_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26831 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1075.734 ; gain = 144.086 ; free physical = 1477 ; free virtual = 3927
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'draw_shape_0' [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/synth/draw_shape_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'draw_shape' [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/draw_shape.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay' (1#1) [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (1#1) [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized1' [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized1' (1#1) [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized2' [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized2' (1#1) [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized3' [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized3' (1#1) [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'sub_11u_11u' [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/sub_11u_11u/synth/sub_11u_11u.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_10' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/sub_11u_11u/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_10' [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/sub_11u_11u/synth/sub_11u_11u.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'sub_11u_11u' (8#1) [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/sub_11u_11u/synth/sub_11u_11u.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'mul_12s_12s' [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/mul_12s_12s/synth/mul_12s_12s.vhd:68]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/mul_12s_12s/synth/mul_12s_12s.vhd:71]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/mul_12s_12s/synth/mul_12s_12s.vhd:71]
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_12' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/mul_12s_12s/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_12' [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/mul_12s_12s/synth/mul_12s_12s.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'mul_12s_12s' (13#1) [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/mul_12s_12s/synth/mul_12s_12s.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'add_24u_24u' [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/add_24u_24u/synth/add_24u_24u.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_10' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/sub_11u_11u/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_10' [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/add_24u_24u/synth/add_24u_24u.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'add_24u_24u' (14#1) [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/add_24u_24u/synth/add_24u_24u.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'draw_shape' (15#1) [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/src/draw_shape.v:3]
+INFO: [Synth 8-256] done synthesizing module 'draw_shape_0' (16#1) [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/draw_shape_0/synth/draw_shape_0.v:56]
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized7 has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized7 has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized7 has unconnected port ASET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv has unconnected port ASET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv has unconnected port SSET
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port b[11]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port b[10]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port b[9]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port b[8]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port b[7]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port b[6]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port b[5]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port b[4]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port b[3]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port b[2]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port b[1]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port b[0]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized5 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized3 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized3 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized3 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized3 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized3 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized3 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized1 has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized1 has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized1 has unconnected port ASET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized1 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized1 has unconnected port SSET
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized1 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized1 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized1 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized1 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized1 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized1 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized1 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized1 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized1 has unconnected port b_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized1 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized1 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized1 has unconnected port aset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized1 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized1 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized1 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized1 has unconnected port a_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized1 has unconnected port b_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv__parameterized1 has unconnected port C_IN
+WARNING: [Synth 8-3331] design mult_gen_v12_0_12_viv has unconnected port CE
+WARNING: [Synth 8-3331] design mult_gen_v12_0_12_viv has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy has unconnected port b_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy has unconnected port a_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy has unconnected port b_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv has unconnected port C_IN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1132.203 ; gain = 200.555 ; free physical = 1486 ; free virtual = 3870
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1132.203 ; gain = 200.555 ; free physical = 1486 ; free virtual = 3870
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 597 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/draw_shape_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/draw_shape_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 156 instances were transformed.
+  MULT_AND => LUT2: 156 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1409.539 ; gain = 0.000 ; free physical = 1337 ; free virtual = 3719
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1409.539 ; gain = 477.891 ; free physical = 1327 ; free virtual = 3712
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1409.539 ; gain = 477.891 ; free physical = 1327 ; free virtual = 3712
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/sum. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/x_mul. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/x_sub. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/y_mul. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/y_sub. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1409.539 ; gain = 477.891 ; free physical = 1327 ; free virtual = 3712
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1409.539 ; gain = 477.891 ; free physical = 1310 ; free virtual = 3696
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/y_pos" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv__parameterized1 has unconnected port ADD
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv__parameterized1 has unconnected port C_IN
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv__parameterized1 has unconnected port BYPASS
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv__parameterized1 has unconnected port SSET
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv__parameterized1 has unconnected port SINIT
+WARNING: [Synth 8-3331] design mult_gen_v12_0_12_viv has unconnected port CE
+WARNING: [Synth 8-3331] design mult_gen_v12_0_12_viv has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv has unconnected port ADD
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv has unconnected port C_IN
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv has unconnected port BYPASS
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv has unconnected port SSET
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv has unconnected port SINIT
+INFO: [Synth 8-3886] merging instance 'mul_12s_12s:/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[0][15]' (FDR) to 'mul_12s_12s:/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[0][16]'
+INFO: [Synth 8-3886] merging instance 'mul_12s_12s:/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[1][15]' (FDR) to 'mul_12s_12s:/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[1][16]'
+INFO: [Synth 8-3886] merging instance 'mul_12s_12s:/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[2][16]' (FDR) to 'mul_12s_12s:/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_1_add.stage_1_pipeline.s1_add_out_reg[2][15]'
+INFO: [Synth 8-3886] merging instance 'mul_12s_12s:/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][20]' (FDR) to 'mul_12s_12s:/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[0][21]'
+INFO: [Synth 8-3886] merging instance 'mul_12s_12s:/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][16]' (FDR) to 'mul_12s_12s:/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.stage_2_add.stage_2_pipeline.s2_add_out_reg[1][15]'
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_3_add.stage_3_pipeline.s3_add_out_reg[0][30]) is unused and will be removed from module mult_gen_v12_0_12_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_3_add.stage_3_pipeline.s3_add_out_reg[0][29]) is unused and will be removed from module mult_gen_v12_0_12_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_3_add.stage_3_pipeline.s3_add_out_reg[0][28]) is unused and will be removed from module mult_gen_v12_0_12_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_3_add.stage_3_pipeline.s3_add_out_reg[0][27]) is unused and will be removed from module mult_gen_v12_0_12_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_3_add.stage_3_pipeline.s3_add_out_reg[0][26]) is unused and will be removed from module mult_gen_v12_0_12_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_3_add.stage_3_pipeline.s3_add_out_reg[0][25]) is unused and will be removed from module mult_gen_v12_0_12_viv.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_3_add.stage_3_pipeline.s3_add_out_reg[0][24]) is unused and will be removed from module mult_gen_v12_0_12_viv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1409.539 ; gain = 477.891 ; free physical = 1294 ; free virtual = 3679
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:45 . Memory (MB): peak = 1409.539 ; gain = 477.891 ; free physical = 1255 ; free virtual = 3641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1409.539 ; gain = 477.891 ; free physical = 1255 ; free virtual = 3640
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[10]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[9]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[8]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[7]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_reg[6]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[0][10]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[0][9]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[0][8]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[0][7]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[0][6]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[1][10]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[1][9]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[1][8]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[1][7]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[1][6]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[2][10]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[2][9]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[2][8]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[2][7]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[2][6]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[3][10]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[3][9]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[3][8]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[3][7]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[3][6]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[4][10]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[4][9]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[4][8]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[4][7]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[4][6]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[5][10]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[5][9]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[5][8]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[5][7]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[5][6]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[6][10]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[6][9]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[6][8]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[6][7]) is unused and will be removed from module draw_shape_0.
+INFO: [Synth 8-3332] Sequential element (inst/x_pos_del/delay_line_reg[6][6]) is unused and will be removed from module draw_shape_0.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1409.539 ; gain = 477.891 ; free physical = 1227 ; free virtual = 3613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1409.539 ; gain = 477.891 ; free physical = 1227 ; free virtual = 3612
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1409.539 ; gain = 477.891 ; free physical = 1227 ; free virtual = 3612
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1409.539 ; gain = 477.891 ; free physical = 1227 ; free virtual = 3612
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1409.539 ; gain = 477.891 ; free physical = 1227 ; free virtual = 3612
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1409.539 ; gain = 477.891 ; free physical = 1223 ; free virtual = 3613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1409.539 ; gain = 477.891 ; free physical = 1223 ; free virtual = 3613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    44|
+|2     |LUT1     |    12|
+|3     |LUT2     |   212|
+|4     |LUT3     |    37|
+|5     |LUT4     |   163|
+|6     |LUT5     |     7|
+|7     |LUT6     |     9|
+|8     |MULT_AND |   154|
+|9     |MUXCY    |   212|
+|10    |SRL16E   |    46|
+|11    |XORCY    |   228|
+|12    |FDRE     |   533|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1409.539 ; gain = 477.891 ; free physical = 1223 ; free virtual = 3613
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1409.539 ; gain = 120.465 ; free physical = 1221 ; free virtual = 3612
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 1409.547 ; gain = 477.898 ; free physical = 1221 ; free virtual = 3612
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 638 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 225 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 71 instances
+  MULT_AND => LUT2: 154 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+91 Infos, 89 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1409.547 ; gain = 410.395 ; free physical = 1187 ; free virtual = 3605
+INFO: [Common 17-1381] The checkpoint '/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/draw_shape_0_synth_1/draw_shape_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 43 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/draw_shape_0_synth_1/draw_shape_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1433.551 ; gain = 0.000 ; free physical = 2175 ; free virtual = 4554
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 11 20:19:27 2017...

@@ -61,17 +61,27 @@ module vb(select, clk,
        bin_de_out, bin_h_sync_out, bin_v_sync_out, bin_out); 
 
 
-    wire[23:0] hsv_in;
-    wire hsv_de_in;
-    wire hsv_h_sync_in;
-    wire hsv_v_sync_in;
-    wire[23:0] hsv_out;
-    wire hsv_de_out;
-    wire hsv_h_sync_out;
-    wire hsv_v_sync_out;
-    hsv_0 hsv(clk, hsv_de_in, hsv_h_sync_in, hsv_v_sync_in, hsv_in,
-        hsv_de_out, hsv_h_sync_out, hsv_v_sync_out, hsv_out);
-
+    //wire[23:0] hsv_in;
+    //wire hsv_de_in;
+    //wire hsv_h_sync_in;
+    //wire hsv_v_sync_in;
+    //wire[23:0] hsv_out;
+    //wire hsv_de_out;
+    //wire hsv_h_sync_out;
+   // wire hsv_v_sync_out;
+    //hsv_0 hsv(clk, hsv_de_in, hsv_h_sync_in, hsv_v_sync_in, hsv_in,
+     //   hsv_de_out, hsv_h_sync_out, hsv_v_sync_out, hsv_out);
+     
+     wire[23:0] draw_shape_in = bin_out;
+     wire draw_shape_de_in = bin_de_out;
+     wire draw_shape_h_sync_in = bin_h_sync_out;
+     wire draw_shape_v_sync_in = bin_v_sync_out;
+     wire[23:0] draw_shape_out;
+     wire draw_shape_de_out;
+     wire draw_shape_h_sync_out;
+     wire draw_shape_v_sync_out;
+     draw_shape_0 ds(1, 32, 32, clk, draw_shape_de_in, draw_shape_h_sync_in, draw_shape_v_sync_in, draw_shape_in,
+         draw_shape_de_out, draw_shape_h_sync_out, draw_shape_v_sync_out, draw_shape_out);
 
     wire[23:0] mux_pixel_in[7:0];
     wire[191:0] mux_in = {mux_pixel_in[7], mux_pixel_in[6], mux_pixel_in[5], mux_pixel_in[4], 
@@ -96,9 +106,13 @@ module vb(select, clk,
     assign mux_h_sync_in[2] = bin_h_sync_out;
     assign mux_v_sync_in[2] = bin_v_sync_out;
     assign mux_de_in[2] = bin_de_out;
-
-    assign mux_pixel_in[3] = hsv_out;
-    assign mux_h_sync_in[3] = hsv_h_sync_out;
-    assign mux_v_sync_in[3] = hsv_v_sync_out;
-    assign mux_de_in[3] = hsv_de_out;
+    
+    assign mux_pixel_in[3] = draw_shape_out;
+    assign mux_de_in[3] = draw_shape_de_out;
+    assign mux_h_sync_in[3] = draw_shape_h_sync_out;
+    assign mux_v_sync_in[3] = draw_shape_v_sync_out;
+  //  assign mux_pixel_in[3] = hsv_out;
+    //assign mux_h_sync_in[3] = hsv_h_sync_out;
+    //assign mux_v_sync_in[3] = hsv_v_sync_out;
+    //assign mux_de_in[3] = hsv_de_out;
 endmodule

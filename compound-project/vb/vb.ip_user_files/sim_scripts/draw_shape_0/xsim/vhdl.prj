@@ -1,0 +1,5 @@
+vhdl xil_defaultlib "../../../../vb.srcs/sources_1/ip/draw_shape_0/src/mul_12s_12s/sim/mul_12s_12s.vhd" 
+vhdl xil_defaultlib "../../../../vb.srcs/sources_1/ip/draw_shape_0/src/sub_11u_11u/sim/sub_11u_11u.vhd" 
+vhdl xil_defaultlib "../../../../vb.srcs/sources_1/ip/draw_shape_0/src/add_24u_24u/sim/add_24u_24u.vhd" 
+
+nosort

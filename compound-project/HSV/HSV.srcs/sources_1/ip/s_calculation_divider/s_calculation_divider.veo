@@ -46,8 +46,8 @@
 // 
 // DO NOT MODIFY THIS FILE.
 
-// IP VLNV: user.org:user:divider_32_20:1.0
-// IP Revision: 3
+// IP VLNV: xilinx.com:ip:div_gen:5.1
+// IP Revision: 11
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -55,12 +55,17 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 s_calculation_divider your_instance_name (
-  .clk(clk),            // input wire clk
-  .start(start),        // input wire start
-  .dividend(dividend),  // input wire [31 : 0] dividend
-  .divisor(divisor),    // input wire [19 : 0] divisor
-  .quotient(quotient),  // output wire [31 : 0] quotient
-  .qv(qv)              // output wire qv
+  .aclk(aclk),                                      // input wire aclk
+  .s_axis_divisor_tvalid(s_axis_divisor_tvalid),    // input wire s_axis_divisor_tvalid
+  .s_axis_divisor_tdata(s_axis_divisor_tdata),      // input wire [7 : 0] s_axis_divisor_tdata
+  .s_axis_dividend_tvalid(s_axis_dividend_tvalid),  // input wire s_axis_dividend_tvalid
+  .s_axis_dividend_tdata(s_axis_dividend_tdata),    // input wire [7 : 0] s_axis_dividend_tdata
+  .m_axis_dout_tvalid(m_axis_dout_tvalid),          // output wire m_axis_dout_tvalid
+  .m_axis_dout_tdata(m_axis_dout_tdata)            // output wire [15 : 0] m_axis_dout_tdata
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
+
+// You must compile the wrapper file s_calculation_divider.v when simulating
+// the core, s_calculation_divider. When compiling the wrapper file, be sure to
+// reference the Verilog simulation library.
 

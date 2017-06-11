@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="hdmi_vga_vb_0_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1496857114">
+<GenRun Id="hdmi_vga_vb_0_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1497205327">
   <File Type="VDS-TIMING-PB" Name="hdmi_vga_vb_0_0_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="hdmi_vga_vb_0_0_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="hdmi_vga_vb_0_0.dcp"/>
@@ -11,9 +11,11 @@
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/hdmi_vga_vb_0_0">
     <File Path="$PSRCDIR/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/hdmi_vga_vb_0_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>
@@ -24,9 +26,11 @@
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/hdmi_vga_vb_0_0">
     <File Path="$PSRCDIR/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/hdmi_vga_vb_0_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>

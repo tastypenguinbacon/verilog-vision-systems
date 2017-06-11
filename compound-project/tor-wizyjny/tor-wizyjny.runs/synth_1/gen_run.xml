@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1496857114">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1497205327">
   <File Type="VDS-TIMING-PB" Name="hdmi_vga_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="hdmi_vga_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="hdmi_vga_wrapper.dcp"/>
@@ -46,7 +46,7 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_vb_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_dvi2rgb_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_vb_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="hdmi_vga_rgb2vga_0_0"/>
 </GenRun>
