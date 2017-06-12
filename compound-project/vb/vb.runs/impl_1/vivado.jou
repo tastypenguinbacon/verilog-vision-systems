@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jun 12 02:30:03 2017
+# Process ID: 26222
+# Current directory: /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/impl_1
+# Command line: vivado -log vb.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source vb.tcl -notrace
+# Log file: /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/impl_1/vb.vdi
+# Journal file: /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source vb.tcl -notrace

@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0_clk_wiz.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_clk_wiz_0_0/hdmi_vga_clk_wiz_0_0.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ipshared/e147/xlconstant.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_xlconstant_0_0/sim/hdmi_vga_xlconstant_0_0.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/hdl/hdmi_vga.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/multiplexer/src/mux.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/multiplexer/sim/multiplexer.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/binarisation_0/src/binarisation.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/binarisation_0/sim/binarisation_0.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/sim/delay_5_3.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/rgb2ycbcr_0/src/delay_3_8/sim/delay_3_8.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/rgb2ycbcr_0/src/cb_row.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/rgb2ycbcr_0/src/rgb2ycbcr.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/rgb2ycbcr_0/sim/rgb2ycbcr_0.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/divider_32_20_0/src/divider_32_20.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/divider_32_20_0/sim/divider_32_20_0.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ipshared/8d21/src/core_adder.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ipshared/8d21/src/center_seeker.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ipshared/8d21/src/draw_shape.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ipshared/8d21/src/vb.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.ip_user_files/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/sim/hdmi_vga_vb_0_0.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+verilog xil_defaultlib  "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/hdl/hdmi_vga_wrapper.v" --include "../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

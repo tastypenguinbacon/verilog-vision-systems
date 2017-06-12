@@ -1,6 +1,46 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Mon Jun 12 19:47:36 2017
+| Host         : mothership running 64-bit Ubuntu 16.10
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'multiplexer'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of multiplexer (user.org:user:mux:1.0) from (Rev. 3) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'multiplexer'. These changes may impact your design.
+
+
+-Upgraded port 'de_in' width 16 differs from original width 8
+
+-Upgraded port 'h_sync_in' width 16 differs from original width 8
+
+-Upgraded port 'in' width 384 differs from original width 192
+
+-Upgraded port 'select' width 4 differs from original width 3
+
+-Upgraded port 'v_sync_in' width 16 differs from original width 8
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
 | Date         : Sun Jun 11 20:18:17 2017
 | Host         : mothership running 64-bit Ubuntu 16.10
 | Command      : upgrade_ip

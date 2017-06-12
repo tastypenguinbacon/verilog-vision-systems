@@ -47,18 +47,18 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: user.org:user:mux:1.0
--- IP Revision: 3
+-- IP Revision: 2
 
 -- The following code must appear in the VHDL architecture header.
 
 ------------- Begin Cut here for COMPONENT Declaration ------ COMP_TAG
 COMPONENT multiplexer
   PORT (
-    select : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
-    in : IN STD_LOGIC_VECTOR(191 DOWNTO 0);
-    h_sync_in : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-    v_sync_in : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-    de_in : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    select : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    in : IN STD_LOGIC_VECTOR(383 DOWNTO 0);
+    h_sync_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    v_sync_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    de_in : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     clk : IN STD_LOGIC;
     out : OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
     h_sync_out : OUT STD_LOGIC;

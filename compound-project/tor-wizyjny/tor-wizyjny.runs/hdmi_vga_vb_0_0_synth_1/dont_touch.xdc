@@ -28,17 +28,20 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==delay_5_3 || OR
 # IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/rgb2ycbcr_0/src/delay_3_8/delay_3_8.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==delay_3_8 || ORIG_REF_NAME==delay_3_8}]
 
-# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/draw_shape_0/draw_shape_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==draw_shape_0 || ORIG_REF_NAME==draw_shape_0}]
+# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/divider_32_20_0/divider_32_20_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==divider_32_20_0 || ORIG_REF_NAME==divider_32_20_0}]
 
-# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/draw_shape_0/src/mul_12s_12s/mul_12s_12s.xci
+# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/divider_32_20_0/src/mult_32_20_lm/mult_32_20_lm.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mult_32_20_lm || ORIG_REF_NAME==mult_32_20_lm}]
+
+# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/mul_12s_12s/mul_12s_12s.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mul_12s_12s || ORIG_REF_NAME==mul_12s_12s}]
 
-# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/draw_shape_0/src/sub_11u_11u/sub_11u_11u.xci
+# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/sub_11u_11u/sub_11u_11u.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sub_11u_11u || ORIG_REF_NAME==sub_11u_11u}]
 
-# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/draw_shape_0/src/add_24u_24u/add_24u_24u.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==add_24u_24u || ORIG_REF_NAME==add_24u_24u}]
+# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/sum_24u_24u/sum_24u_24u.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sum_24u_24u || ORIG_REF_NAME==sum_24u_24u}]
 
 # IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/hdmi_vga_vb_0_0.xci
 # IP: The module: 'hdmi_vga_vb_0_0' is the root of the design. Do not add the DONT_TOUCH constraint.
@@ -67,14 +70,17 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==add_24u_24u || 
 # IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/rgb2ycbcr_0/src/delay_3_8/delay_3_8.xci
 #dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==delay_3_8 || ORIG_REF_NAME==delay_3_8}]
 
-# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/draw_shape_0/draw_shape_0.xci
-#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==draw_shape_0 || ORIG_REF_NAME==draw_shape_0}]
+# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/divider_32_20_0/divider_32_20_0.xci
+#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==divider_32_20_0 || ORIG_REF_NAME==divider_32_20_0}]
 
-# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/draw_shape_0/src/mul_12s_12s/mul_12s_12s.xci
+# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/divider_32_20_0/src/mult_32_20_lm/mult_32_20_lm.xci
+#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mult_32_20_lm || ORIG_REF_NAME==mult_32_20_lm}]
+
+# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/mul_12s_12s/mul_12s_12s.xci
 #dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mul_12s_12s || ORIG_REF_NAME==mul_12s_12s}]
 
-# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/draw_shape_0/src/sub_11u_11u/sub_11u_11u.xci
+# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/sub_11u_11u/sub_11u_11u.xci
 #dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sub_11u_11u || ORIG_REF_NAME==sub_11u_11u}]
 
-# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/draw_shape_0/src/add_24u_24u/add_24u_24u.xci
-#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==add_24u_24u || ORIG_REF_NAME==add_24u_24u}]
+# IP: /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/sum_24u_24u/sum_24u_24u.xci
+#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sum_24u_24u || ORIG_REF_NAME==sum_24u_24u}]

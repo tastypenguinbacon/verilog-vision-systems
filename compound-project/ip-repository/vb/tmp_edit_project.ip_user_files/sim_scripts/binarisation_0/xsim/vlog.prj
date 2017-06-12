@@ -1,0 +1,6 @@
+verilog xil_defaultlib "../../../../src/binarisation_0/src/binarisation.v" 
+verilog xil_defaultlib "../../../../src/binarisation_0/sim/binarisation_0.v" 
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

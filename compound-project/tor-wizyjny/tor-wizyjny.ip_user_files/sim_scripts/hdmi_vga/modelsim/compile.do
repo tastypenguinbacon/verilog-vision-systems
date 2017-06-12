@@ -104,14 +104,22 @@ vlog -work xil_defaultlib -64 -incr "+incdir+../../../../tor-wizyjny.srcs/source
 "../../../bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/rgb2ycbcr_0/sim/rgb2ycbcr_0.v" \
 
 vcom -work xil_defaultlib -64 -93 \
-"../../../bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/draw_shape_0/src/mul_12s_12s/sim/mul_12s_12s.vhd" \
-"../../../bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/draw_shape_0/src/sub_11u_11u/sim/sub_11u_11u.vhd" \
-"../../../bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/draw_shape_0/src/add_24u_24u/sim/add_24u_24u.vhd" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/divider_32_20_0/src/mult_32_20_lm/sim/mult_32_20_lm.vhd" \
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a" "+incdir+../../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a" \
-"../../../bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/draw_shape_0/src/draw_shape.v" \
-"../../../bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/draw_shape_0/sim/draw_shape_0.v" \
-"../../../bd/hdmi_vga/ipshared/9e6a/src/vb.v" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/divider_32_20_0/src/divider_32_20.v" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/divider_32_20_0/sim/divider_32_20_0.v" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/mul_12s_12s/sim/mul_12s_12s.vhd" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/sub_11u_11u/sim/sub_11u_11u.vhd" \
+"../../../bd/hdmi_vga/ip/hdmi_vga_vb_0_0/src/sum_24u_24u/sim/sum_24u_24u.vhd" \
+
+vlog -work xil_defaultlib -64 -incr "+incdir+../../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a" "+incdir+../../../../tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ipshared/100a" \
+"../../../bd/hdmi_vga/ipshared/4da4/src/core_adder.v" \
+"../../../bd/hdmi_vga/ipshared/4da4/src/center_seeker.v" \
+"../../../bd/hdmi_vga/ipshared/4da4/src/draw_shape.v" \
+"../../../bd/hdmi_vga/ipshared/4da4/src/vb.v" \
 "../../../bd/hdmi_vga/ip/hdmi_vga_vb_0_0/sim/hdmi_vga_vb_0_0.v" \
 
 vlog -work xil_defaultlib "glbl.v"

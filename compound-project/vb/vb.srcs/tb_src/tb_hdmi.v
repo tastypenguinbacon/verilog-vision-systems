@@ -62,7 +62,7 @@ hdmi_in file_input (
 // --------------------------------------
 // Output assigment
 // --------------------------------------
-vb cudo(3, rx_pclk, rx_de, rx_hsync, rx_vsync, {rx_red, rx_green, rx_blue}, tx_de, tx_hsync, tx_vsync, {tx_red, tx_green, tx_blue});
+vb cudo(4, rx_pclk, rx_de, rx_hsync, rx_vsync, {rx_red, rx_green, rx_blue}, tx_de, tx_hsync, tx_vsync, {tx_red, tx_green, tx_blue});
 
 // --------------------------------------
 // HDMI output

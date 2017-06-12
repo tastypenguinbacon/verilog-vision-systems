@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-// Date        : Wed Jun  7 17:50:34 2017
+// Date        : Mon Jun 12 19:48:40 2017
 // Host        : mothership running 64-bit Ubuntu 16.10
 // Command     : write_verilog -force -mode funcsim
 //               /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/multiplexer/multiplexer_sim_netlist.v
@@ -25,26 +25,34 @@ module multiplexer
     h_sync_out,
     v_sync_out,
     de_out);
-  input [2:0]select;
-  input [191:0]in;
-  input [7:0]h_sync_in;
-  input [7:0]v_sync_in;
-  input [7:0]de_in;
+  input [3:0]select;
+  input [383:0]in;
+  input [15:0]h_sync_in;
+  input [15:0]v_sync_in;
+  input [15:0]de_in;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) input clk;
   output [23:0]out;
   output h_sync_out;
   output v_sync_out;
   output de_out;
 
-  wire [7:0]de_in;
+  wire [15:0]de_in;
   wire de_out;
   wire de_out_INST_0_i_1_n_0;
   wire de_out_INST_0_i_2_n_0;
-  wire [7:0]h_sync_in;
+  wire de_out_INST_0_i_3_n_0;
+  wire de_out_INST_0_i_4_n_0;
+  wire de_out_INST_0_i_5_n_0;
+  wire de_out_INST_0_i_6_n_0;
+  wire [15:0]h_sync_in;
   wire h_sync_out;
   wire h_sync_out_INST_0_i_1_n_0;
   wire h_sync_out_INST_0_i_2_n_0;
-  wire [191:0]in;
+  wire h_sync_out_INST_0_i_3_n_0;
+  wire h_sync_out_INST_0_i_4_n_0;
+  wire h_sync_out_INST_0_i_5_n_0;
+  wire h_sync_out_INST_0_i_6_n_0;
+  wire [383:0]in;
   wire [23:0]out;
   wire \out[0]_INST_0_i_1_n_0 ;
   wire \out[0]_INST_0_i_2_n_0 ;
@@ -94,62 +102,126 @@ module multiplexer
   wire \out[8]_INST_0_i_2_n_0 ;
   wire \out[9]_INST_0_i_1_n_0 ;
   wire \out[9]_INST_0_i_2_n_0 ;
-  wire [2:0]select;
-  wire [7:0]v_sync_in;
+  wire [3:0]select;
+  wire [15:0]v_sync_in;
   wire v_sync_out;
   wire v_sync_out_INST_0_i_1_n_0;
   wire v_sync_out_INST_0_i_2_n_0;
+  wire v_sync_out_INST_0_i_3_n_0;
+  wire v_sync_out_INST_0_i_4_n_0;
+  wire v_sync_out_INST_0_i_5_n_0;
+  wire v_sync_out_INST_0_i_6_n_0;
 
-  MUXF7 de_out_INST_0
+  MUXF8 de_out_INST_0
        (.I0(de_out_INST_0_i_1_n_0),
         .I1(de_out_INST_0_i_2_n_0),
         .O(de_out),
+        .S(select[3]));
+  MUXF7 de_out_INST_0_i_1
+       (.I0(de_out_INST_0_i_3_n_0),
+        .I1(de_out_INST_0_i_4_n_0),
+        .O(de_out_INST_0_i_1_n_0),
+        .S(select[2]));
+  MUXF7 de_out_INST_0_i_2
+       (.I0(de_out_INST_0_i_5_n_0),
+        .I1(de_out_INST_0_i_6_n_0),
+        .O(de_out_INST_0_i_2_n_0),
         .S(select[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    de_out_INST_0_i_1
+    de_out_INST_0_i_3
        (.I0(de_in[3]),
         .I1(de_in[2]),
         .I2(select[1]),
         .I3(de_in[1]),
         .I4(select[0]),
         .I5(de_in[0]),
-        .O(de_out_INST_0_i_1_n_0));
+        .O(de_out_INST_0_i_3_n_0));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    de_out_INST_0_i_2
+    de_out_INST_0_i_4
        (.I0(de_in[7]),
         .I1(de_in[6]),
         .I2(select[1]),
         .I3(de_in[5]),
         .I4(select[0]),
         .I5(de_in[4]),
-        .O(de_out_INST_0_i_2_n_0));
-  MUXF7 h_sync_out_INST_0
+        .O(de_out_INST_0_i_4_n_0));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    de_out_INST_0_i_5
+       (.I0(de_in[11]),
+        .I1(de_in[10]),
+        .I2(select[1]),
+        .I3(de_in[9]),
+        .I4(select[0]),
+        .I5(de_in[8]),
+        .O(de_out_INST_0_i_5_n_0));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    de_out_INST_0_i_6
+       (.I0(de_in[15]),
+        .I1(de_in[14]),
+        .I2(select[1]),
+        .I3(de_in[13]),
+        .I4(select[0]),
+        .I5(de_in[12]),
+        .O(de_out_INST_0_i_6_n_0));
+  MUXF8 h_sync_out_INST_0
        (.I0(h_sync_out_INST_0_i_1_n_0),
         .I1(h_sync_out_INST_0_i_2_n_0),
         .O(h_sync_out),
+        .S(select[3]));
+  MUXF7 h_sync_out_INST_0_i_1
+       (.I0(h_sync_out_INST_0_i_3_n_0),
+        .I1(h_sync_out_INST_0_i_4_n_0),
+        .O(h_sync_out_INST_0_i_1_n_0),
+        .S(select[2]));
+  MUXF7 h_sync_out_INST_0_i_2
+       (.I0(h_sync_out_INST_0_i_5_n_0),
+        .I1(h_sync_out_INST_0_i_6_n_0),
+        .O(h_sync_out_INST_0_i_2_n_0),
         .S(select[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    h_sync_out_INST_0_i_1
+    h_sync_out_INST_0_i_3
        (.I0(h_sync_in[3]),
         .I1(h_sync_in[2]),
         .I2(select[1]),
         .I3(h_sync_in[1]),
         .I4(select[0]),
         .I5(h_sync_in[0]),
-        .O(h_sync_out_INST_0_i_1_n_0));
+        .O(h_sync_out_INST_0_i_3_n_0));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    h_sync_out_INST_0_i_2
+    h_sync_out_INST_0_i_4
        (.I0(h_sync_in[7]),
         .I1(h_sync_in[6]),
         .I2(select[1]),
         .I3(h_sync_in[5]),
         .I4(select[0]),
         .I5(h_sync_in[4]),
-        .O(h_sync_out_INST_0_i_2_n_0));
+        .O(h_sync_out_INST_0_i_4_n_0));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    h_sync_out_INST_0_i_5
+       (.I0(h_sync_in[11]),
+        .I1(h_sync_in[10]),
+        .I2(select[1]),
+        .I3(h_sync_in[9]),
+        .I4(select[0]),
+        .I5(h_sync_in[8]),
+        .O(h_sync_out_INST_0_i_5_n_0));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    h_sync_out_INST_0_i_6
+       (.I0(h_sync_in[15]),
+        .I1(h_sync_in[14]),
+        .I2(select[1]),
+        .I3(h_sync_in[13]),
+        .I4(select[0]),
+        .I5(h_sync_in[12]),
+        .O(h_sync_out_INST_0_i_6_n_0));
   MUXF7 \out[0]_INST_0 
        (.I0(\out[0]_INST_0_i_1_n_0 ),
         .I1(\out[0]_INST_0_i_2_n_0 ),
@@ -750,31 +822,61 @@ module multiplexer
         .I4(select[0]),
         .I5(in[105]),
         .O(\out[9]_INST_0_i_2_n_0 ));
-  MUXF7 v_sync_out_INST_0
+  MUXF8 v_sync_out_INST_0
        (.I0(v_sync_out_INST_0_i_1_n_0),
         .I1(v_sync_out_INST_0_i_2_n_0),
         .O(v_sync_out),
+        .S(select[3]));
+  MUXF7 v_sync_out_INST_0_i_1
+       (.I0(v_sync_out_INST_0_i_3_n_0),
+        .I1(v_sync_out_INST_0_i_4_n_0),
+        .O(v_sync_out_INST_0_i_1_n_0),
+        .S(select[2]));
+  MUXF7 v_sync_out_INST_0_i_2
+       (.I0(v_sync_out_INST_0_i_5_n_0),
+        .I1(v_sync_out_INST_0_i_6_n_0),
+        .O(v_sync_out_INST_0_i_2_n_0),
         .S(select[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    v_sync_out_INST_0_i_1
+    v_sync_out_INST_0_i_3
        (.I0(v_sync_in[3]),
         .I1(v_sync_in[2]),
         .I2(select[1]),
         .I3(v_sync_in[1]),
         .I4(select[0]),
         .I5(v_sync_in[0]),
-        .O(v_sync_out_INST_0_i_1_n_0));
+        .O(v_sync_out_INST_0_i_3_n_0));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    v_sync_out_INST_0_i_2
+    v_sync_out_INST_0_i_4
        (.I0(v_sync_in[7]),
         .I1(v_sync_in[6]),
         .I2(select[1]),
         .I3(v_sync_in[5]),
         .I4(select[0]),
         .I5(v_sync_in[4]),
-        .O(v_sync_out_INST_0_i_2_n_0));
+        .O(v_sync_out_INST_0_i_4_n_0));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    v_sync_out_INST_0_i_5
+       (.I0(v_sync_in[11]),
+        .I1(v_sync_in[10]),
+        .I2(select[1]),
+        .I3(v_sync_in[9]),
+        .I4(select[0]),
+        .I5(v_sync_in[8]),
+        .O(v_sync_out_INST_0_i_5_n_0));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    v_sync_out_INST_0_i_6
+       (.I0(v_sync_in[15]),
+        .I1(v_sync_in[14]),
+        .I2(select[1]),
+        .I3(v_sync_in[13]),
+        .I4(select[0]),
+        .I5(v_sync_in[12]),
+        .O(v_sync_out_INST_0_i_6_n_0));
 endmodule
 `ifndef GLBL
 `define GLBL

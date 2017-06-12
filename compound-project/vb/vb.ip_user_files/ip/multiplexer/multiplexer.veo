@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: user.org:user:mux:1.0
-// IP Revision: 3
+// IP Revision: 2
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -55,11 +55,11 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 multiplexer your_instance_name (
-  .select(select),          // input wire [2 : 0] select
-  .in(in),                  // input wire [191 : 0] in
-  .h_sync_in(h_sync_in),    // input wire [7 : 0] h_sync_in
-  .v_sync_in(v_sync_in),    // input wire [7 : 0] v_sync_in
-  .de_in(de_in),            // input wire [7 : 0] de_in
+  .select(select),          // input wire [3 : 0] select
+  .in(in),                  // input wire [383 : 0] in
+  .h_sync_in(h_sync_in),    // input wire [15 : 0] h_sync_in
+  .v_sync_in(v_sync_in),    // input wire [15 : 0] v_sync_in
+  .de_in(de_in),            // input wire [15 : 0] de_in
   .clk(clk),                // input wire clk
   .out(out),                // output wire [23 : 0] out
   .h_sync_out(h_sync_out),  // output wire h_sync_out

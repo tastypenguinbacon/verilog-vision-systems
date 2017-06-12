@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
--- Date        : Wed Jun  7 17:50:33 2017
+-- Date        : Mon Jun 12 19:48:39 2017
 -- Host        : mothership running 64-bit Ubuntu 16.10
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ multiplexer_sim_netlist.vhdl
@@ -16,11 +16,11 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   port (
-    \select\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    \in\ : in STD_LOGIC_VECTOR ( 191 downto 0 );
-    h_sync_in : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    v_sync_in : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    de_in : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    \select\ : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    \in\ : in STD_LOGIC_VECTOR ( 383 downto 0 );
+    h_sync_in : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    v_sync_in : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    de_in : in STD_LOGIC_VECTOR ( 15 downto 0 );
     clk : in STD_LOGIC;
     \out\ : out STD_LOGIC_VECTOR ( 23 downto 0 );
     h_sync_out : out STD_LOGIC;
@@ -40,8 +40,16 @@ end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   signal de_out_INST_0_i_1_n_0 : STD_LOGIC;
   signal de_out_INST_0_i_2_n_0 : STD_LOGIC;
+  signal de_out_INST_0_i_3_n_0 : STD_LOGIC;
+  signal de_out_INST_0_i_4_n_0 : STD_LOGIC;
+  signal de_out_INST_0_i_5_n_0 : STD_LOGIC;
+  signal de_out_INST_0_i_6_n_0 : STD_LOGIC;
   signal h_sync_out_INST_0_i_1_n_0 : STD_LOGIC;
   signal h_sync_out_INST_0_i_2_n_0 : STD_LOGIC;
+  signal h_sync_out_INST_0_i_3_n_0 : STD_LOGIC;
+  signal h_sync_out_INST_0_i_4_n_0 : STD_LOGIC;
+  signal h_sync_out_INST_0_i_5_n_0 : STD_LOGIC;
+  signal h_sync_out_INST_0_i_6_n_0 : STD_LOGIC;
   signal \out[0]_INST_0_i_1_n_0\ : STD_LOGIC;
   signal \out[0]_INST_0_i_2_n_0\ : STD_LOGIC;
   signal \out[10]_INST_0_i_1_n_0\ : STD_LOGIC;
@@ -92,15 +100,33 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   signal \out[9]_INST_0_i_2_n_0\ : STD_LOGIC;
   signal v_sync_out_INST_0_i_1_n_0 : STD_LOGIC;
   signal v_sync_out_INST_0_i_2_n_0 : STD_LOGIC;
+  signal v_sync_out_INST_0_i_3_n_0 : STD_LOGIC;
+  signal v_sync_out_INST_0_i_4_n_0 : STD_LOGIC;
+  signal v_sync_out_INST_0_i_5_n_0 : STD_LOGIC;
+  signal v_sync_out_INST_0_i_6_n_0 : STD_LOGIC;
 begin
-de_out_INST_0: unisim.vcomponents.MUXF7
+de_out_INST_0: unisim.vcomponents.MUXF8
      port map (
       I0 => de_out_INST_0_i_1_n_0,
       I1 => de_out_INST_0_i_2_n_0,
       O => de_out,
+      S => \select\(3)
+    );
+de_out_INST_0_i_1: unisim.vcomponents.MUXF7
+     port map (
+      I0 => de_out_INST_0_i_3_n_0,
+      I1 => de_out_INST_0_i_4_n_0,
+      O => de_out_INST_0_i_1_n_0,
       S => \select\(2)
     );
-de_out_INST_0_i_1: unisim.vcomponents.LUT6
+de_out_INST_0_i_2: unisim.vcomponents.MUXF7
+     port map (
+      I0 => de_out_INST_0_i_5_n_0,
+      I1 => de_out_INST_0_i_6_n_0,
+      O => de_out_INST_0_i_2_n_0,
+      S => \select\(2)
+    );
+de_out_INST_0_i_3: unisim.vcomponents.LUT6
     generic map(
       INIT => X"AFA0CFCFAFA0C0C0"
     )
@@ -111,9 +137,9 @@ de_out_INST_0_i_1: unisim.vcomponents.LUT6
       I3 => de_in(1),
       I4 => \select\(0),
       I5 => de_in(0),
-      O => de_out_INST_0_i_1_n_0
+      O => de_out_INST_0_i_3_n_0
     );
-de_out_INST_0_i_2: unisim.vcomponents.LUT6
+de_out_INST_0_i_4: unisim.vcomponents.LUT6
     generic map(
       INIT => X"AFA0CFCFAFA0C0C0"
     )
@@ -124,16 +150,56 @@ de_out_INST_0_i_2: unisim.vcomponents.LUT6
       I3 => de_in(5),
       I4 => \select\(0),
       I5 => de_in(4),
-      O => de_out_INST_0_i_2_n_0
+      O => de_out_INST_0_i_4_n_0
     );
-h_sync_out_INST_0: unisim.vcomponents.MUXF7
+de_out_INST_0_i_5: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AFA0CFCFAFA0C0C0"
+    )
+        port map (
+      I0 => de_in(11),
+      I1 => de_in(10),
+      I2 => \select\(1),
+      I3 => de_in(9),
+      I4 => \select\(0),
+      I5 => de_in(8),
+      O => de_out_INST_0_i_5_n_0
+    );
+de_out_INST_0_i_6: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AFA0CFCFAFA0C0C0"
+    )
+        port map (
+      I0 => de_in(15),
+      I1 => de_in(14),
+      I2 => \select\(1),
+      I3 => de_in(13),
+      I4 => \select\(0),
+      I5 => de_in(12),
+      O => de_out_INST_0_i_6_n_0
+    );
+h_sync_out_INST_0: unisim.vcomponents.MUXF8
      port map (
       I0 => h_sync_out_INST_0_i_1_n_0,
       I1 => h_sync_out_INST_0_i_2_n_0,
       O => h_sync_out,
+      S => \select\(3)
+    );
+h_sync_out_INST_0_i_1: unisim.vcomponents.MUXF7
+     port map (
+      I0 => h_sync_out_INST_0_i_3_n_0,
+      I1 => h_sync_out_INST_0_i_4_n_0,
+      O => h_sync_out_INST_0_i_1_n_0,
       S => \select\(2)
     );
-h_sync_out_INST_0_i_1: unisim.vcomponents.LUT6
+h_sync_out_INST_0_i_2: unisim.vcomponents.MUXF7
+     port map (
+      I0 => h_sync_out_INST_0_i_5_n_0,
+      I1 => h_sync_out_INST_0_i_6_n_0,
+      O => h_sync_out_INST_0_i_2_n_0,
+      S => \select\(2)
+    );
+h_sync_out_INST_0_i_3: unisim.vcomponents.LUT6
     generic map(
       INIT => X"AFA0CFCFAFA0C0C0"
     )
@@ -144,9 +210,9 @@ h_sync_out_INST_0_i_1: unisim.vcomponents.LUT6
       I3 => h_sync_in(1),
       I4 => \select\(0),
       I5 => h_sync_in(0),
-      O => h_sync_out_INST_0_i_1_n_0
+      O => h_sync_out_INST_0_i_3_n_0
     );
-h_sync_out_INST_0_i_2: unisim.vcomponents.LUT6
+h_sync_out_INST_0_i_4: unisim.vcomponents.LUT6
     generic map(
       INIT => X"AFA0CFCFAFA0C0C0"
     )
@@ -157,7 +223,33 @@ h_sync_out_INST_0_i_2: unisim.vcomponents.LUT6
       I3 => h_sync_in(5),
       I4 => \select\(0),
       I5 => h_sync_in(4),
-      O => h_sync_out_INST_0_i_2_n_0
+      O => h_sync_out_INST_0_i_4_n_0
+    );
+h_sync_out_INST_0_i_5: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AFA0CFCFAFA0C0C0"
+    )
+        port map (
+      I0 => h_sync_in(11),
+      I1 => h_sync_in(10),
+      I2 => \select\(1),
+      I3 => h_sync_in(9),
+      I4 => \select\(0),
+      I5 => h_sync_in(8),
+      O => h_sync_out_INST_0_i_5_n_0
+    );
+h_sync_out_INST_0_i_6: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AFA0CFCFAFA0C0C0"
+    )
+        port map (
+      I0 => h_sync_in(15),
+      I1 => h_sync_in(14),
+      I2 => \select\(1),
+      I3 => h_sync_in(13),
+      I4 => \select\(0),
+      I5 => h_sync_in(12),
+      O => h_sync_out_INST_0_i_6_n_0
     );
 \out[0]_INST_0\: unisim.vcomponents.MUXF7
      port map (
@@ -951,14 +1043,28 @@ h_sync_out_INST_0_i_2: unisim.vcomponents.LUT6
       I5 => \in\(105),
       O => \out[9]_INST_0_i_2_n_0\
     );
-v_sync_out_INST_0: unisim.vcomponents.MUXF7
+v_sync_out_INST_0: unisim.vcomponents.MUXF8
      port map (
       I0 => v_sync_out_INST_0_i_1_n_0,
       I1 => v_sync_out_INST_0_i_2_n_0,
       O => v_sync_out,
+      S => \select\(3)
+    );
+v_sync_out_INST_0_i_1: unisim.vcomponents.MUXF7
+     port map (
+      I0 => v_sync_out_INST_0_i_3_n_0,
+      I1 => v_sync_out_INST_0_i_4_n_0,
+      O => v_sync_out_INST_0_i_1_n_0,
       S => \select\(2)
     );
-v_sync_out_INST_0_i_1: unisim.vcomponents.LUT6
+v_sync_out_INST_0_i_2: unisim.vcomponents.MUXF7
+     port map (
+      I0 => v_sync_out_INST_0_i_5_n_0,
+      I1 => v_sync_out_INST_0_i_6_n_0,
+      O => v_sync_out_INST_0_i_2_n_0,
+      S => \select\(2)
+    );
+v_sync_out_INST_0_i_3: unisim.vcomponents.LUT6
     generic map(
       INIT => X"AFA0CFCFAFA0C0C0"
     )
@@ -969,9 +1075,9 @@ v_sync_out_INST_0_i_1: unisim.vcomponents.LUT6
       I3 => v_sync_in(1),
       I4 => \select\(0),
       I5 => v_sync_in(0),
-      O => v_sync_out_INST_0_i_1_n_0
+      O => v_sync_out_INST_0_i_3_n_0
     );
-v_sync_out_INST_0_i_2: unisim.vcomponents.LUT6
+v_sync_out_INST_0_i_4: unisim.vcomponents.LUT6
     generic map(
       INIT => X"AFA0CFCFAFA0C0C0"
     )
@@ -982,6 +1088,32 @@ v_sync_out_INST_0_i_2: unisim.vcomponents.LUT6
       I3 => v_sync_in(5),
       I4 => \select\(0),
       I5 => v_sync_in(4),
-      O => v_sync_out_INST_0_i_2_n_0
+      O => v_sync_out_INST_0_i_4_n_0
+    );
+v_sync_out_INST_0_i_5: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AFA0CFCFAFA0C0C0"
+    )
+        port map (
+      I0 => v_sync_in(11),
+      I1 => v_sync_in(10),
+      I2 => \select\(1),
+      I3 => v_sync_in(9),
+      I4 => \select\(0),
+      I5 => v_sync_in(8),
+      O => v_sync_out_INST_0_i_5_n_0
+    );
+v_sync_out_INST_0_i_6: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AFA0CFCFAFA0C0C0"
+    )
+        port map (
+      I0 => v_sync_in(15),
+      I1 => v_sync_in(14),
+      I2 => \select\(1),
+      I3 => v_sync_in(13),
+      I4 => \select\(0),
+      I5 => v_sync_in(12),
+      O => v_sync_out_INST_0_i_6_n_0
     );
 end STRUCTURE;

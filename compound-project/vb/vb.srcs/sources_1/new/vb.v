@@ -24,7 +24,7 @@ module vb(select, clk,
     de_in, h_sync_in, v_sync_in, pixel_in,
     de_out, h_sync_out, v_sync_out, pixel_out    
     );
-    input[2:0] select;
+    input[3:0] select;
     input clk;
 
     input de_in;
@@ -59,7 +59,11 @@ module vb(select, clk,
     wire bin_de_out;
     binarisation_0 binarisation(clk, bin_de_in, bin_h_sync_in, bin_v_sync_in, bin_in,
        bin_de_out, bin_h_sync_out, bin_v_sync_out, bin_out); 
-
+    
+    wire median_de_out, median_v_sync_out, median_h_sync_out;
+    wire[23:0] median_out;
+    median_5_5 # (.H_SIZE(82)) med (clk, bin_de_out, bin_h_sync_out, bin_v_sync_out, bin_out,
+        median_de_out, median_h_sync_out, median_v_sync_out, median_out);
 
     //wire[23:0] hsv_in;
     //wire hsv_de_in;
@@ -73,10 +77,11 @@ module vb(select, clk,
      //   hsv_de_out, hsv_h_sync_out, hsv_v_sync_out, hsv_out);
     
     wire[10:0] avg_x;
-    wire[10:0] avg_y; 
+    wire[10:0] avg_y;
+    wire[10:0] min_x, max_x, min_y, max_y; 
     wire valid_center;
     center_seeker # ( .IMG_H(64), .IMG_W(64)) centr
-         (clk, bin_h_sync_out, bin_v_sync_out, bin_de_out, bin_out, avg_x, avg_y, valid_center);
+         (clk, bin_h_sync_out, bin_v_sync_out, bin_de_out, bin_out, avg_x, avg_y, min_x, max_x, min_y, max_y, valid_center);
 
     
 
@@ -88,16 +93,18 @@ module vb(select, clk,
      wire draw_shape_de_out;
      wire draw_shape_h_sync_out;
      wire draw_shape_v_sync_out;
-     draw_shape # (.IMG_W(64), .IMG_H(64)) ds(valid_center, avg_x, avg_y, clk,
+     draw_shape # (.IMG_W(64), .IMG_H(64)) ds(valid_center, avg_x, avg_y,min_x, max_x, min_y, max_y, clk,
          draw_shape_de_in, draw_shape_h_sync_in, draw_shape_v_sync_in, draw_shape_in,
          draw_shape_de_out, draw_shape_h_sync_out, draw_shape_v_sync_out, draw_shape_out);
 
-    wire[23:0] mux_pixel_in[7:0];
-    wire[191:0] mux_in = {mux_pixel_in[7], mux_pixel_in[6], mux_pixel_in[5], mux_pixel_in[4], 
+    wire[23:0] mux_pixel_in[15:0];
+    wire[16*24-1:0] mux_in = {mux_pixel_in[15], mux_pixel_in[14], mux_pixel_in[13], mux_pixel_in[12], 
+        mux_pixel_in[11], mux_pixel_in[10], mux_pixel_in[9], mux_pixel_in[8],
+        mux_pixel_in[7], mux_pixel_in[6], mux_pixel_in[5], mux_pixel_in[4], 
         mux_pixel_in[3], mux_pixel_in[2], mux_pixel_in[1], mux_pixel_in[0]};
-    wire[7:0] mux_h_sync_in;
-    wire[7:0] mux_v_sync_in;
-    wire[7:0] mux_de_in;
+    wire[15:0] mux_h_sync_in;
+    wire[15:0] mux_v_sync_in;
+    wire[15:0] mux_de_in;
     multiplexer multi(select, mux_in, mux_h_sync_in, mux_v_sync_in,
         mux_de_in, clk, pixel_out, h_sync_out, v_sync_out, de_out);
     
@@ -120,6 +127,13 @@ module vb(select, clk,
     assign mux_de_in[3] = draw_shape_de_out;
     assign mux_h_sync_in[3] = draw_shape_h_sync_out;
     assign mux_v_sync_in[3] = draw_shape_v_sync_out;
+
+    
+    assign mux_pixel_in[4] = median_out;
+    assign mux_de_in[4] = median_de_out;
+    assign mux_h_sync_in[4] = median_h_sync_out;
+    assign mux_v_sync_in[4] = median_v_sync_out;
+    
 //    assign mux_pixel_in[3] = hsv_out;
 //    assign mux_h_sync_in[3] = hsv_h_sync_out;
 //    assign mux_v_sync_in[3] = hsv_v_sync_out;

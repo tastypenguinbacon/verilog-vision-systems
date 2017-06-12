@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:mux:1.0
-// IP Revision: 3
+// IP Revision: 2
 
 (* X_CORE_INFO = "mux,Vivado 2016.4" *)
 (* CHECK_LICENSE_TYPE = "multiplexer,mux,{}" *)
@@ -66,11 +66,11 @@ module multiplexer (
   de_out
 );
 
-input wire [2 : 0] select;
-input wire [191 : 0] in;
-input wire [7 : 0] h_sync_in;
-input wire [7 : 0] v_sync_in;
-input wire [7 : 0] de_in;
+input wire [3 : 0] select;
+input wire [383 : 0] in;
+input wire [15 : 0] h_sync_in;
+input wire [15 : 0] v_sync_in;
+input wire [15 : 0] de_in;
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 input wire clk;
 output wire [23 : 0] out;

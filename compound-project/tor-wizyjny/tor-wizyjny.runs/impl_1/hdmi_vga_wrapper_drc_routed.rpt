@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date         : Sun Jun 11 20:25:31 2017
-| Host         : mothership running 64-bit Ubuntu 16.10
+| Date         : Mon Jun 12 04:45:19 2017
+| Host         : mothership running 64-bit unknown
 | Command      : report_drc -file hdmi_vga_wrapper_drc_routed.rpt -pb hdmi_vga_wrapper_drc_routed.pb -rpx hdmi_vga_wrapper_drc_routed.rpx
 | Design       : hdmi_vga_wrapper
 | Device       : xc7z010clg400-1
@@ -24,15 +24,33 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 1
-+--------+----------+--------------------+------------+
-| Rule   | Severity | Description        | Violations |
-+--------+----------+--------------------+------------+
-| ZPS7-1 | Warning  | PS7 block required | 1          |
-+--------+----------+--------------------+------------+
+             Violations found: 3
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PDRC-153    | Warning  | Gated clock check                                           | 1          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
+| ZPS7-1      | Warning  | PS7 block required                                          | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net hdmi_vga_i/vb_0/inst/centr/core_add/CLK is a gated clock net sourced by a combinational pin hdmi_vga_i/vb_0/inst/centr/core_add/previous_y[10]_i_1/O, cell hdmi_vga_i/vb_0/inst/centr/core_add/previous_y[10]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT hdmi_vga_i/vb_0/inst/centr/core_add/previous_y[10]_i_1 is driving clock pin of 66 cells. This could lead to large hold time violations. First few involved cells are:
+    hdmi_vga_i/vb_0/inst/ds/min_y_reg[8] {FDRE}
+    hdmi_vga_i/vb_0/inst/ds/min_x_reg[6] {FDRE}
+    hdmi_vga_i/vb_0/inst/ds/min_x_reg[7] {FDRE}
+    hdmi_vga_i/vb_0/inst/ds/min_x_reg[8] {FDRE}
+    hdmi_vga_i/vb_0/inst/ds/min_y_reg[9] {FDRE}
+
+Related violations: <none>
+
 ZPS7-1#1 Warning
 PS7 block required  
 The PS7 cell must be used in this Zynq design in order to enable correct default configuration.

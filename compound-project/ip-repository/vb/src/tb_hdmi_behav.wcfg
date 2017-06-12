@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_hdmi_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_hdmi" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="110229333333fs"></ZoomStartTime>
+      <ZoomEndTime time="160229333334fs"></ZoomEndTime>
+      <Cursor1Time time="151896000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="185"></NameColumnWidth>
+      <ValueColumnWidth column_width="63"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="32" />
+   <wvobject type="logic" fp_name="/tb_hdmi/rx_pclk">
+      <obj_property name="ElementShortName">rx_pclk</obj_property>
+      <obj_property name="ObjectShortName">rx_pclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_hdmi/rx_de">
+      <obj_property name="ElementShortName">rx_de</obj_property>
+      <obj_property name="ObjectShortName">rx_de</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_hdmi/rx_hsync">
+      <obj_property name="ElementShortName">rx_hsync</obj_property>
+      <obj_property name="ObjectShortName">rx_hsync</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_hdmi/rx_vsync">
+      <obj_property name="ElementShortName">rx_vsync</obj_property>
+      <obj_property name="ObjectShortName">rx_vsync</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/rx_red">
+      <obj_property name="ElementShortName">rx_red[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_red[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/rx_green">
+      <obj_property name="ElementShortName">rx_green[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_green[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/rx_blue">
+      <obj_property name="ElementShortName">rx_blue[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_blue[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_hdmi/tx_de">
+      <obj_property name="ElementShortName">tx_de</obj_property>
+      <obj_property name="ObjectShortName">tx_de</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_hdmi/tx_hsync">
+      <obj_property name="ElementShortName">tx_hsync</obj_property>
+      <obj_property name="ObjectShortName">tx_hsync</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_hdmi/tx_vsync">
+      <obj_property name="ElementShortName">tx_vsync</obj_property>
+      <obj_property name="ObjectShortName">tx_vsync</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/tx_red">
+      <obj_property name="ElementShortName">tx_red[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_red[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/tx_green">
+      <obj_property name="ElementShortName">tx_green[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_green[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/tx_blue">
+      <obj_property name="ElementShortName">tx_blue[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_blue[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/ds/previous_x">
+      <obj_property name="ElementShortName">previous_x[10:0]</obj_property>
+      <obj_property name="ObjectShortName">previous_x[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/ds/previous_y">
+      <obj_property name="ElementShortName">previous_y[10:0]</obj_property>
+      <obj_property name="ObjectShortName">previous_y[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_hdmi/cudo/ds/valid_in">
+      <obj_property name="ElementShortName">valid_in</obj_property>
+      <obj_property name="ObjectShortName">valid_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_hdmi/cudo/centr/eof">
+      <obj_property name="ElementShortName">eof</obj_property>
+      <obj_property name="ObjectShortName">eof</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_hdmi/cudo/centr/core_add/out_valid">
+      <obj_property name="ElementShortName">out_valid</obj_property>
+      <obj_property name="ObjectShortName">out_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_hdmi/cudo/centr/core_add/ce">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/core_add/x_sum">
+      <obj_property name="ElementShortName">x_sum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x_sum[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/core_add/y_sum">
+      <obj_property name="ElementShortName">y_sum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y_sum[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/core_add/divisor">
+      <obj_property name="ElementShortName">divisor[19:0]</obj_property>
+      <obj_property name="ObjectShortName">divisor[19:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/x_pos">
+      <obj_property name="ElementShortName">x_pos[10:0]</obj_property>
+      <obj_property name="ObjectShortName">x_pos[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/core_add/x">
+      <obj_property name="ElementShortName">x[10:0]</obj_property>
+      <obj_property name="ObjectShortName">x[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/reg_min_x">
+      <obj_property name="ElementShortName">reg_min_x[10:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_min_x[10:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/reg_max_x">
+      <obj_property name="ElementShortName">reg_max_x[10:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_max_x[10:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/reg_min_y">
+      <obj_property name="ElementShortName">reg_min_y[10:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_min_y[10:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/reg_max_y">
+      <obj_property name="ElementShortName">reg_max_y[10:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_max_y[10:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/ds/min_x">
+      <obj_property name="ElementShortName">min_x[10:0]</obj_property>
+      <obj_property name="ObjectShortName">min_x[10:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/ds/max_x">
+      <obj_property name="ElementShortName">max_x[10:0]</obj_property>
+      <obj_property name="ObjectShortName">max_x[10:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/ds/min_y">
+      <obj_property name="ElementShortName">min_y[10:0]</obj_property>
+      <obj_property name="ObjectShortName">min_y[10:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/ds/max_y">
+      <obj_property name="ElementShortName">max_y[10:0]</obj_property>
+      <obj_property name="ObjectShortName">max_y[10:0]</obj_property>
+   </wvobject>
+</wave_config>

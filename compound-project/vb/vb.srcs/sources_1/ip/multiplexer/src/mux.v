@@ -21,12 +21,12 @@
 
 
 module mux(
-        input[2:0] select,
+        input[3:0] select,
         
-        input[24*8-1:0] in,
-        input[7:0] h_sync_in,
-        input[7:0] v_sync_in,
-        input[7:0] de_in,
+        input[24*16-1:0] in,
+        input[15:0] h_sync_in,
+        input[15:0] v_sync_in,
+        input[15:0] de_in,
         
         input clk,
         
@@ -37,6 +37,14 @@ module mux(
     );
     
     wire[23:0] temporary_concept[7:0];
+    assign temporary_concept[15] = in[24 * 16 - 1: 24 * 15];
+    assign temporary_concept[14] = in[24 * 15 - 1: 24 * 14];
+    assign temporary_concept[13] = in[24 * 14 - 1: 24 * 13];
+    assign temporary_concept[12] = in[24 * 13 - 1: 24 * 12];
+    assign temporary_concept[11] = in[24 * 12 - 1: 24 * 11];
+    assign temporary_concept[10] = in[24 * 11 - 1: 24 * 10];
+    assign temporary_concept[9] = in[24 * 10 - 1: 24 * 9];
+    assign temporary_concept[8] = in[24 * 9 - 1: 8];
     assign temporary_concept[7] = in[24 * 8 - 1: 24 * 7];
     assign temporary_concept[6] = in[24 * 7 - 1: 24 * 6];
     assign temporary_concept[5] = in[24 * 6 - 1: 24 * 5];

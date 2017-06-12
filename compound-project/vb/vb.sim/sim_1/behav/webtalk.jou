@@ -2,8 +2,8 @@
 # Webtalk v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Mon Jun 12 02:12:51 2017
-# Process ID: 24381
+# Start of session at: Mon Jun 12 19:51:43 2017
+# Process ID: 3778
 # Current directory: /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.sim/sim_1/behav
 # Command line: wbtcv -mode batch -source /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.sim/sim_1/behav/xsim.dir/tb_hdmi_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.sim/sim_1/behav/webtalk.log
