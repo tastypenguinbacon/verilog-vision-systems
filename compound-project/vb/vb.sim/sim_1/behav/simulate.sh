@@ -9,4 +9,4 @@ then
 exit $RETVAL
 fi
 }
-ExecStep $xv_path/bin/xsim tb_hdmi_behav -key {Behavioral:sim_1:Functional:tb_hdmi} -tclbatch tb_hdmi.tcl -log simulate.log
+ExecStep $xv_path/bin/xsim tb_hdmi_behav -key {Behavioral:sim_1:Functional:tb_hdmi} -tclbatch tb_hdmi.tcl -view /home/pingwin/Dokumenty/Verilog/compound-project/vb/tb_hdmi_behav.wcfg -log simulate.log

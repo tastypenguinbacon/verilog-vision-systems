@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="sum_24u_24u_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1497208736">
+  <File Type="VDS-TIMING-PB" Name="sum_24u_24u_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="sum_24u_24u_timing_summary_synth.rpt"/>
+  <File Type="RDS-RDS" Name="sum_24u_24u.vds"/>
+  <File Type="PA-TCL" Name="sum_24u_24u.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="sum_24u_24u_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="sum_24u_24u_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="sum_24u_24u_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="sum_24u_24u.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sum_24u_24u">
+    <File Path="$PSRCDIR/sources_1/ip/sum_24u_24u/sum_24u_24u.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="sum_24u_24u"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/sum_24u_24u">
+    <File Path="$PSRCDIR/sources_1/ip/sum_24u_24u/sum_24u_24u.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="sum_24u_24u"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

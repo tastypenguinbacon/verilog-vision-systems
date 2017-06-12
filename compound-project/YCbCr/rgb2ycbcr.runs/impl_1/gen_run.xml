@@ -1,21 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1495663385">
-  <File Type="ROUTE-PWR-RPX" Name="rgb2ycbcr_power_routed.rpx"/>
+  <File Type="PLACE-CLK" Name="rgb2ycbcr_clock_utilization_placed.rpt"/>
+  <File Type="OPT-HWDEF" Name="rgb2ycbcr.hwdef"/>
+  <File Type="OPT-TIMING" Name="rgb2ycbcr_timing_summary_opted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="rgb2ycbcr_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PLACE-UTIL" Name="rgb2ycbcr_utilization_placed.rpt"/>
+  <File Type="PWROPT-DRC" Name="rgb2ycbcr_drc_pwropted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="rgb2ycbcr_timing_summary_physopted.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="rgb2ycbcr_utilization_placed.pb"/>
+  <File Type="PWROPT-TIMING" Name="rgb2ycbcr_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-IO" Name="rgb2ycbcr_io_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="rgb2ycbcr_control_sets_placed.rpt"/>
+  <File Type="ROUTE-STATUS" Name="rgb2ycbcr_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="rgb2ycbcr_route_status.pb"/>
+  <File Type="BITSTR-BMM" Name="rgb2ycbcr_bd.bmm"/>
+  <File Type="PWROPT-DCP" Name="rgb2ycbcr_pwropt.dcp"/>
+  <File Type="BITSTR-SYSDEF" Name="rgb2ycbcr.sysdef"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="rgb2ycbcr_timing_summary_routed.rpt"/>
+  <File Type="BG-BGN" Name="rgb2ycbcr.bgn"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="rgb2ycbcr_timing_summary_postroute_physopted.rpt"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="PLACE-DCP" Name="rgb2ycbcr_placed.dcp"/>
+  <File Type="BITSTR-MMI" Name="rgb2ycbcr.mmi"/>
+  <File Type="BG-DRC" Name="rgb2ycbcr.drc"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="rgb2ycbcr_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-RBT" Name="rgb2ycbcr.rbt"/>
+  <File Type="ROUTE-SIMILARITY" Name="rgb2ycbcr_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="rgb2ycbcr_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="rgb2ycbcr_routed.dcp"/>
+  <File Type="BG-BIT" Name="rgb2ycbcr.bit"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="rgb2ycbcr_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="rgb2ycbcr_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="rgb2ycbcr_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="rgb2ycbcr_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="rgb2ycbcr_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-SUM" Name="rgb2ycbcr_power_summary_routed.pb"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="rgb2ycbcr_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-PWR" Name="rgb2ycbcr_power_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="rgb2ycbcr_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="rgb2ycbcr_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-PB" Name="rgb2ycbcr_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="rgb2ycbcr_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC" Name="rgb2ycbcr_drc_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="rgb2ycbcr_routed_bb.dcp"/>
-  <File Type="ROUTE-DCP" Name="rgb2ycbcr_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="rgb2ycbcr_routed_error.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="rgb2ycbcr_drc_physopted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="rgb2ycbcr_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="rgb2ycbcr_postplace_pwropt.dcp"/>
+  <File Type="ROUTE-PWR-RPX" Name="rgb2ycbcr_power_routed.rpx"/>
+  <File Type="PHYSOPT-DRC" Name="rgb2ycbcr_drc_physopted.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="rgb2ycbcr_drc_routed.rpx"/>
+  <File Type="ROUTE-PWR" Name="rgb2ycbcr_power_routed.rpt"/>
   <File Type="PA-TCL" Name="rgb2ycbcr.tcl"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="rgb2ycbcr_postplace_pwropt.dcp"/>
   <File Type="PLACE-SIMILARITY" Name="rgb2ycbcr_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="rgb2ycbcr_incremental_reuse_pre_placed.rpt"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="rgb2ycbcr_methodology_drc_opted.rpt"/>
@@ -24,42 +51,15 @@
   <File Type="INIT-TIMING" Name="rgb2ycbcr_timing_summary_init.rpt"/>
   <File Type="PLACE-TIMING" Name="rgb2ycbcr_timing_summary_placed.rpt"/>
   <File Type="RDI-RDI" Name="rgb2ycbcr.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="rgb2ycbcr_postroute_physopt.dcp"/>
-  <File Type="BG-BIT" Name="rgb2ycbcr.bit"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="rgb2ycbcr_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="rgb2ycbcr_postroute_physopt.dcp"/>
   <File Type="BG-BIN" Name="rgb2ycbcr.bin"/>
   <File Type="ROUTE-TIMING-PB" Name="rgb2ycbcr_timing_summary_routed.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="rgb2ycbcr_timing_summary_postroute_physopted.rpx"/>
   <File Type="BITSTR-MSK" Name="rgb2ycbcr.msk"/>
   <File Type="ROUTE-TIMING-RPX" Name="rgb2ycbcr_timing_summary_routed.rpx"/>
-  <File Type="BITSTR-RBT" Name="rgb2ycbcr.rbt"/>
-  <File Type="ROUTE-SIMILARITY" Name="rgb2ycbcr_incremental_reuse_routed.rpt"/>
   <File Type="BITSTR-NKY" Name="rgb2ycbcr.nky"/>
   <File Type="ROUTE-CLK" Name="rgb2ycbcr_clock_utilization_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="rgb2ycbcr_postroute_physopt_bb.dcp"/>
-  <File Type="BG-DRC" Name="rgb2ycbcr.drc"/>
-  <File Type="BITSTR-MMI" Name="rgb2ycbcr.mmi"/>
-  <File Type="PLACE-DCP" Name="rgb2ycbcr_placed.dcp"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="rgb2ycbcr_timing_summary_postroute_physopted.rpt"/>
-  <File Type="BG-BGN" Name="rgb2ycbcr.bgn"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="rgb2ycbcr_timing_summary_routed.rpt"/>
-  <File Type="BITSTR-SYSDEF" Name="rgb2ycbcr.sysdef"/>
-  <File Type="PWROPT-DCP" Name="rgb2ycbcr_pwropt.dcp"/>
-  <File Type="BITSTR-BMM" Name="rgb2ycbcr_bd.bmm"/>
-  <File Type="ROUTE-STATUS-PB" Name="rgb2ycbcr_route_status.pb"/>
-  <File Type="ROUTE-STATUS" Name="rgb2ycbcr_route_status.rpt"/>
-  <File Type="PLACE-CTRL" Name="rgb2ycbcr_control_sets_placed.rpt"/>
-  <File Type="PLACE-IO" Name="rgb2ycbcr_io_placed.rpt"/>
-  <File Type="PWROPT-TIMING" Name="rgb2ycbcr_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="rgb2ycbcr_utilization_placed.pb"/>
-  <File Type="PHYSOPT-TIMING" Name="rgb2ycbcr_timing_summary_physopted.rpt"/>
-  <File Type="PWROPT-DRC" Name="rgb2ycbcr_drc_pwropted.rpt"/>
-  <File Type="PLACE-UTIL" Name="rgb2ycbcr_utilization_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="rgb2ycbcr_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="OPT-TIMING" Name="rgb2ycbcr_timing_summary_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="rgb2ycbcr.hwdef"/>
-  <File Type="PLACE-CLK" Name="rgb2ycbcr_clock_utilization_placed.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/sum_11s_11s/sum_11s_11s.xci">
@@ -115,6 +115,6 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="delay_5_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="delay_3_8"/>
   <BlockFileSet Type="BlockSrcs" Name="mul_8u_11s"/>
+  <BlockFileSet Type="BlockSrcs" Name="delay_3_8"/>
 </GenRun>
