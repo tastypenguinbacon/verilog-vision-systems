@@ -9,6 +9,10 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/com
 INFO: [VRFC 10-311] analyzing module delayLinieBRAM_WP
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/delay.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/erosion/erosion_delay_line.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module erosion_delay_line
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/dilatation/dilatation_delay_line.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dilatation_delay_line
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/core_adder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module core_adder
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/median/median_bram_delay.v" into library xil_defaultlib
@@ -28,20 +32,22 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/com
 INFO: [VRFC 10-311] analyzing module rgb2ycbcr
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/rgb2ycbcr_0/sim/rgb2ycbcr_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module rgb2ycbcr_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/multiplexer/src/mux.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mux
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/multiplexer/sim/multiplexer.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module multiplexer
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/draw_shape.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module draw_shape
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/center_seeker.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module center_seeker
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/binarisation_0/src/binarisation.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module binarisation
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/binarisation_0/sim/binarisation_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module binarisation_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/erosion/erosion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module erosion
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/draw_shape.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module draw_shape
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/dilatation/dilatation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dilatation
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/center_seeker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module center_seeker
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/median_5_5.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module median_5_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/mux/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/vb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module vb
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/tb_src/hdmi_out.v" into library xil_defaultlib

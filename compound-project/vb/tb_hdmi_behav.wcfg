@@ -11,12 +11,12 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="653003719760fs"></ZoomStartTime>
-      <ZoomEndTime time="653126933341fs"></ZoomEndTime>
-      <Cursor1Time time="653068000000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="237246000001fs"></ZoomEndTime>
+      <Cursor1Time time="237246000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="183"></NameColumnWidth>
+      <NameColumnWidth column_width="181"></NameColumnWidth>
       <ValueColumnWidth column_width="63"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="35" />
@@ -63,14 +63,17 @@
    <wvobject type="array" fp_name="/tb_hdmi/tx_red">
       <obj_property name="ElementShortName">tx_red[7:0]</obj_property>
       <obj_property name="ObjectShortName">tx_red[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_hdmi/tx_green">
       <obj_property name="ElementShortName">tx_green[7:0]</obj_property>
       <obj_property name="ObjectShortName">tx_green[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_hdmi/tx_blue">
       <obj_property name="ElementShortName">tx_blue[7:0]</obj_property>
       <obj_property name="ObjectShortName">tx_blue[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_hdmi/cudo/ds/previous_x">
       <obj_property name="ElementShortName">previous_x[10:0]</obj_property>
@@ -156,59 +159,16 @@
       <obj_property name="ObjectShortName">max_y[10:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_hdmi/cudo/med/bundle">
-      <obj_property name="ElementShortName">bundle[4:0][4:0][3:0]</obj_property>
-      <obj_property name="ObjectShortName">bundle[4:0][4:0][3:0]</obj_property>
+      <obj_property name="ElementShortName">bundle[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bundle[3:0]</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject type="array" fp_name="/tb_hdmi/cudo/med/bundle[4]">
-         <obj_property name="ElementShortName">[4][4:0][3:0]</obj_property>
-         <obj_property name="ObjectShortName">[4][4:0][3:0]</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/tb_hdmi/cudo/med/bundle[3]">
-         <obj_property name="ElementShortName">[3][4:0][3:0]</obj_property>
-         <obj_property name="ObjectShortName">[3][4:0][3:0]</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/tb_hdmi/cudo/med/bundle[2]">
-         <obj_property name="ElementShortName">[2][4:0][3:0]</obj_property>
-         <obj_property name="ObjectShortName">[2][4:0][3:0]</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/tb_hdmi/cudo/med/bundle[1]">
-         <obj_property name="ElementShortName">[1][4:0][3:0]</obj_property>
-         <obj_property name="ObjectShortName">[1][4:0][3:0]</obj_property>
-      </wvobject>
-      <wvobject type="array" fp_name="/tb_hdmi/cudo/med/bundle[0]">
-         <obj_property name="ElementShortName">[0][4:0][3:0]</obj_property>
-         <obj_property name="ObjectShortName">[0][4:0][3:0]</obj_property>
-         <obj_property name="isExpanded"></obj_property>
-         <wvobject type="array" fp_name="/tb_hdmi/cudo/med/bundle[0][4]">
-            <obj_property name="ElementShortName">[4][3:0]</obj_property>
-            <obj_property name="ObjectShortName">[4][3:0]</obj_property>
-            <obj_property name="isExpanded"></obj_property>
-         </wvobject>
-         <wvobject type="array" fp_name="/tb_hdmi/cudo/med/bundle[0][3]">
-            <obj_property name="ElementShortName">[3][3:0]</obj_property>
-            <obj_property name="ObjectShortName">[3][3:0]</obj_property>
-         </wvobject>
-         <wvobject type="array" fp_name="/tb_hdmi/cudo/med/bundle[0][2]">
-            <obj_property name="ElementShortName">[2][3:0]</obj_property>
-            <obj_property name="ObjectShortName">[2][3:0]</obj_property>
-         </wvobject>
-         <wvobject type="array" fp_name="/tb_hdmi/cudo/med/bundle[0][1]">
-            <obj_property name="ElementShortName">[1][3:0]</obj_property>
-            <obj_property name="ObjectShortName">[1][3:0]</obj_property>
-         </wvobject>
-         <wvobject type="array" fp_name="/tb_hdmi/cudo/med/bundle[0][0]">
-            <obj_property name="ElementShortName">[0][3:0]</obj_property>
-            <obj_property name="ObjectShortName">[0][3:0]</obj_property>
-         </wvobject>
-      </wvobject>
    </wvobject>
    <wvobject type="logic" fp_name="/tb_hdmi/cudo/med/context_de">
       <obj_property name="ElementShortName">context_de</obj_property>
       <obj_property name="ObjectShortName">context_de</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/med/ctxt_de">
-      <obj_property name="ElementShortName">ctxt_de[4:0]</obj_property>
-      <obj_property name="ObjectShortName">ctxt_de[4:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/close_out">
+      <obj_property name="ElementShortName">close_out[23:0]</obj_property>
+      <obj_property name="ObjectShortName">close_out[23:0]</obj_property>
    </wvobject>
 </wave_config>

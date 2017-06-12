@@ -17,14 +17,6 @@ WARNING: [VRFC 10-278] actual bit length 9 differs from formal bit length 8 for 
 WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port rst [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/median/median_bram_delay.v:17]
 WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2419]
 WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
-WARNING: [VRFC 10-597] element index 15 into temporary_concept is out of bounds [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/multiplexer/src/mux.v:40]
-WARNING: [VRFC 10-597] element index 14 into temporary_concept is out of bounds [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/multiplexer/src/mux.v:41]
-WARNING: [VRFC 10-597] element index 13 into temporary_concept is out of bounds [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/multiplexer/src/mux.v:42]
-WARNING: [VRFC 10-597] element index 12 into temporary_concept is out of bounds [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/multiplexer/src/mux.v:43]
-WARNING: [VRFC 10-597] element index 11 into temporary_concept is out of bounds [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/multiplexer/src/mux.v:44]
-WARNING: [VRFC 10-597] element index 10 into temporary_concept is out of bounds [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/multiplexer/src/mux.v:45]
-WARNING: [VRFC 10-597] element index 9 into temporary_concept is out of bounds [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/multiplexer/src/mux.v:46]
-WARNING: [VRFC 10-597] element index 8 into temporary_concept is out of bounds [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/multiplexer/src/mux.v:47]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -91,6 +83,10 @@ Compiling module xil_defaultlib.delayLinieBRAM_WP
 Compiling module xil_defaultlib.median_bram_delay(H_SIZE=82)
 Compiling module xil_defaultlib.delay(WIDTH=3,DELAY=3)
 Compiling module xil_defaultlib.median_5_5(H_SIZE=82)
+Compiling module xil_defaultlib.dilatation_delay_line
+Compiling module xil_defaultlib.dilatation(H_SIZE=82)
+Compiling module xil_defaultlib.erosion_delay_line
+Compiling module xil_defaultlib.erosion(H_SIZE=82)
 Compiling architecture xilinx of entity mult_gen_v12_0_12.delay_line [\delay_line(c_xdevicefamily="zyn...]
 Compiling architecture xilinx of entity mult_gen_v12_0_12.delay_line [\delay_line(c_xdevicefamily="zyn...]
 Compiling architecture xilinx of entity mult_gen_v12_0_12.delay_line [\delay_line(c_xdevicefamily="zyn...]
@@ -137,7 +133,6 @@ Compiling architecture xilinx of entity c_addsub_v12_0_10.c_addsub_v12_0_10 [\c_
 Compiling architecture sum_24u_24u_arch of entity xil_defaultlib.sum_24u_24u [sum_24u_24u_default]
 Compiling module xil_defaultlib.draw_shape(IMG_W=64,IMG_H=64)
 Compiling module xil_defaultlib.mux
-Compiling module xil_defaultlib.multiplexer
 Compiling module xil_defaultlib.vb
 Compiling module xil_defaultlib.hdmi_out
 Compiling module xil_defaultlib.tb_hdmi
