@@ -12,11 +12,15 @@ WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl p
 WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port ce [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/rgb2ycbcr_0/src/cb_row.v:58]
 WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port b [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/rgb2ycbcr_0/src/cb_row.v:59]
 WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port ce [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/rgb2ycbcr_0/src/cb_row.v:60]
+WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port b [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/average/average.v:105]
 WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port b [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/core_adder.v:19]
 WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port select [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/tb_src/tb_hdmi.v:65]
 WARNING: [VRFC 10-278] actual bit length 9 differs from formal bit length 8 for port out [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/rgb2ycbcr_0/src/cb_row.v:56]
 WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port rst [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/median/median_bram_delay.v:17]
 WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port rst [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/sobell/sobell_bram_delay.v:12]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port rst [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/average/full_bram_delay.v:11]
+WARNING: [VRFC 10-278] actual bit length 13 differs from formal bit length 11 for port addra [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/delayLinieBRAM_WP.v:68]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port rst [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/average/two_signal_bram_full_delay.v:11]
 WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2419]
 WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
 Completed static elaboration
@@ -123,6 +127,30 @@ Compiling architecture summ_8u_8u_arch of entity xil_defaultlib.summ_8u_8u [summ
 Compiling module xil_defaultlib.combined_sobell
 Compiling module xil_defaultlib.delay(WIDTH=3)
 Compiling module xil_defaultlib.sobell(H_SIZE=82)
+Compiling module xil_defaultlib.delay(WIDTH=3,DELAY=1)
+Compiling module xil_defaultlib.delay(WIDTH=8,DELAY=1)
+Compiling module xil_defaultlib.delayLinieBRAM_WP(WIDTH=11,BRAM_...
+Compiling module xil_defaultlib.full_bram_delay(H_SIZE=82)
+Compiling module xil_defaultlib.two_signal_bram_delay(H_SIZE=82)
+Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_10.c_addsub_v12_0_10 [\c_addsub_v12_0_10(c_xdevicefami...]
+Compiling architecture summatr_9u_9u_arch of entity xil_defaultlib.summatr_9u_9u [summatr_9u_9u_default]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_10.c_addsub_v12_0_10 [\c_addsub_v12_0_10(c_xdevicefami...]
+Compiling architecture summatr_10u_10u_arch of entity xil_defaultlib.summatr_10u_10u [summatr_10u_10u_default]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_10.c_addsub_v12_0_10 [\c_addsub_v12_0_10(c_xdevicefami...]
+Compiling architecture summatr_11u_11u_arch of entity xil_defaultlib.summatr_11u_11u [summatr_11u_11u_default]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_10.c_addsub_v12_0_10 [\c_addsub_v12_0_10(c_xdevicefami...]
+Compiling architecture summatr_12u_12u_arch of entity xil_defaultlib.summatr_12u_12u [summatr_12u_12u_default]
+Compiling module xil_defaultlib.average(H_SIZE=82)
 Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,dreg=0,inmodere...]
 Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(areg=...]
 Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_3.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]

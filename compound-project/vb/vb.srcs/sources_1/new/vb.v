@@ -94,6 +94,13 @@ module vb # (
     wire[23:0] sobell_pixel_out;
     sobell # (.H_SIZE(H_SIZE)) sob (clk, bin_de_out, bin_h_sync_out, bin_v_sync_out,
         bin_out, sobell_de_out, sobell_h_sync_out, sobell_v_sync_out, sobell_pixel_out);
+    
+    
+    wire average_de_out, average_h_sync_out, average_v_sync_out;
+    wire[23:0] average_pixel_out;
+    average # (.H_SIZE(H_SIZE)) avg (clk, rgb2ycbcr_de_out, rgb2ycbcr_h_sync_out, 
+        rgb2ycbcr_v_sync_out, rgb2ycbcr_out, average_de_out, average_h_sync_out,
+        average_v_sync_out, average_pixel_out);
     //wire[23:0] hsv_in;
     //wire hsv_de_in;
     //wire hsv_h_sync_in;
@@ -187,6 +194,11 @@ module vb # (
     assign mux_h_sync_in[9] = sobell_h_sync_out;
     assign mux_v_sync_in[9] = sobell_v_sync_out;
     assign mux_pixel_in[9] = sobell_pixel_out;
+
+    assign mux_de_in[10] = average_de_out;
+    assign mux_h_sync_in[10] = average_h_sync_out;
+    assign mux_v_sync_in[10] = average_v_sync_out;
+    assign mux_pixel_in[10] = average_pixel_out;
 //    assign mux_pixel_in[3] = hsv_out;
 //    assign mux_h_sync_in[3] = hsv_h_sync_out;
 //    assign mux_v_sync_in[3] = hsv_v_sync_out;

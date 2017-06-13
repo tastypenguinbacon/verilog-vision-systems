@@ -30,20 +30,20 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="zybo"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="117"/>
+    <Option Name="WTXSimLaunchSim" Val="128"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="29"/>
-    <Option Name="WTModelSimExportSim" Val="29"/>
-    <Option Name="WTQuestaExportSim" Val="29"/>
-    <Option Name="WTIesExportSim" Val="29"/>
-    <Option Name="WTVcsExportSim" Val="29"/>
-    <Option Name="WTRivieraExportSim" Val="29"/>
-    <Option Name="WTActivehdlExportSim" Val="29"/>
+    <Option Name="WTXSimExportSim" Val="34"/>
+    <Option Name="WTModelSimExportSim" Val="34"/>
+    <Option Name="WTQuestaExportSim" Val="34"/>
+    <Option Name="WTIesExportSim" Val="34"/>
+    <Option Name="WTVcsExportSim" Val="34"/>
+    <Option Name="WTRivieraExportSim" Val="34"/>
+    <Option Name="WTActivehdlExportSim" Val="34"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -75,6 +75,34 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/delayLinieBRAM_WP.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/average/two_signal_bram_full_delay.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/summatr_9u_9u/summatr_9u_9u.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/summatr_10u_10u/summatr_10u_10u.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/average/full_bram_delay.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -124,6 +152,13 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/sobell/sobell_bram_delay.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/average/average.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -392,6 +427,32 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="summatr_11u_11u" Type="BlockSrcs" RelSrcDir="$PSRCDIR/summatr_11u_11u">
+      <File Path="$PSRCDIR/sources_1/ip/summatr_11u_11u/summatr_11u_11u.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="summatr_11u_11u"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="summatr_12u_12u" Type="BlockSrcs" RelSrcDir="$PSRCDIR/summatr_12u_12u">
+      <File Path="$PSRCDIR/sources_1/ip/summatr_12u_12u/summatr_12u_12u.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="summatr_12u_12u"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -520,6 +581,26 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="summ_8u_8u_synth_1" Type="Ft3:Synth" SrcSet="summ_8u_8u" Part="xc7z010clg400-1" ConstrsSet="summ_8u_8u" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/summ_8u_8u_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="summatr_11u_11u_synth_1" Type="Ft3:Synth" SrcSet="summatr_11u_11u" Part="xc7z010clg400-1" ConstrsSet="summatr_11u_11u" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/summatr_11u_11u_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="summatr_12u_12u_synth_1" Type="Ft3:Synth" SrcSet="summatr_12u_12u" Part="xc7z010clg400-1" ConstrsSet="summatr_12u_12u" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/summatr_12u_12u_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -719,6 +800,40 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="summ_8u_8u_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="summ_8u_8u" Description="Default settings for Implementation." SynthRun="summ_8u_8u_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="summatr_11u_11u_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="summatr_11u_11u" Description="Default settings for Implementation." SynthRun="summatr_11u_11u_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="summatr_12u_12u_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="summatr_12u_12u" Description="Default settings for Implementation." SynthRun="summatr_12u_12u_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
           <Desc>Default settings for Implementation.</Desc>
