@@ -117,7 +117,7 @@ module vb # (
      wire draw_shape_de_out;
      wire draw_shape_h_sync_out;
      wire draw_shape_v_sync_out;
-     draw_shape # (.IMG_W(64), .IMG_H(64)) ds(valid_center, avg_x, avg_y,min_x, max_x, min_y, max_y, clk,
+     draw_shape # (.IMG_W(IMG_W), .IMG_H(IMG_H)) ds(valid_center, avg_x, avg_y,min_x, max_x, min_y, max_y, clk,
          draw_shape_de_in, draw_shape_h_sync_in, draw_shape_v_sync_in, draw_shape_in,
          draw_shape_de_out, draw_shape_h_sync_out, draw_shape_v_sync_out, draw_shape_out);
 

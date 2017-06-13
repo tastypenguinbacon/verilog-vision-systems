@@ -159,7 +159,7 @@ proc create_root_design { parentCell } {
 
   # Create ports
   set hdmi_hpd [ create_bd_port -dir O -from 0 -to 0 hdmi_hpd ]
-  set sw [ create_bd_port -dir I -from 2 -to 0 sw ]
+  set sw [ create_bd_port -dir I -from 3 -to 0 sw ]
   set sys_clock [ create_bd_port -dir I -type clk sys_clock ]
   set_property -dict [ list \
 CONFIG.FREQ_HZ {125000000} \
@@ -203,6 +203,11 @@ CONFIG.kEdidFileName {720p_edid.txt} \
 
   # Create instance: vb_0, and set properties
   set vb_0 [ create_bd_cell -type ip -vlnv user.org:user:vb:1.0 vb_0 ]
+  set_property -dict [ list \
+CONFIG.H_SIZE {1664} \
+CONFIG.IMG_H {720} \
+CONFIG.IMG_W {1280} \
+ ] $vb_0
 
   # Create instance: xlconstant_0, and set properties
   set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
@@ -245,7 +250,7 @@ preplace port vga_pHSync -pg 1 -y 270 -defaultsOSRD
 preplace port sys_clock -pg 1 -y 310 -defaultsOSRD
 preplace port hdmi_in -pg 1 -y 230 -defaultsOSRD
 preplace port hdmi_in_ddc -pg 1 -y 190 -defaultsOSRD
-preplace portBus sw -pg 1 -y 210 -defaultsOSRD
+preplace portBus sw -pg 1 -y 280 -defaultsOSRD
 preplace portBus hdmi_hpd -pg 1 -y 380 -defaultsOSRD
 preplace portBus vga_pGreen -pg 1 -y 230 -defaultsOSRD
 preplace portBus vga_pRed -pg 1 -y 210 -defaultsOSRD
@@ -270,7 +275,7 @@ preplace netloc dvi2rgb_0_vid_pData 1 3 1 560
 preplace netloc rgb2vga_0_vga_pVSync 1 5 1 1740
 preplace netloc rgb2vga_0_vga_pHSync 1 5 1 1730
 preplace netloc clk_wiz_0_clk_out1 1 2 1 300
-preplace netloc sw_1 1 0 4 NJ 210 NJ 210 NJ 210 590
+preplace netloc sw_1 1 0 4 -120J 240 NJ 240 NJ 240 590
 preplace netloc vb_0_v_sync_out 1 4 1 1180
 preplace netloc vb_0_de_out 1 4 1 N
 preplace netloc dvi2rgb_0_PixelClk 1 3 2 580J 430 1190J

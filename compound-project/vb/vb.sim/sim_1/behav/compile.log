@@ -61,6 +61,8 @@ INFO: [VRFC 10-311] analyzing module glbl
 awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/divider_32_20_0/src/mult_32_20_lm/sim/mult_32_20_lm.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mult_32_20_lm
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/add_32u_11u_1/sim/add_32u_11u.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity add_32u_11u
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/sum_24u_24u/sim/sum_24u_24u.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity sum_24u_24u
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/sub_11u_11u/sim/sub_11u_11u.vhd" into library xil_defaultlib

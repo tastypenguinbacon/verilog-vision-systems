@@ -42,17 +42,15 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 set_msg_config -id {HDL-1065} -limit 10000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7z010clg400-1
   set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
@@ -62,7 +60,7 @@ set rc [catch {
   set_property ip_repo_paths /home/pingwin/Dokumenty/Verilog/compound-project/ip-repository [current_project]
   set_property ip_output_repo /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.runs/synth_1/hdmi_vga_wrapper.dcp
   add_files -quiet /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_rgb2vga_0_0/hdmi_vga_rgb2vga_0_0.dcp
   set_property netlist_only true [get_files /home/pingwin/Dokumenty/Verilog/compound-project/tor-wizyjny/tor-wizyjny.srcs/sources_1/bd/hdmi_vga/ip/hdmi_vga_rgb2vga_0_0/hdmi_vga_rgb2vga_0_0.dcp]
@@ -157,7 +155,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force hdmi_vga_wrapper.mmi }
   write_bitstream -force -no_partial_bitfile hdmi_vga_wrapper.bit 
   catch { write_sysdef -hwdef hdmi_vga_wrapper.hwdef -bitfile hdmi_vga_wrapper.bit -meminfo hdmi_vga_wrapper.mmi -file hdmi_vga_wrapper.sysdef }

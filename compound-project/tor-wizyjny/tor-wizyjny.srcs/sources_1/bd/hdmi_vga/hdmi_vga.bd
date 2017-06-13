@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x47C94FF6A811E269" bd:device="xc7z010clg400-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.4" bd:top="hdmi_vga" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x83BD85781109412E" bd:device="xc7z010clg400-1" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.4" bd:top="hdmi_vga" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -46,29 +46,6 @@
           <spirit:parameter>
             <spirit:name>FREQ_HZ</spirit:name>
             <spirit:value>125000000</spirit:value>
-            <spirit:vendorExtensions>
-              <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="user"/>
-              </bd:configElementInfos>
-            </spirit:vendorExtensions>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>PHASE</spirit:name>
-            <spirit:value>0.000</spirit:value>
-            <spirit:vendorExtensions>
-              <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="default"/>
-              </bd:configElementInfos>
-            </spirit:vendorExtensions>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>CLK_DOMAIN</spirit:name>
-            <spirit:value>hdmi_vga_sys_clock</spirit:value>
-            <spirit:vendorExtensions>
-              <bd:configElementInfos>
-                <bd:configElementInfo bd:valueSource="default"/>
-              </bd:configElementInfos>
-            </spirit:vendorExtensions>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:busInterface>
@@ -145,7 +122,7 @@
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
             <spirit:vector>
-              <spirit:left>2</spirit:left>
+              <spirit:left>3</spirit:left>
               <spirit:right>0</spirit:right>
             </spirit:vector>
           </spirit:wire>
@@ -204,6 +181,9 @@
         <spirit:componentRef spirit:library="user" spirit:name="vb" spirit:vendor="user.org" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">hdmi_vga_vb_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="H_SIZE">1664</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="IMG_W">1280</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="IMG_H">720</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -279,11 +259,6 @@
         <spirit:internalPortReference spirit:componentRef="vb_0" spirit:portRef="de_in"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>sw_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="sw"/>
-        <spirit:internalPortReference spirit:componentRef="vb_0" spirit:portRef="select"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>vb_0_de_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="vb_0" spirit:portRef="de_out"/>
         <spirit:internalPortReference spirit:componentRef="rgb2vga_0" spirit:portRef="rgb_pVDE"/>
@@ -302,6 +277,11 @@
         <spirit:name>vb_0_pixel_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="vb_0" spirit:portRef="pixel_out"/>
         <spirit:internalPortReference spirit:componentRef="rgb2vga_0" spirit:portRef="rgb_pData"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sw_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="sw"/>
+        <spirit:internalPortReference spirit:componentRef="vb_0" spirit:portRef="select"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>

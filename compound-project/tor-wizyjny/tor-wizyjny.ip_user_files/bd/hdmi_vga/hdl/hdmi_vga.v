@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-//Date        : Mon Jun 12 04:42:31 2017
+//Date        : Tue Jun 13 15:45:11 2017
 //Host        : mothership running 64-bit Ubuntu 16.10
 //Command     : generate_target hdmi_vga.bd
 //Design      : hdmi_vga
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* HW_HANDOFF = "hdmi_vga.hwdef" *) (* core_generation_info = "hdmi_vga,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi_vga,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=5,numReposBlks=5,numNonXlnxBlks=3,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) 
+(* CORE_GENERATION_INFO = "hdmi_vga,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=hdmi_vga,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=5,numReposBlks=5,numNonXlnxBlks=3,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "hdmi_vga.hwdef" *) 
 module hdmi_vga
    (hdmi_hpd,
     hdmi_in_clk_n,
@@ -40,7 +40,7 @@ module hdmi_vga
   input hdmi_in_ddc_sda_i;
   output hdmi_in_ddc_sda_o;
   output hdmi_in_ddc_sda_t;
-  input [2:0]sw;
+  input [3:0]sw;
   input sys_clock;
   output [4:0]vga_pBlue;
   output [5:0]vga_pGreen;
@@ -69,7 +69,7 @@ module hdmi_vga
   wire rgb2vga_0_vga_pHSync;
   wire [4:0]rgb2vga_0_vga_pRed;
   wire rgb2vga_0_vga_pVSync;
-  wire [2:0]sw_1;
+  wire [3:0]sw_1;
   wire sys_clock_1;
   wire vb_0_de_out;
   wire vb_0_h_sync_out;
@@ -88,7 +88,7 @@ module hdmi_vga
   assign hdmi_in_ddc_scl_t = dvi2rgb_0_DDC_SCL_T;
   assign hdmi_in_ddc_sda_o = dvi2rgb_0_DDC_SDA_O;
   assign hdmi_in_ddc_sda_t = dvi2rgb_0_DDC_SDA_T;
-  assign sw_1 = sw[2:0];
+  assign sw_1 = sw[3:0];
   assign sys_clock_1 = sys_clock;
   assign vga_pBlue[4:0] = rgb2vga_0_vga_pBlue;
   assign vga_pGreen[5:0] = rgb2vga_0_vga_pGreen;

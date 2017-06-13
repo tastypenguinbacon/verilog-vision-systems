@@ -85,8 +85,8 @@ module draw_shape # (
     
     wire[23:0] temp_radius_sq;
     sum_24u_24u sum(x_diff_sq, y_diff_sq, clk, 1'b1, temp_radius_sq);
-    localparam radius_sq = 24'd64;
-    localparam inner_radius = 24'd36;
+    localparam radius_sq = 24'd144;
+    localparam inner_radius = 24'd100;
     
     assign pixel_out[23:0] = 
         ((x_pos_delayed == min_x_del || x_pos_delayed == max_x_del || y_pos_delayed == min_y_del || y_pos_delayed == max_y_del) &&

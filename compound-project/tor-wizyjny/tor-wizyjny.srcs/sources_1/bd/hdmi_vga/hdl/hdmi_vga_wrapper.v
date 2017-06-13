@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-//Date        : Mon Jun 12 04:42:31 2017
+//Date        : Tue Jun 13 15:45:11 2017
 //Host        : mothership running 64-bit Ubuntu 16.10
 //Command     : generate_target hdmi_vga_wrapper.bd
 //Design      : hdmi_vga_wrapper
@@ -31,7 +31,7 @@ module hdmi_vga_wrapper
   input [2:0]hdmi_in_data_p;
   inout hdmi_in_ddc_scl_io;
   inout hdmi_in_ddc_sda_io;
-  input [2:0]sw;
+  input [3:0]sw;
   input sys_clock;
   output [4:0]vga_pBlue;
   output [5:0]vga_pGreen;
@@ -52,7 +52,7 @@ module hdmi_vga_wrapper
   wire hdmi_in_ddc_sda_io;
   wire hdmi_in_ddc_sda_o;
   wire hdmi_in_ddc_sda_t;
-  wire [2:0]sw;
+  wire [3:0]sw;
   wire sys_clock;
   wire [4:0]vga_pBlue;
   wire [5:0]vga_pGreen;

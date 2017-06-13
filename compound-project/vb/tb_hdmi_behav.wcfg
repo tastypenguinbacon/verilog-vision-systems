@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="237246000001fs"></ZoomEndTime>
-      <Cursor1Time time="237246000000fs"></Cursor1Time>
+      <ZoomStartTime time="15290322580fs"></ZoomStartTime>
+      <ZoomEndTime time="18516129033fs"></ZoomEndTime>
+      <Cursor1Time time="15836000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="181"></NameColumnWidth>
+      <NameColumnWidth column_width="177"></NameColumnWidth>
       <ValueColumnWidth column_width="63"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="35" />
+   <WVObjectSize size="36" />
    <wvobject type="logic" fp_name="/tb_hdmi/rx_pclk">
       <obj_property name="ElementShortName">rx_pclk</obj_property>
       <obj_property name="ObjectShortName">rx_pclk</obj_property>
@@ -63,17 +63,14 @@
    <wvobject type="array" fp_name="/tb_hdmi/tx_red">
       <obj_property name="ElementShortName">tx_red[7:0]</obj_property>
       <obj_property name="ObjectShortName">tx_red[7:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_hdmi/tx_green">
       <obj_property name="ElementShortName">tx_green[7:0]</obj_property>
       <obj_property name="ObjectShortName">tx_green[7:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_hdmi/tx_blue">
       <obj_property name="ElementShortName">tx_blue[7:0]</obj_property>
       <obj_property name="ObjectShortName">tx_blue[7:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_hdmi/cudo/ds/previous_x">
       <obj_property name="ElementShortName">previous_x[10:0]</obj_property>
@@ -170,5 +167,10 @@
    <wvobject type="array" fp_name="/tb_hdmi/cudo/close_out">
       <obj_property name="ElementShortName">close_out[23:0]</obj_property>
       <obj_property name="ObjectShortName">close_out[23:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/avg_x">
+      <obj_property name="ElementShortName">avg_x[10:0]</obj_property>
+      <obj_property name="ObjectShortName">avg_x[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>
