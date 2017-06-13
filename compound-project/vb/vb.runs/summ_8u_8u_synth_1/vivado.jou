@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Jun 13 21:24:56 2017
+# Process ID: 20722
+# Current directory: /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/summ_8u_8u_synth_1
+# Command line: vivado -log summ_8u_8u.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source summ_8u_8u.tcl
+# Log file: /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/summ_8u_8u_synth_1/summ_8u_8u.vds
+# Journal file: /home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.runs/summ_8u_8u_synth_1/vivado.jou
+#-----------------------------------------------------------
+source summ_8u_8u.tcl -notrace

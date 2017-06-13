@@ -89,6 +89,11 @@ module vb # (
     wire[23:0] close_out;
     erosion # (.H_SIZE(H_SIZE)) closee (clk, dilatation_de_out, dilatation_h_sync_out, dilatation_v_sync_out, dilatation_out,
         close_de_out, close_h_sync_out, close_v_sync_out, close_out);
+
+    wire sobell_de_out, sobell_h_sync_out, sobell_v_sync_out;
+    wire[23:0] sobell_pixel_out;
+    sobell # (.H_SIZE(H_SIZE)) sob (clk, bin_de_out, bin_h_sync_out, bin_v_sync_out,
+        bin_out, sobell_de_out, sobell_h_sync_out, sobell_v_sync_out, sobell_pixel_out);
     //wire[23:0] hsv_in;
     //wire hsv_de_in;
     //wire hsv_h_sync_in;
@@ -177,6 +182,11 @@ module vb # (
     assign mux_de_in[8] = close_de_out;
     assign mux_h_sync_in[8] = close_h_sync_out;
     assign mux_v_sync_in[8] = close_v_sync_out;
+    
+    assign mux_de_in[9] = sobell_de_out;
+    assign mux_h_sync_in[9] = sobell_h_sync_out;
+    assign mux_v_sync_in[9] = sobell_v_sync_out;
+    assign mux_pixel_in[9] = sobell_pixel_out;
 //    assign mux_pixel_in[3] = hsv_out;
 //    assign mux_h_sync_in[3] = hsv_h_sync_out;
 //    assign mux_v_sync_in[3] = hsv_v_sync_out;

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="summ_11s_11s_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1497381841">
+  <File Type="VDS-TIMING-PB" Name="summ_11s_11s_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="summ_11s_11s_timing_summary_synth.rpt"/>
+  <File Type="RDS-RDS" Name="summ_11s_11s.vds"/>
+  <File Type="PA-TCL" Name="summ_11s_11s.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="summ_11s_11s_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="summ_11s_11s_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="summ_11s_11s_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="summ_11s_11s.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/summ_11s_11s">
+    <File Path="$PSRCDIR/sources_1/ip/summ_11s_11s/summ_11s_11s.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="summ_11s_11s"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/summ_11s_11s">
+    <File Path="$PSRCDIR/sources_1/ip/summ_11s_11s/summ_11s_11s.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="summ_11s_11s"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
