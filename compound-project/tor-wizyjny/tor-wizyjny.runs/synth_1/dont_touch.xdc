@@ -21,4 +21,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_xlcons
 # IP: bd/hdmi_vga/ip/hdmi_vga_vb_0_0/hdmi_vga_vb_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_vb_0_0 || ORIG_REF_NAME==hdmi_vga_vb_0_0}]
 
+# IP: bd/hdmi_vga/ip/hdmi_vga_vb_0_0_2/hdmi_vga_vb_0_0.xci
+#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==hdmi_vga_vb_0_0 || ORIG_REF_NAME==hdmi_vga_vb_0_0}]
+
 # XDC: bd/hdmi_vga/hdmi_vga_ooc.xdc

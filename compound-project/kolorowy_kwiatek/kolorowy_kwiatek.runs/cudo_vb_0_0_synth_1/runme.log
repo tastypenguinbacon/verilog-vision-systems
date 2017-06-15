@@ -1,0 +1,992 @@
+
+*** Running vivado
+    with args -log cudo_vb_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cudo_vb_0_0.tcl
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source cudo_vb_0_0.tcl -notrace
+WARNING: [Board 49-69] Validation failed for board file /home/pingwin/VIVADO/Vivado/2016.4/data/boards/board_files/arty-s7-50/B.0/board.xml:
+ Pin Map file does not provide LOC constraints for shield_dp0_dp9_tri_i_0COMP : digilentinc.com:arty-s7-50:part0:1.0
+
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - /home/pingwin/VIVADO/Vivado/2016.4/data/boards/board_files/arty-s7-50/B.0/board.xml
+Command: synth_design -top cudo_vb_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22970 
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1081.738 ; gain = 150.086 ; free physical = 1735 ; free virtual = 4149
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cudo_vb_0_0' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/synth/cudo_vb_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'vb' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:23]
+INFO: [Synth 8-638] synthesizing module 'rgb2ycbcr_0' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/synth/rgb2ycbcr_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'rgb2ycbcr' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/rgb2ycbcr.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay_5_3' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/synth/delay_5_3.v:56]
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay' (1#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay_5_3' (2#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/synth/delay_5_3.v:56]
+INFO: [Synth 8-638] synthesizing module 'matrix_row' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/cb_row.v:23]
+INFO: [Synth 8-638] synthesizing module 'mul_8u_11s' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/mul_8u_11s/synth/mul_8u_11s.vhd:68]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/mul_8u_11s/synth/mul_8u_11s.vhd:71]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/mul_8u_11s/synth/mul_8u_11s.vhd:71]
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_12' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/mul_8u_11s/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_12' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/mul_8u_11s/synth/mul_8u_11s.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'mul_8u_11s' (8#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/mul_8u_11s/synth/mul_8u_11s.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'delay_3_8' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_3_8/synth/delay_3_8.v:56]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (8#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay_3_8' (9#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_3_8/synth/delay_3_8.v:56]
+WARNING: [Synth 8-689] width (9) of port connection 'out' does not match port width (8) of module 'delay_3_8' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/cb_row.v:56]
+INFO: [Synth 8-638] synthesizing module 'sum_10s_10s' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/sum_10s_10s/synth/sum_10s_10s.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_10' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_10' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/sum_10s_10s/synth/sum_10s_10s.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'sum_10s_10s' (16#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/sum_10s_10s/synth/sum_10s_10s.vhd:69]
+WARNING: [Synth 8-689] width (11) of port connection 'B' does not match port width (10) of module 'sum_10s_10s' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/cb_row.v:59]
+INFO: [Synth 8-638] synthesizing module 'sum_11s_11s' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/sum_11s_11s/synth/sum_11s_11s.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_10' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_10' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/sum_11s_11s/synth/sum_11s_11s.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'sum_11s_11s' (17#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/sum_11s_11s/synth/sum_11s_11s.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'matrix_row' (18#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/cb_row.v:23]
+INFO: [Synth 8-256] done synthesizing module 'rgb2ycbcr' (19#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/rgb2ycbcr.v:23]
+INFO: [Synth 8-256] done synthesizing module 'rgb2ycbcr_0' (20#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/synth/rgb2ycbcr_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'binarisation_0' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/binarisation_0/synth/binarisation_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'binarisation' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/binarisation_0/src/binarisation.v:23]
+INFO: [Synth 8-256] done synthesizing module 'binarisation' (21#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/binarisation_0/src/binarisation.v:23]
+INFO: [Synth 8-256] done synthesizing module 'binarisation_0' (22#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/binarisation_0/synth/binarisation_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'median_5_5' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/median_5_5.v:3]
+INFO: [Synth 8-638] synthesizing module 'median_delay_line' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/median_delay_line.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized1' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized1' (22#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized2' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized2' (22#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized3' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized3' (22#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized4' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized4' (22#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized5' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized5' (22#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'median_delay_line' (23#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/median_delay_line.v:3]
+INFO: [Synth 8-638] synthesizing module 'median_bram_delay' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/median_bram_delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'delayLinieBRAM_WP' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:21]
+INFO: [Synth 8-638] synthesizing module 'delayLineBRAM' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/delayLineBRAM/synth/delayLineBRAM.vhd:69]
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_3_5' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/delayLineBRAM/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd:195251' bound to instance 'U0' of component 'blk_mem_gen_v8_3_5' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/delayLineBRAM/synth/delayLineBRAM.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'delayLineBRAM' (32#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/delayLineBRAM/synth/delayLineBRAM.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'delayLinieBRAM_WP' (33#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:21]
+INFO: [Synth 8-256] done synthesizing module 'median_bram_delay' (34#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/median_bram_delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized6' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized6' (34#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'median_5_5' (35#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/median_5_5.v:3]
+INFO: [Synth 8-638] synthesizing module 'dilatation' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/dilatation.v:3]
+INFO: [Synth 8-638] synthesizing module 'dilatation_delay_line' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/dilatation_delay_line.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized7' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized7' (35#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized8' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized8' (35#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized9' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized9' (35#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized10' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized10' (35#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized11' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized11' (35#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'dilatation_delay_line' (36#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/dilatation_delay_line.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized12' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized12' (36#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'dilatation' (37#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/dilatation.v:3]
+INFO: [Synth 8-638] synthesizing module 'erosion' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/erosion.v:3]
+INFO: [Synth 8-638] synthesizing module 'erosion_delay_line' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/erosion_delay_line.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized13' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized13' (37#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized14' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized14' (37#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized15' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized15' (37#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized16' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized16' (37#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized17' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized17' (37#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'erosion_delay_line' (38#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/erosion_delay_line.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized18' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized18' (38#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'erosion' (39#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/erosion.v:3]
+INFO: [Synth 8-638] synthesizing module 'sobell' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/sobell.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized19' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized19' (39#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized20' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized20' (39#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized21' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized21' (39#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized22' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized22' (39#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized23' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized23' (39#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized24' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized24' (39#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized25' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized25' (39#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized26' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized26' (39#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized27' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized27' (39#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'sobell_bram_delay' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/sobell_bram_delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'delayLinieBRAM_WP__parameterized0' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:21]
+INFO: [Synth 8-256] done synthesizing module 'delayLinieBRAM_WP__parameterized0' (39#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:21]
+INFO: [Synth 8-256] done synthesizing module 'sobell_bram_delay' (40#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/sobell_bram_delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'combined_sobell' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/combined_sobell.v:3]
+INFO: [Synth 8-638] synthesizing module 'sobell_1' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/sobell_1.v:3]
+INFO: [Synth 8-638] synthesizing module 'sub_9u_9u' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/sub_9u_9u/synth/sub_9u_9u.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_10' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_10' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/sub_9u_9u/synth/sub_9u_9u.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'sub_9u_9u' (41#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/sub_9u_9u/synth/sub_9u_9u.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized28' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized28' (41#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized29' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized29' (41#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'summ_10s_10s' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summ_10s_10s/synth/summ_10s_10s.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_10' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_10' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summ_10s_10s/synth/summ_10s_10s.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'summ_10s_10s' (42#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summ_10s_10s/synth/summ_10s_10s.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'summ_11s_11s' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summ_11s_11s/synth/summ_11s_11s.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_10' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_10' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summ_11s_11s/synth/summ_11s_11s.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'summ_11s_11s' (43#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summ_11s_11s/synth/summ_11s_11s.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'sobell_1' (44#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/sobell_1.v:3]
+INFO: [Synth 8-638] synthesizing module 'sobell_2' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/sobell_2.v:3]
+INFO: [Synth 8-256] done synthesizing module 'sobell_2' (45#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/sobell_2.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized30' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized30' (45#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'summ_8u_8u' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summ_8u_8u/synth/summ_8u_8u.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_10' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_10' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summ_8u_8u/synth/summ_8u_8u.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'summ_8u_8u' (46#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summ_8u_8u/synth/summ_8u_8u.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'combined_sobell' (47#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/combined_sobell.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized31' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized31' (47#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'sobell' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/sobell.v:3]
+INFO: [Synth 8-638] synthesizing module 'average' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/average.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized32' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized32' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized33' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized33' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized34' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized34' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized35' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized35' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized36' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized36' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized37' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized37' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized38' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized38' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized39' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized39' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized40' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized40' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized41' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized41' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized42' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized42' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized43' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized43' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized44' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized44' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized45' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized45' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized46' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized46' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized47' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized47' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized48' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized48' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized49' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized49' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized50' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized50' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'full_bram_delay' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/full_bram_delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'delayLinieBRAM_WP__parameterized1' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:21]
+WARNING: [Synth 8-689] width (13) of port connection 'addra' does not match port width (11) of module 'delayLineBRAM' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:68]
+INFO: [Synth 8-256] done synthesizing module 'delayLinieBRAM_WP__parameterized1' (48#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:21]
+INFO: [Synth 8-256] done synthesizing module 'full_bram_delay' (49#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/full_bram_delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'two_signal_bram_delay' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/two_signal_bram_full_delay.v:3]
+INFO: [Synth 8-256] done synthesizing module 'two_signal_bram_delay' (50#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/two_signal_bram_full_delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'summatr_9u_9u' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/synth/summatr_9u_9u.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_10' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_10' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/synth/summatr_9u_9u.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'summatr_9u_9u' (51#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/synth/summatr_9u_9u.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized51' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized51' (51#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized52' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized52' (51#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized53' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized53' (51#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized54' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized54' (51#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'summatr_10u_10u' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_10u_10u/synth/summatr_10u_10u.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_10' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_10' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_10u_10u/synth/summatr_10u_10u.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'summatr_10u_10u' (52#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_10u_10u/synth/summatr_10u_10u.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'summatr_11u_11u' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_11u_11u/synth/summatr_11u_11u.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_10' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_10' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_11u_11u/synth/summatr_11u_11u.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'summatr_11u_11u' (53#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_11u_11u/synth/summatr_11u_11u.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'summatr_12u_12u' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_12u_12u/synth/summatr_12u_12u.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_10' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_10' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_12u_12u/synth/summatr_12u_12u.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'summatr_12u_12u' (54#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_12u_12u/synth/summatr_12u_12u.vhd:69]
+WARNING: [Synth 8-689] width (10) of port connection 'B' does not match port width (12) of module 'summatr_12u_12u' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/average.v:105]
+INFO: [Synth 8-256] done synthesizing module 'average' (55#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/average.v:3]
+INFO: [Synth 8-638] synthesizing module 'center_seeker' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/center_seeker.v:3]
+INFO: [Synth 8-638] synthesizing module 'core_adder' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/core_adder.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized55' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized55' (55#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'add_32u_11u' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/add_32u_11u/synth/add_32u_11u.vhd:70]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_10' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_10' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/add_32u_11u/synth/add_32u_11u.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'add_32u_11u' (61#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/add_32u_11u/synth/add_32u_11u.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'divider_32_20_0' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/divider_32_20_0/synth/divider_32_20_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'divider_32_20' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/divider_32_20_0/src/divider_32_20.v:8]
+INFO: [Synth 8-638] synthesizing module 'mult_32_20_lm' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:68]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:71]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:71]
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_12' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/mul_8u_11s/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_12' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'mult_32_20_lm' (62#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/divider_32_20_0/src/mult_32_20_lm/synth/mult_32_20_lm.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'divider_32_20' (63#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/divider_32_20_0/src/divider_32_20.v:8]
+INFO: [Synth 8-256] done synthesizing module 'divider_32_20_0' (64#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/divider_32_20_0/synth/divider_32_20_0.v:56]
+INFO: [Synth 8-256] done synthesizing module 'core_adder' (65#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/core_adder.v:3]
+INFO: [Synth 8-256] done synthesizing module 'center_seeker' (66#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/center_seeker.v:3]
+INFO: [Synth 8-638] synthesizing module 'draw_shape' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/draw_shape.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized56' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized56' (66#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized57' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized57' (66#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized58' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized58' (66#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized59' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized59' (66#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized60' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized60' (66#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized61' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized61' (66#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized62' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized62' (66#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized63' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized63' (66#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized64' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized64' (66#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized65' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized65' (66#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:23]
+INFO: [Synth 8-638] synthesizing module 'sub_11u_11u' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/sub_11u_11u/synth/sub_11u_11u.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_10' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_10' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/sub_11u_11u/synth/sub_11u_11u.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'sub_11u_11u' (67#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/sub_11u_11u/synth/sub_11u_11u.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'mul_12s_12s' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/mul_12s_12s/synth/mul_12s_12s.vhd:68]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/mul_12s_12s/synth/mul_12s_12s.vhd:71]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/mul_12s_12s/synth/mul_12s_12s.vhd:71]
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_12' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/mul_8u_11s/hdl/mult_gen_v12_0_vh_rfs.vhd:21013' bound to instance 'U0' of component 'mult_gen_v12_0_12' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/mul_12s_12s/synth/mul_12s_12s.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'mul_12s_12s' (69#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/mul_12s_12s/synth/mul_12s_12s.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'sum_24u_24u' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/sum_24u_24u/synth/sum_24u_24u.vhd:69]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_10' declared at '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/summatr_9u_9u/hdl/c_addsub_v12_0_vh_rfs.vhd:7026' bound to instance 'U0' of component 'c_addsub_v12_0_10' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/sum_24u_24u/synth/sum_24u_24u.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'sum_24u_24u' (70#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/sum_24u_24u/synth/sum_24u_24u.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'draw_shape' (71#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/draw_shape.v:3]
+INFO: [Synth 8-638] synthesizing module 'mux' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/mux.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux' (72#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/mux.v:23]
+WARNING: [Synth 8-3848] Net mux_pixel_in[11] in module/entity vb does not have driver. [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:134]
+WARNING: [Synth 8-3848] Net mux_pixel_in[12] in module/entity vb does not have driver. [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:134]
+WARNING: [Synth 8-3848] Net mux_pixel_in[13] in module/entity vb does not have driver. [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:134]
+WARNING: [Synth 8-3848] Net mux_pixel_in[14] in module/entity vb does not have driver. [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:134]
+WARNING: [Synth 8-3848] Net mux_pixel_in[15] in module/entity vb does not have driver. [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:134]
+INFO: [Synth 8-256] done synthesizing module 'vb' (73#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:23]
+INFO: [Synth 8-256] done synthesizing module 'cudo_vb_0_0' (74#1) [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/synth/cudo_vb_0_0.v:56]
+WARNING: [Synth 8-3331] design mux has unconnected port clk
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized25 has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized25 has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized25 has unconnected port ASET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized25 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized25 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized25 has unconnected port SSET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized23 has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized23 has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized23 has unconnected port ASET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized23 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized23 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized23 has unconnected port SSET
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port b[11]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port b[10]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port b[9]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port b[8]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port b[7]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port b[6]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port b[5]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port b[4]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port b[3]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port b[2]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port b[1]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port b[0]
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized19 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized21 has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized21 has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized21 has unconnected port ASET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized21 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized21 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized21 has unconnected port SSET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized19 has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized19 has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized19 has unconnected port ASET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized19 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized19 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized19 has unconnected port SSET
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized17 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized17 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized17 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized17 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized17 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized17 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized15 has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized15 has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized15 has unconnected port ASET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized17 has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized17 has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized17 has unconnected port ASET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized17 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized17 has unconnected port SSET
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized15 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized15 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized15 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized15 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized15 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized15 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized19 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized19 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized19 has unconnected port b_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized19 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized19 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized19 has unconnected port aset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized19 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized19 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized19 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized19 has unconnected port a_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized19 has unconnected port b_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv__parameterized21 has unconnected port C_IN
+WARNING: [Synth 8-3331] design mult_gen_v12_0_12_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design mult_gen_v12_0_12_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized13 has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized13 has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized13 has unconnected port ASET
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_3_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized13 has unconnected port add
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized13 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized13 has unconnected port bypass
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized13 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized13 has unconnected port sset
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_lut6_legacy__parameterized13 has unconnected port sinit
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized17 has unconnected port c_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized17 has unconnected port b_in
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized17 has unconnected port a_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_legacy__parameterized17 has unconnected port b_signed
+WARNING: [Synth 8-3331] design c_addsub_v12_0_10_viv__parameterized19 has unconnected port C_IN
+WARNING: [Synth 8-3331] design delay_line has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_line has unconnected port CE
+WARNING: [Synth 8-3331] design delay_line has unconnected port SCLR
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:06 ; elapsed = 00:01:07 . Memory (MB): peak = 1297.410 ; gain = 365.758 ; free physical = 1490 ; free virtual = 3919
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[16] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[16] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[15] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[14] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[13] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[12] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[11] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[10] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[9] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[8] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[16] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[15] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[14] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[13] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[12] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin BRAM:dina[11] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/delayLinieBRAM_WP.v:65]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[383] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[382] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[381] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[380] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[379] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[378] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[377] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[376] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[375] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[374] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[373] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[372] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[371] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[370] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[369] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[368] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[367] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[366] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[365] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[364] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[363] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[362] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[361] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[360] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[359] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[358] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[357] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[356] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[355] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[354] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[353] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[352] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[351] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[350] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[349] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[348] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[347] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[346] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[345] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[344] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[343] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[342] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[341] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[340] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[339] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[338] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[337] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[336] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[335] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[334] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[333] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[332] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[331] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[330] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[329] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[328] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[327] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[326] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[325] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[324] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[323] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[322] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[321] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[320] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[319] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[318] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[317] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[316] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[315] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[314] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[313] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[312] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[311] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[310] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[309] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[308] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[307] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[306] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[305] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[304] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[303] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[302] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[301] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+WARNING: [Synth 8-3295] tying undriven pin multi:in[300] to constant 0 [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ipshared/3066/src/vb.v:142]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:07 . Memory (MB): peak = 1297.410 ; gain = 365.758 ; free physical = 1490 ; free virtual = 3919
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1225 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.runs/cudo_vb_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.runs/cudo_vb_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 156 instances were transformed.
+  MULT_AND => LUT2: 156 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1406.426 ; gain = 0.000 ; free physical = 1464 ; free virtual = 3893
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:18 ; elapsed = 00:01:18 . Memory (MB): peak = 1406.426 ; gain = 474.773 ; free physical = 1462 ; free virtual = 3893
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:18 ; elapsed = 00:01:18 . Memory (MB): peak = 1406.426 ; gain = 474.773 ; free physical = 1462 ; free virtual = 3893
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/avg/fbd1/bramka/BRAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/avg/fbd1/bramka/BRAM/U0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/avg/fbd2/bramka/BRAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/avg/fbd2/bramka/BRAM/U0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/avg/sum1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/avg/sum2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/avg/sum3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/avg/sum4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/avg/sum5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/avg/sum6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/avg/sum7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/avg/sum8. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/avg/tsbd/bramka/BRAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/avg/tsbd/bramka/BRAM/U0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/binarisation. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/centr/core_add/div. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/centr/core_add/div_x. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/centr/core_add/div_x/inst/instance_name. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/centr/core_add/div_y. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/centr/core_add/div_y/inst/instance_name. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/centr/core_add/x_add. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/centr/core_add/y_add. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/closee/bramka/bramka/BRAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/closee/bramka/bramka/BRAM/U0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/dilat/bramka/bramka/BRAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/dilat/bramka/bramka/BRAM/U0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ds/sum. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ds/x_mul. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ds/x_sub. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ds/y_mul. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/ds/y_sub. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/eros/bramka/bramka/BRAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/eros/bramka/bramka/BRAM/U0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/med/bramka/bramka/BRAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/med/bramka/bramka/BRAM/U0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/openn/bramka/bramka/BRAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/openn/bramka/bramka/BRAM/U0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/cb_row/cb_1_cb_2_sum. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/cb_row/cb_3_sum_128. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/cb_row/cb_sum. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/cb_row/delay. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/cb_row/mul1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/cb_row/mul2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/cb_row/mul3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/cr_row/cb_1_cb_2_sum. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/cr_row/cb_3_sum_128. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/cr_row/cb_sum. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/cr_row/delay. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/cr_row/mul1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/cr_row/mul2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/cr_row/mul3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/m18. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/y_row/cb_1_cb_2_sum. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/y_row/cb_3_sum_128. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/y_row/cb_sum. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/y_row/delay. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/y_row/mul1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/y_row/mul2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/rgb2ycbcr/inst/y_row/mul3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sob/sbd/bramka/BRAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sob/sbd/bramka/BRAM/U0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sob/sob/sob1/sub1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sob/sob/sob1/sub2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sob/sob/sob1/sub3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sob/sob/sob1/sum1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sob/sob/sob1/sum2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sob/sob/sob1/sum3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sob/sob/sob2/sob/sub1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sob/sob/sob2/sob/sub2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sob/sob/sob2/sob/sub3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sob/sob/sob2/sob/sum1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sob/sob/sob2/sob/sum2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sob/sob/sob2/sob/sum3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sob/sob/sum. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 1406.426 ; gain = 474.773 ; free physical = 1462 ; free virtual = 3893
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:20 ; elapsed = 00:01:21 . Memory (MB): peak = 1406.426 ; gain = 474.773 ; free physical = 1450 ; free virtual = 3882
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'sob/sob2/sob/ce_1_del/delay_line_reg[0][0:0]' into 'sob/sob1/ce_1_del/delay_line_reg[0][0:0]' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:36]
+INFO: [Synth 8-4471] merging register 'sob/sob2/sob/ce_2_del/delay_line_reg[0][0:0]' into 'sob/sob1/ce_2_del/delay_line_reg[0][0:0]' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:36]
+INFO: [Synth 8-4471] merging register 'sob/ce_del/delay_line_reg[0][0:0]' into 'sob/sob1/ce_1_del/delay_line_reg[0][0:0]' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:36]
+INFO: [Synth 8-4471] merging register 'sob/ce_del/delay_line_reg[1][0:0]' into 'sob/sob1/ce_2_del/delay_line_reg[0][0:0]' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:36]
+INFO: [Synth 8-4471] merging register 'out_sync_delay/delay_line_reg[0][2:0]' into 'sync_d23/delay_line_reg[0][2:0]' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:36]
+INFO: [Synth 8-4471] merging register 'middledelay/delay_line_reg[0][7:0]' into 'd23/delay_line_reg[0][7:0]' [/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.srcs/sources_1/bd/cudo/ip/cudo_vb_0_0/src/rgb2ycbcr_0/src/delay_5_3/src/delay.v:36]
+INFO: [Synth 8-5546] ROM "inst/i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'inst/sob/d11/delay_line_reg[0][0]' (FD) to 'inst/ds/sync_del/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/sob/d11/delay_line_reg[0][1]' (FD) to 'inst/ds/sync_del/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/sob/d12/delay_line_reg[0][0]' (FD) to 'inst/ds/sync_del/delay_line_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/sob/d12/delay_line_reg[0][1]' (FD) to 'inst/ds/sync_del/delay_line_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'inst/closee/mdl3/del_1/delay_line_reg[0][0]' (FD) to 'inst/closee/sync_delay/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/closee/mdl3/del_1/delay_line_reg[0][1]' (FD) to 'inst/closee/sync_delay/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/openn/mdl3/del_1/delay_line_reg[0][0]' (FD) to 'inst/openn/sync_delay/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/openn/mdl3/del_1/delay_line_reg[0][1]' (FD) to 'inst/openn/sync_delay/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl3/del_1/delay_line_reg[0][0]' (FD) to 'inst/eros/sync_delay/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl3/del_1/delay_line_reg[0][1]' (FD) to 'inst/eros/sync_delay/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl1/del_1/delay_line_reg[0][0]' (FD) to 'inst/ds/sync_del/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl1/del_1/delay_line_reg[0][1]' (FD) to 'inst/ds/sync_del/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl3/del_1/delay_line_reg[0][0]' (FD) to 'inst/dilat/sync_delay/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl3/del_1/delay_line_reg[0][1]' (FD) to 'inst/dilat/sync_delay/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl1/del_1/delay_line_reg[0][0]' (FD) to 'inst/ds/sync_del/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl1/del_1/delay_line_reg[0][1]' (FD) to 'inst/ds/sync_del/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl3/del_1/delay_line_reg[0][0]' (FD) to 'inst/med/sync_delay/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl3/del_1/delay_line_reg[0][1]' (FD) to 'inst/med/sync_delay/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl1/del_1/delay_line_reg[0][0]' (FD) to 'inst/ds/sync_del/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl1/del_1/delay_line_reg[0][1]' (FD) to 'inst/ds/sync_del/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/ds/pixel_del/delay_line_reg[0][0]' (FD) to 'inst/sob/d11/delay_line_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/sob/d23/delay_line_reg[0][0]' (FD) to 'inst/sob/sync_delay/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/sob/d23/delay_line_reg[0][1]' (FD) to 'inst/sob/sync_delay/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/sob/d13/delay_line_reg[0][0]' (FD) to 'inst/ds/sync_del/delay_line_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'inst/sob/d13/delay_line_reg[0][1]' (FD) to 'inst/ds/sync_del/delay_line_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'inst/closee/mdl3/del_2/delay_line_reg[0][0]' (FD) to 'inst/closee/sync_delay/delay_line_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/closee/mdl3/del_2/delay_line_reg[0][1]' (FD) to 'inst/closee/sync_delay/delay_line_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'inst/openn/mdl3/del_2/delay_line_reg[0][0]' (FD) to 'inst/openn/sync_delay/delay_line_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/openn/mdl3/del_2/delay_line_reg[0][1]' (FD) to 'inst/openn/sync_delay/delay_line_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl3/del_2/delay_line_reg[0][0]' (FD) to 'inst/eros/sync_delay/delay_line_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl3/del_2/delay_line_reg[0][1]' (FD) to 'inst/eros/sync_delay/delay_line_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl1/del_2/delay_line_reg[0][0]' (FD) to 'inst/med/mdl1/del_2/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl1/del_2/delay_line_reg[0][1]' (FD) to 'inst/med/mdl1/del_2/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl3/del_2/delay_line_reg[0][0]' (FD) to 'inst/dilat/sync_delay/delay_line_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl3/del_2/delay_line_reg[0][1]' (FD) to 'inst/dilat/sync_delay/delay_line_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl1/del_2/delay_line_reg[0][0]' (FD) to 'inst/med/mdl1/del_2/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl1/del_2/delay_line_reg[0][1]' (FD) to 'inst/med/mdl1/del_2/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl3/del_2/delay_line_reg[0][0]' (FD) to 'inst/med/sync_delay/delay_line_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl3/del_2/delay_line_reg[0][1]' (FD) to 'inst/med/sync_delay/delay_line_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl1/del_2/delay_line_reg[0][0]' (FD) to 'inst/ds/sync_del/delay_line_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl1/del_2/delay_line_reg[0][1]' (FD) to 'inst/ds/sync_del/delay_line_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'inst/ds/sync_del/delay_line_reg[0][2]' (FD) to 'inst/sob/d11/delay_line_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/ds/pixel_del/delay_line_reg[1][0]' (FD) to 'inst/sob/d12/delay_line_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/closee/mdl3/del_3/delay_line_reg[0][0]' (FD) to 'inst/closee/sync_delay/delay_line_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'inst/closee/mdl3/del_3/delay_line_reg[0][1]' (FD) to 'inst/closee/sync_delay/delay_line_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'inst/openn/mdl3/del_3/delay_line_reg[0][0]' (FD) to 'inst/openn/sync_delay/delay_line_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'inst/openn/mdl3/del_3/delay_line_reg[0][1]' (FD) to 'inst/openn/sync_delay/delay_line_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl3/del_3/delay_line_reg[0][0]' (FD) to 'inst/eros/sync_delay/delay_line_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl3/del_3/delay_line_reg[0][1]' (FD) to 'inst/eros/sync_delay/delay_line_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl1/del_3/delay_line_reg[0][0]' (FD) to 'inst/med/mdl1/del_3/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl1/del_3/delay_line_reg[0][1]' (FD) to 'inst/med/mdl1/del_3/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl3/del_3/delay_line_reg[0][0]' (FD) to 'inst/dilat/sync_delay/delay_line_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl3/del_3/delay_line_reg[0][1]' (FD) to 'inst/dilat/sync_delay/delay_line_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl1/del_3/delay_line_reg[0][0]' (FD) to 'inst/med/mdl1/del_3/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl1/del_3/delay_line_reg[0][1]' (FD) to 'inst/med/mdl1/del_3/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl3/del_3/delay_line_reg[0][0]' (FD) to 'inst/med/sync_delay/delay_line_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl3/del_3/delay_line_reg[0][1]' (FD) to 'inst/med/sync_delay/delay_line_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl1/del_3/delay_line_reg[0][0]' (FD) to 'inst/ds/sync_del/delay_line_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl1/del_3/delay_line_reg[0][1]' (FD) to 'inst/ds/sync_del/delay_line_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'inst/ds/sync_del/delay_line_reg[1][2]' (FD) to 'inst/sob/d12/delay_line_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/ds/pixel_del/delay_line_reg[2][0]' (FD) to 'inst/sob/d13/delay_line_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/sob/d13/delay_line_reg[0][2]' (FD) to 'inst/ds/sync_del/delay_line_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'inst/sob/d23/delay_line_reg[0][2]' (FD) to 'inst/sob/sync_delay/delay_line_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/sob/d11/delay_line_reg[0][2]' (FD) to 'inst/eros/mdl1/del_1/delay_line_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/sob/d11/delay_line_reg[0][3]' (FD) to 'inst/eros/mdl1/del_1/delay_line_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl3/del_4/delay_line_reg[0][0]' (FD) to 'inst/openn/mdl1/del_1/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl3/del_4/delay_line_reg[0][1]' (FD) to 'inst/openn/mdl1/del_1/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl1/del_4/delay_line_reg[0][0]' (FD) to 'inst/med/mdl1/del_4/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl1/del_4/delay_line_reg[0][1]' (FD) to 'inst/med/mdl1/del_4/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl3/del_4/delay_line_reg[0][0]' (FD) to 'inst/closee/mdl1/del_1/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl3/del_4/delay_line_reg[0][1]' (FD) to 'inst/closee/mdl1/del_1/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl1/del_4/delay_line_reg[0][0]' (FD) to 'inst/med/mdl1/del_4/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl1/del_4/delay_line_reg[0][1]' (FD) to 'inst/med/mdl1/del_4/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl1/del_4/delay_line_reg[0][0]' (FD) to 'inst/ds/sync_del/delay_line_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl1/del_4/delay_line_reg[0][1]' (FD) to 'inst/ds/sync_del/delay_line_reg[3][1]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl3/del_5/delay_line_reg[0][0]' (FD) to 'inst/openn/mdl1/del_2/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl3/del_5/delay_line_reg[0][1]' (FD) to 'inst/openn/mdl1/del_2/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl1/del_5/delay_line_reg[0][0]' (FD) to 'inst/med/mdl1/del_5/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl1/del_5/delay_line_reg[0][1]' (FD) to 'inst/med/mdl1/del_5/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl3/del_5/delay_line_reg[0][0]' (FD) to 'inst/closee/mdl1/del_2/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl3/del_5/delay_line_reg[0][1]' (FD) to 'inst/closee/mdl1/del_2/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl1/del_5/delay_line_reg[0][0]' (FD) to 'inst/med/mdl1/del_5/delay_line_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/mdl1/del_5/delay_line_reg[0][1]' (FD) to 'inst/med/mdl1/del_5/delay_line_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl1/del_5/delay_line_reg[0][0]' (FD) to 'inst/ds/sync_del/delay_line_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'inst/med/mdl1/del_5/delay_line_reg[0][1]' (FD) to 'inst/ds/sync_del/delay_line_reg[4][1]'
+INFO: [Synth 8-3886] merging instance 'inst/closee/sync_delay/delay_line_reg[0][2]' (FD) to 'inst/closee/mdl3/del_1/delay_line_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/openn/sync_delay/delay_line_reg[0][2]' (FD) to 'inst/openn/mdl3/del_1/delay_line_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/sync_delay/delay_line_reg[0][2]' (FD) to 'inst/eros/mdl3/del_1/delay_line_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/dilat/sync_delay/delay_line_reg[0][2]' (FD) to 'inst/dilat/mdl3/del_1/delay_line_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/med/sync_delay/delay_line_reg[0][2]' (FD) to 'inst/med/mdl3/del_1/delay_line_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/closee/mdl3/del_2/delay_line_reg[0][2]' (FD) to 'inst/closee/sync_delay/delay_line_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'inst/closee/mdl3/del_3/delay_line_reg[0][2]' (FD) to 'inst/closee/sync_delay/delay_line_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'inst/openn/mdl3/del_2/delay_line_reg[0][2]' (FD) to 'inst/openn/sync_delay/delay_line_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'inst/openn/mdl3/del_3/delay_line_reg[0][2]' (FD) to 'inst/openn/sync_delay/delay_line_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl1/del_2/delay_line_reg[0][3]' (FD) to 'inst/sob/d12/delay_line_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl1/del_3/delay_line_reg[0][3]' (FD) to 'inst/sob/d13/delay_line_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl1/del_4/delay_line_reg[0][3]' (FD) to 'inst/ds/pixel_del/delay_line_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl1/del_1/delay_line_reg[0][3]' (FD) to 'inst/dilat/mdl1/del_1/delay_line_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl3/del_2/delay_line_reg[0][2]' (FD) to 'inst/eros/sync_delay/delay_line_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'inst/eros/mdl3/del_3/delay_line_reg[0][2]' (FD) to 'inst/eros/sync_delay/delay_line_reg[2][2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (inst/med/mdl5/del_1/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/med/mdl5/del_1/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/med/mdl5/del_2/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/med/mdl5/del_2/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/med/mdl5/del_3/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/med/mdl5/del_3/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/med/mdl5/del_4/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/med/mdl5/del_4/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/med/mdl5/del_5/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/med/mdl5/del_5/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/dilat/mdl5/del_1/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/dilat/mdl5/del_1/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/dilat/mdl5/del_2/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/dilat/mdl5/del_2/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/dilat/mdl5/del_3/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/dilat/mdl5/del_3/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/dilat/mdl5/del_4/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/dilat/mdl5/del_4/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/dilat/mdl5/del_5/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/dilat/mdl5/del_5/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/eros/mdl5/del_1/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/eros/mdl5/del_1/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/eros/mdl5/del_2/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/eros/mdl5/del_2/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/eros/mdl5/del_3/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/eros/mdl5/del_3/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/eros/mdl5/del_4/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/eros/mdl5/del_4/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/eros/mdl5/del_5/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/eros/mdl5/del_5/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/openn/mdl5/del_1/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/openn/mdl5/del_1/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/openn/mdl5/del_2/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/openn/mdl5/del_2/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/openn/mdl5/del_3/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/openn/mdl5/del_3/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/openn/mdl5/del_4/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/openn/mdl5/del_4/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/openn/mdl5/del_5/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/openn/mdl5/del_5/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/closee/mdl5/del_1/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/closee/mdl5/del_1/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/closee/mdl5/del_2/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/closee/mdl5/del_2/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/closee/mdl5/del_3/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/closee/mdl5/del_3/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/closee/mdl5/del_4/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/closee/mdl5/del_4/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/closee/mdl5/del_5/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/closee/mdl5/del_5/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sob/d31/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sob/d31/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sob/d32/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sob/d32/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sob/d33/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/sob/d33/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/avg/sync_d31/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/avg/sync_d31/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/avg/sync_d32/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/avg/sync_d32/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/avg/sync_d33/delay_line_reg[0][1]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/avg/sync_d33/delay_line_reg[0][0]) is unused and will be removed from module cudo_vb_0_0.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_3_add.stage_3_pipeline.s3_add_out_reg[0][30]) is unused and will be removed from module mult_gen_v12_0_12_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_3_add.stage_3_pipeline.s3_add_out_reg[0][29]) is unused and will be removed from module mult_gen_v12_0_12_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_3_add.stage_3_pipeline.s3_add_out_reg[0][28]) is unused and will be removed from module mult_gen_v12_0_12_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_3_add.stage_3_pipeline.s3_add_out_reg[0][27]) is unused and will be removed from module mult_gen_v12_0_12_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_3_add.stage_3_pipeline.s3_add_out_reg[0][26]) is unused and will be removed from module mult_gen_v12_0_12_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_3_add.stage_3_pipeline.s3_add_out_reg[0][25]) is unused and will be removed from module mult_gen_v12_0_12_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (gLUT.gLUT_speed.iLUT/NxM_mult.stage_3_add.stage_3_pipeline.s3_add_out_reg[0][24]) is unused and will be removed from module mult_gen_v12_0_12_viv__parameterized3.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:29 . Memory (MB): peak = 1438.449 ; gain = 506.797 ; free physical = 1409 ; free virtual = 3843
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:39 ; elapsed = 00:01:40 . Memory (MB): peak = 1460.449 ; gain = 528.797 ; free physical = 1350 ; free virtual = 3786
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:39 ; elapsed = 00:01:40 . Memory (MB): peak = 1461.449 ; gain = 529.797 ; free physical = 1349 ; free virtual = 3785
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:41 ; elapsed = 00:01:41 . Memory (MB): peak = 1491.488 ; gain = 559.836 ; free physical = 1318 ; free virtual = 3755
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1491.488 ; gain = 559.836 ; free physical = 1319 ; free virtual = 3756
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:41 ; elapsed = 00:01:42 . Memory (MB): peak = 1491.488 ; gain = 559.836 ; free physical = 1319 ; free virtual = 3756
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 1491.488 ; gain = 559.836 ; free physical = 1318 ; free virtual = 3756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 1491.488 ; gain = 559.836 ; free physical = 1318 ; free virtual = 3756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 1491.488 ; gain = 559.836 ; free physical = 1318 ; free virtual = 3756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 1491.488 ; gain = 559.836 ; free physical = 1318 ; free virtual = 3756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    97|
+|2     |DSP48E1   |     9|
+|3     |DSP48E1_1 |     3|
+|4     |DSP48E1_2 |     2|
+|5     |DSP48E1_3 |     2|
+|6     |LUT1      |    53|
+|7     |LUT2      |   629|
+|8     |LUT3      |   164|
+|9     |LUT4      |   378|
+|10    |LUT5      |    97|
+|11    |LUT6      |   254|
+|12    |MULT_AND  |   154|
+|13    |MUXCY     |   503|
+|14    |RAMB36E1  |     9|
+|15    |SRL16E    |   176|
+|16    |XORCY     |   549|
+|17    |FDRE      |  1969|
+|18    |FDSE      |    32|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 1491.488 ; gain = 559.836 ; free physical = 1318 ; free virtual = 3756
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 416 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:32 ; elapsed = 00:01:33 . Memory (MB): peak = 1491.488 ; gain = 370.730 ; free physical = 1318 ; free virtual = 3756
+Synthesis Optimization Complete : Time (s): cpu = 00:01:42 ; elapsed = 00:01:43 . Memory (MB): peak = 1491.496 ; gain = 559.844 ; free physical = 1320 ; free virtual = 3758
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1328 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 326 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 172 instances
+  MULT_AND => LUT2: 154 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+453 Infos, 216 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:43 . Memory (MB): peak = 1491.496 ; gain = 492.340 ; free physical = 1320 ; free virtual = 3758
+INFO: [Common 17-1381] The checkpoint '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.runs/cudo_vb_0_0_synth_1/cudo_vb_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 621 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.runs/cudo_vb_0_0_synth_1/cudo_vb_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1515.500 ; gain = 0.000 ; free physical = 1308 ; free virtual = 3757
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 14 20:11:23 2017...

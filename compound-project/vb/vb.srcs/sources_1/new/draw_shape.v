@@ -43,6 +43,7 @@ module draw_shape # (
         min_y <= in_min_y;
         max_y <= in_max_y;
     end
+    
     always @(posedge clk) begin 
         if (v_sync_in == 1) begin 
             x_pos <= 11'b0;

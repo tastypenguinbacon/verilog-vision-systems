@@ -13,8 +13,7 @@ WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl p
 WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port b [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/rgb2ycbcr_0/src/cb_row.v:59]
 WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port ce [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/rgb2ycbcr_0/src/cb_row.v:60]
 WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port b [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/average/average.v:105]
-WARNING: [VRFC 10-1374] size mismatch in mixed language port association, vhdl port b [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/core_adder.v:19]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port select [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/tb_src/tb_hdmi.v:65]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port select [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/tb_src/tb_hdmi.v:66]
 WARNING: [VRFC 10-278] actual bit length 9 differs from formal bit length 8 for port out [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/ip/rgb2ycbcr_0/src/cb_row.v:56]
 WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port rst [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/median/median_bram_delay.v:17]
 WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port rst [/home/pingwin/Dokumenty/Verilog/compound-project/vb/vb.srcs/sources_1/new/sobell/sobell_bram_delay.v:12]
@@ -89,15 +88,15 @@ Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5_mem_module(C_...
 Compiling module blk_mem_gen_v8_3_5.blk_mem_gen_v8_3_5(C_FAMILY="zyn...
 Compiling module xil_defaultlib.delayLineBRAM
 Compiling module xil_defaultlib.delayLinieBRAM_WP
-Compiling module xil_defaultlib.median_bram_delay(H_SIZE=82)
+Compiling module xil_defaultlib.median_bram_delay(H_SIZE=1663)
 Compiling module xil_defaultlib.delay(WIDTH=3,DELAY=3)
-Compiling module xil_defaultlib.median_5_5(H_SIZE=82)
+Compiling module xil_defaultlib.median_5_5(H_SIZE=1663)
 Compiling module xil_defaultlib.dilatation_delay_line
-Compiling module xil_defaultlib.dilatation(H_SIZE=82)
+Compiling module xil_defaultlib.dilatation(H_SIZE=1663)
 Compiling module xil_defaultlib.erosion_delay_line
-Compiling module xil_defaultlib.erosion(H_SIZE=82)
+Compiling module xil_defaultlib.erosion(H_SIZE=1663)
 Compiling module xil_defaultlib.delayLinieBRAM_WP(WIDTH=8)
-Compiling module xil_defaultlib.sobell_bram_delay(H_SIZE=82)
+Compiling module xil_defaultlib.sobell_bram_delay(H_SIZE=1663)
 Compiling architecture structural of entity c_reg_fd_v12_0_3.c_reg_fd_v12_0_3_viv [\c_reg_fd_v12_0_3_viv(c_width=10...]
 Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
 Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
@@ -126,12 +125,12 @@ Compiling architecture xilinx of entity c_addsub_v12_0_10.c_addsub_v12_0_10 [\c_
 Compiling architecture summ_8u_8u_arch of entity xil_defaultlib.summ_8u_8u [summ_8u_8u_default]
 Compiling module xil_defaultlib.combined_sobell
 Compiling module xil_defaultlib.delay(WIDTH=3)
-Compiling module xil_defaultlib.sobell(H_SIZE=82)
+Compiling module xil_defaultlib.sobell(H_SIZE=1663)
 Compiling module xil_defaultlib.delay(WIDTH=3,DELAY=1)
 Compiling module xil_defaultlib.delay(WIDTH=8,DELAY=1)
 Compiling module xil_defaultlib.delayLinieBRAM_WP(WIDTH=11,BRAM_...
-Compiling module xil_defaultlib.full_bram_delay(H_SIZE=82)
-Compiling module xil_defaultlib.two_signal_bram_delay(H_SIZE=82)
+Compiling module xil_defaultlib.full_bram_delay(H_SIZE=1663)
+Compiling module xil_defaultlib.two_signal_bram_delay(H_SIZE=166...
 Compiling architecture rtl of entity c_addsub_v12_0_10.c_addsub_v12_0_10_lut6_legacy [\c_addsub_v12_0_10_lut6_legacy(c...]
 Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_fabric_legacy [\c_addsub_v12_0_10_fabric_legacy...]
 Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legacy [\c_addsub_v12_0_10_legacy(c_fami...]
@@ -150,9 +149,9 @@ Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legac
 Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
 Compiling architecture xilinx of entity c_addsub_v12_0_10.c_addsub_v12_0_10 [\c_addsub_v12_0_10(c_xdevicefami...]
 Compiling architecture summatr_12u_12u_arch of entity xil_defaultlib.summatr_12u_12u [summatr_12u_12u_default]
-Compiling module xil_defaultlib.average(H_SIZE=82)
-Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,dreg=0,inmodere...]
-Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(areg=...]
+Compiling module xil_defaultlib.average(H_SIZE=1663)
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(preg=...]
 Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_3.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
 Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_3.xbip_dsp48_addsub_v3_0_3_viv [\xbip_dsp48_addsub_v3_0_3_viv(c_...]
 Compiling architecture synth of entity xbip_addsub_v3_0_3.xbip_addsub_v3_0_3_viv [\xbip_addsub_v3_0_3_viv(c_xdevic...]
@@ -175,7 +174,7 @@ Compiling architecture mult_32_20_lm_arch of entity xil_defaultlib.mult_32_20_lm
 Compiling module xil_defaultlib.divider_32_20
 Compiling module xil_defaultlib.divider_32_20_0
 Compiling module xil_defaultlib.core_adder
-Compiling module xil_defaultlib.center_seeker(IMG_H=64,IMG_W=64)
+Compiling module xil_defaultlib.center_seeker(IMG_H=720,IMG_W=12...
 Compiling module xil_defaultlib.delay(WIDTH=3,DELAY=7)
 Compiling module xil_defaultlib.delay(WIDTH=11,DELAY=7)
 Compiling module xil_defaultlib.delay(WIDTH=24,DELAY=7)
@@ -203,9 +202,9 @@ Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_legac
 Compiling architecture synth of entity c_addsub_v12_0_10.c_addsub_v12_0_10_viv [\c_addsub_v12_0_10_viv(c_xdevice...]
 Compiling architecture xilinx of entity c_addsub_v12_0_10.c_addsub_v12_0_10 [\c_addsub_v12_0_10(c_xdevicefami...]
 Compiling architecture sum_24u_24u_arch of entity xil_defaultlib.sum_24u_24u [sum_24u_24u_default]
-Compiling module xil_defaultlib.draw_shape(IMG_W=64,IMG_H=64)
+Compiling module xil_defaultlib.draw_shape(IMG_W=1280,IMG_H=720)
 Compiling module xil_defaultlib.mux
-Compiling module xil_defaultlib.vb
+Compiling module xil_defaultlib.vb(H_SIZE=1663,IMG_W=1280,IMG_H=...
 Compiling module xil_defaultlib.hdmi_out
 Compiling module xil_defaultlib.tb_hdmi
 Compiling module xil_defaultlib.glbl

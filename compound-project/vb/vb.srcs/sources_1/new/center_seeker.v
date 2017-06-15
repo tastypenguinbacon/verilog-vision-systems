@@ -22,23 +22,26 @@ module center_seeker # (
     
     reg[10:0] previous_x = 11'b0;
     reg[10:0] previous_y = 11'b0;
-    reg eof = 1'b0;
-
-    always @(v_sync_in) begin
-        if (v_sync_in == 1'b1) 
-            eof <= 1'b1;
-        else
-            eof <= 1'b0;
-    end
+    wire eof;
     
-    core_adder core_add(eof, clk, pixel_in[0], x_pos, y_pos, x, y, valid);
+    reg prev_v_sync = 0;
+    
+    core_adder core_add(eof, clk, pixel_in[0] && de_in, x_pos, y_pos, x, y, valid);
     
     reg[10:0] reg_min_x = 11'b11111111111;
     reg[10:0] reg_max_x = 11'b0;
     reg[10:0] reg_min_y = 11'b11111111111;
     reg[10:0] reg_max_y = 11'b0;
     
-    always @(posedge clk) begin 
+    assign eof = (prev_v_sync == 0) && (v_sync_in == 1) ? 1 : 0;
+    
+    always @(posedge clk) begin
+        if (v_sync_in == 1 && prev_v_sync == 0) begin
+            prev_v_sync <= 1;
+        end else if (v_sync_in == 0) begin
+            prev_v_sync <= 0;
+        end
+         
         if (v_sync_in == 1) begin 
             x_pos <= 11'b0;
             y_pos <= 11'b0;

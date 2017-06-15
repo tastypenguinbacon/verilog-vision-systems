@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="237246000001fs"></ZoomEndTime>
-      <Cursor1Time time="237246000000fs"></Cursor1Time>
+      <ZoomStartTime time="3870951147600fs"></ZoomStartTime>
+      <ZoomEndTime time="3871581147601fs"></ZoomEndTime>
+      <Cursor1Time time="3871205468000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="181"></NameColumnWidth>
+      <NameColumnWidth column_width="171"></NameColumnWidth>
       <ValueColumnWidth column_width="63"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="35" />
+   <WVObjectSize size="23" />
    <wvobject type="logic" fp_name="/tb_hdmi/rx_pclk">
       <obj_property name="ElementShortName">rx_pclk</obj_property>
       <obj_property name="ObjectShortName">rx_pclk</obj_property>
@@ -63,112 +63,53 @@
    <wvobject type="array" fp_name="/tb_hdmi/tx_red">
       <obj_property name="ElementShortName">tx_red[7:0]</obj_property>
       <obj_property name="ObjectShortName">tx_red[7:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_hdmi/tx_green">
       <obj_property name="ElementShortName">tx_green[7:0]</obj_property>
       <obj_property name="ObjectShortName">tx_green[7:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_hdmi/tx_blue">
       <obj_property name="ElementShortName">tx_blue[7:0]</obj_property>
       <obj_property name="ObjectShortName">tx_blue[7:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/ds/previous_x">
-      <obj_property name="ElementShortName">previous_x[10:0]</obj_property>
-      <obj_property name="ObjectShortName">previous_x[10:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/ds/previous_y">
-      <obj_property name="ElementShortName">previous_y[10:0]</obj_property>
-      <obj_property name="ObjectShortName">previous_y[10:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_hdmi/cudo/ds/valid_in">
-      <obj_property name="ElementShortName">valid_in</obj_property>
-      <obj_property name="ObjectShortName">valid_in</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_hdmi/cudo/centr/eof">
-      <obj_property name="ElementShortName">eof</obj_property>
-      <obj_property name="ObjectShortName">eof</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_hdmi/cudo/centr/core_add/out_valid">
-      <obj_property name="ElementShortName">out_valid</obj_property>
-      <obj_property name="ObjectShortName">out_valid</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/tb_hdmi/cudo/centr/core_add/ce">
-      <obj_property name="ElementShortName">ce</obj_property>
-      <obj_property name="ObjectShortName">ce</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/core_add/x_sum">
-      <obj_property name="ElementShortName">x_sum[31:0]</obj_property>
-      <obj_property name="ObjectShortName">x_sum[31:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/core_add/y_sum">
-      <obj_property name="ElementShortName">y_sum[31:0]</obj_property>
-      <obj_property name="ObjectShortName">y_sum[31:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/core_add/divisor">
-      <obj_property name="ElementShortName">divisor[19:0]</obj_property>
-      <obj_property name="ObjectShortName">divisor[19:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/x_pos">
-      <obj_property name="ElementShortName">x_pos[10:0]</obj_property>
-      <obj_property name="ObjectShortName">x_pos[10:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/core_add/x">
-      <obj_property name="ElementShortName">x[10:0]</obj_property>
-      <obj_property name="ObjectShortName">x[10:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/reg_min_x">
-      <obj_property name="ElementShortName">reg_min_x[10:0]</obj_property>
-      <obj_property name="ObjectShortName">reg_min_x[10:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/reg_max_x">
-      <obj_property name="ElementShortName">reg_max_x[10:0]</obj_property>
-      <obj_property name="ObjectShortName">reg_max_x[10:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/reg_min_y">
       <obj_property name="ElementShortName">reg_min_y[10:0]</obj_property>
       <obj_property name="ObjectShortName">reg_min_y[10:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/reg_max_y">
-      <obj_property name="ElementShortName">reg_max_y[10:0]</obj_property>
-      <obj_property name="ObjectShortName">reg_max_y[10:0]</obj_property>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/core_add/x_sum">
+      <obj_property name="ElementShortName">x_sum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">x_sum[31:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/ds/min_x">
-      <obj_property name="ElementShortName">min_x[10:0]</obj_property>
-      <obj_property name="ObjectShortName">min_x[10:0]</obj_property>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/core_add/y_sum">
+      <obj_property name="ElementShortName">y_sum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">y_sum[31:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/ds/max_x">
-      <obj_property name="ElementShortName">max_x[10:0]</obj_property>
-      <obj_property name="ObjectShortName">max_x[10:0]</obj_property>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/core_add/divisor">
+      <obj_property name="ElementShortName">divisor[31:0]</obj_property>
+      <obj_property name="ObjectShortName">divisor[31:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/ds/min_y">
-      <obj_property name="ElementShortName">min_y[10:0]</obj_property>
-      <obj_property name="ObjectShortName">min_y[10:0]</obj_property>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/core_add/avg_y">
+      <obj_property name="ElementShortName">avg_y[10:0]</obj_property>
+      <obj_property name="ObjectShortName">avg_y[10:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/ds/max_y">
-      <obj_property name="ElementShortName">max_y[10:0]</obj_property>
-      <obj_property name="ObjectShortName">max_y[10:0]</obj_property>
+   <wvobject type="array" fp_name="/tb_hdmi/cudo/centr/core_add/avg_x">
+      <obj_property name="ElementShortName">avg_x[10:0]</obj_property>
+      <obj_property name="ObjectShortName">avg_x[10:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/med/bundle">
-      <obj_property name="ElementShortName">bundle[3:0]</obj_property>
-      <obj_property name="ObjectShortName">bundle[3:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
+   <wvobject type="logic" fp_name="/tb_hdmi/cudo/centr/core_add/out_valid">
+      <obj_property name="ElementShortName">out_valid</obj_property>
+      <obj_property name="ObjectShortName">out_valid</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/tb_hdmi/cudo/med/context_de">
-      <obj_property name="ElementShortName">context_de</obj_property>
-      <obj_property name="ObjectShortName">context_de</obj_property>
+   <wvobject type="logic" fp_name="/tb_hdmi/cudo/centr/core_add/x_valid">
+      <obj_property name="ElementShortName">x_valid</obj_property>
+      <obj_property name="ObjectShortName">x_valid</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/tb_hdmi/cudo/close_out">
-      <obj_property name="ElementShortName">close_out[23:0]</obj_property>
-      <obj_property name="ObjectShortName">close_out[23:0]</obj_property>
+   <wvobject type="logic" fp_name="/tb_hdmi/cudo/centr/core_add/y_valid">
+      <obj_property name="ElementShortName">y_valid</obj_property>
+      <obj_property name="ObjectShortName">y_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_hdmi/cudo/centr/core_add/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
 </wave_config>

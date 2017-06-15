@@ -117,9 +117,7 @@ module vb # (
     wire[10:0] min_x, max_x, min_y, max_y; 
     wire valid_center;
     center_seeker # ( .IMG_H(IMG_H), .IMG_W(IMG_W)) centr
-         (clk, bin_h_sync_out, bin_v_sync_out, bin_de_out, bin_out, avg_x, avg_y, min_x, max_x, min_y, max_y, valid_center);
-
-    
+         (clk, bin_h_sync_out, bin_v_sync_out, bin_de_out, bin_out, avg_x, avg_y, min_x, max_x, min_y, max_y, valid_center);    
 
      wire[23:0] draw_shape_in = bin_out;
      wire draw_shape_de_in = bin_de_out;
@@ -129,7 +127,7 @@ module vb # (
      wire draw_shape_de_out;
      wire draw_shape_h_sync_out;
      wire draw_shape_v_sync_out;
-     draw_shape # (.IMG_W(IMG_W), .IMG_H(IMG_H)) ds(valid_center, avg_x, avg_y,min_x, max_x, min_y, max_y, clk,
+     draw_shape # (.IMG_W(IMG_W), .IMG_H(IMG_H)) ds(valid_center, avg_x, avg_y, min_x, max_x, min_y, max_y /*300, 300, 100, 500, 100, 400*/, clk,
          draw_shape_de_in, draw_shape_h_sync_in, draw_shape_v_sync_in, draw_shape_in,
          draw_shape_de_out, draw_shape_h_sync_out, draw_shape_v_sync_out, draw_shape_out);
 

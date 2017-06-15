@@ -42,7 +42,7 @@ begin
 
 	 $display("out%d.ppm saved",vsc);
 	 
-   $fwrite(fm1,"P6%c64 64%c255\n",10,10);
+   $fwrite(fm1,"P6%c1280 720%c255\n",10,10);
    
 
 	 vsc<=vsc+1;

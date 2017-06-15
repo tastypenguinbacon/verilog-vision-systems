@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-//Date        : Tue Jun 13 15:45:11 2017
+//Date        : Wed Jun 14 09:32:39 2017
 //Host        : mothership running 64-bit Ubuntu 16.10
 //Command     : generate_target hdmi_vga.bd
 //Design      : hdmi_vga
@@ -129,7 +129,7 @@ module hdmi_vga
         .vga_pHSync(rgb2vga_0_vga_pHSync),
         .vga_pRed(rgb2vga_0_vga_pRed),
         .vga_pVSync(rgb2vga_0_vga_pVSync));
-  hdmi_vga_vb_0_0 vb_0
+  hdmi_vga_vb_1_0 vb_0
        (.clk(dvi2rgb_0_PixelClk),
         .de_in(dvi2rgb_0_vid_pVDE),
         .de_out(vb_0_de_out),
