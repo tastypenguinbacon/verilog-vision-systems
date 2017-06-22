@@ -1,0 +1,16 @@
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/cpu/src/regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/cpu/d_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/cpu/src/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+WARNING: [VRFC 10-965] invalid size of integer constant literal [/home/pingwin/Dokumenty/Verilog/cpu/src/alu.v:13]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/cpu/src/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/cpu/test/cpu_tb_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pingwin/Dokumenty/Verilog/cpu/cpu.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

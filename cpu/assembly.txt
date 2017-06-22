@@ -1,1 +1,16 @@
-Hejo
+movi R4 1
+movi R0 24
+addi R0 R0 255
+jnz R0 2
+movi R4 2
+andi R0 R5 1
+jz R0 5
+movi R4 4
+movi R0 24
+addi R0 R0 255
+jnz R0 9
+movi R4 8
+andi R0 R5 2
+jz R0 12
+jumpi 0
+

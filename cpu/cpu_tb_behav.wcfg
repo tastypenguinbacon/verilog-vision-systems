@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cpu_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cpu_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="38958421fs"></ZoomEndTime>
+      <Cursor1Time time="4372000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="159"></NameColumnWidth>
+      <ValueColumnWidth column_width="63"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject type="logic" fp_name="/cpu_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_tb/dut/pc_out">
+      <obj_property name="ElementShortName">pc_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_tb/dut/r/outs">
+      <obj_property name="ElementShortName">outs[7:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">outs[7:0][7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[7]">
+         <obj_property name="ElementShortName">[7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[6]">
+         <obj_property name="ElementShortName">[6][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[5]">
+         <obj_property name="ElementShortName">[5][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[4]">
+         <obj_property name="ElementShortName">[4][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[3]">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[2]">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[1]">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[0]">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[7]">
+         <obj_property name="ElementShortName">[7][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[6]">
+         <obj_property name="ElementShortName">[6][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[5]">
+         <obj_property name="ElementShortName">[5][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[4]">
+         <obj_property name="ElementShortName">[4][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[3]">
+         <obj_property name="ElementShortName">[3][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[2]">
+         <obj_property name="ElementShortName">[2][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[1]">
+         <obj_property name="ElementShortName">[1][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/cpu_tb/dut/r/outs[0]">
+         <obj_property name="ElementShortName">[0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_tb/dut/alu_op">
+      <obj_property name="ElementShortName">alu_op[2:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_tb/dut/d_op">
+      <obj_property name="ElementShortName">d_op[2:0]</obj_property>
+      <obj_property name="ObjectShortName">d_op[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_tb/dut/rx_op">
+      <obj_property name="ElementShortName">rx_op[2:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_op[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_tb/dut/ry_op">
+      <obj_property name="ElementShortName">ry_op[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ry_op[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cpu_tb/dut/pc_mux">
+      <obj_property name="ElementShortName">pc_mux</obj_property>
+      <obj_property name="ObjectShortName">pc_mux</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/cpu_tb/dut/imm">
+      <obj_property name="ElementShortName">imm[7:0]</obj_property>
+      <obj_property name="ObjectShortName">imm[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cpu_tb/dut/imm_op">
+      <obj_property name="ElementShortName">imm_op</obj_property>
+      <obj_property name="ObjectShortName">imm_op</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cpu_tb/dut/rd_op">
+      <obj_property name="ElementShortName">rd_op</obj_property>
+      <obj_property name="ObjectShortName">rd_op</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/cpu_tb/dut/cmp_res">
+      <obj_property name="ElementShortName">cmp_res</obj_property>
+      <obj_property name="ObjectShortName">cmp_res</obj_property>
+   </wvobject>
+</wave_config>

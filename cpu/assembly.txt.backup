@@ -1,0 +1,18 @@
+movi R0 3
+movi R1 3
+and R2 R0 R1
+add R3 R0 R1
+andi R2 R2 2
+addi R3 R3 22
+addi R2 R2 2
+load R4 R2
+loadi R4 6
+jnz R0 16
+nop
+nop
+nop
+nop
+nop
+nop
+jz R5 9
+jumpi 0

@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../i_mem.v"
+verilog xil_defaultlib  "../../../src/regs.v"
+verilog xil_defaultlib  "../../../d_mem.v"
+verilog xil_defaultlib  "../../../src/alu.v"
+verilog xil_defaultlib  "../../../src/cpu.v"
+verilog xil_defaultlib  "../../../test/cpu_tb_2.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

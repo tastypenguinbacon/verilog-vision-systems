@@ -8,7 +8,7 @@
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7z010_1" gui_info="">
       <Properties Property="PROBES.FILE" value=""/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="/home/pingwin/Dokumenty/Verilog/compound-project/kolorowy_kwiatek/kolorowy_kwiatek.runs/impl_1/cudo_wrapper.bit"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/top.bit"/>
     </Object>
   </ObjectList>
   <probeset name="hw project" active="false"/>

@@ -1,0 +1,466 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Jun 22 12:43:27 2017
+# Process ID: 26174
+# Current directory: /home/pingwin/Dokumenty/Verilog/cpu/cpu.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /home/pingwin/Dokumenty/Verilog/cpu/cpu.runs/synth_1/top.vds
+# Journal file: /home/pingwin/Dokumenty/Verilog/cpu/cpu.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+WARNING: [Board 49-69] Validation failed for board file /home/pingwin/VIVADO/Vivado/2016.4/data/boards/board_files/arty-s7-50/B.0/board.xml:
+ Pin Map file does not provide LOC constraints for shield_dp0_dp9_tri_i_0COMP : digilentinc.com:arty-s7-50:part0:1.0
+
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - /home/pingwin/VIVADO/Vivado/2016.4/data/boards/board_files/arty-s7-50/B.0/board.xml
+Command: synth_design -top top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26237 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1066.742 ; gain = 135.086 ; free physical = 575 ; free virtual = 3439
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [/home/pingwin/Dokumenty/Verilog/cpu/src/top.v:3]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/pingwin/Dokumenty/Verilog/cpu/src/top.v:17]
+INFO: [Synth 8-638] synthesizing module 'cpu' [/home/pingwin/Dokumenty/Verilog/cpu/src/cpu.v:3]
+INFO: [Synth 8-638] synthesizing module 'alu' [/home/pingwin/Dokumenty/Verilog/cpu/src/alu.v:3]
+INFO: [Synth 8-256] done synthesizing module 'alu' (1#1) [/home/pingwin/Dokumenty/Verilog/cpu/src/alu.v:3]
+WARNING: [Synth 8-689] width (3) of port connection 'alu_op' does not match port width (2) of module 'alu' [/home/pingwin/Dokumenty/Verilog/cpu/src/cpu.v:12]
+INFO: [Synth 8-638] synthesizing module 'regs' [/home/pingwin/Dokumenty/Verilog/cpu/src/regs.v:3]
+INFO: [Synth 8-256] done synthesizing module 'regs' (2#1) [/home/pingwin/Dokumenty/Verilog/cpu/src/regs.v:3]
+INFO: [Synth 8-638] synthesizing module 'i_mem' [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:2]
+WARNING: [Synth 8-3848] Net program[255] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[254] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[253] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[252] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[251] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[250] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[249] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[248] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[247] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[246] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[245] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[244] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[243] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[242] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[241] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[240] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[239] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[238] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[237] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[236] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[235] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[234] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[233] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[232] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[231] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[230] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[229] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[228] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[227] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[226] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[225] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[224] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[223] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[222] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[221] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[220] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[219] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[218] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[217] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[216] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[215] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[214] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[213] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[212] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[211] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[210] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[209] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[208] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[207] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[206] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[205] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[204] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[203] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[202] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[201] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[200] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[199] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[198] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[197] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[196] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[195] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[194] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[193] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[192] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[191] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[190] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[189] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[188] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[187] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[186] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[185] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[184] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[183] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[182] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[181] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[180] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[179] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[178] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[177] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[176] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[175] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[174] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[173] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[172] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[171] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[170] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[169] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[168] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[167] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[166] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[165] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[164] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[163] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[162] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[161] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[160] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[159] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[158] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[157] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+WARNING: [Synth 8-3848] Net program[156] in module/entity i_mem does not have driver. [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:3]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'i_mem' (3#1) [/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v:2]
+INFO: [Synth 8-638] synthesizing module 'd_mem' [/home/pingwin/Dokumenty/Verilog/cpu/d_mem.v:6]
+INFO: [Synth 8-256] done synthesizing module 'd_mem' (4#1) [/home/pingwin/Dokumenty/Verilog/cpu/d_mem.v:6]
+INFO: [Synth 8-256] done synthesizing module 'cpu' (5#1) [/home/pingwin/Dokumenty/Verilog/cpu/src/cpu.v:3]
+WARNING: [Synth 8-689] width (4) of port connection 'gpo' does not match port width (8) of module 'cpu' [/home/pingwin/Dokumenty/Verilog/cpu/src/top.v:17]
+INFO: [Synth 8-256] done synthesizing module 'top' (6#1) [/home/pingwin/Dokumenty/Verilog/cpu/src/top.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1108.211 ; gain = 176.555 ; free physical = 533 ; free virtual = 3397
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1108.211 ; gain = 176.555 ; free physical = 533 ; free virtual = 3397
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/pingwin/Dokumenty/Verilog/cpu/ZYBO_Master.xdc]
+Finished Parsing XDC File [/home/pingwin/Dokumenty/Verilog/cpu/ZYBO_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/pingwin/Dokumenty/Verilog/cpu/ZYBO_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1367.844 ; gain = 0.000 ; free physical = 356 ; free virtual = 3227
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1367.844 ; gain = 436.188 ; free physical = 354 ; free virtual = 3225
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1367.844 ; gain = 436.188 ; free physical = 354 ; free virtual = 3225
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1367.844 ; gain = 436.188 ; free physical = 354 ; free virtual = 3225
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "alu_res2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "r_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1367.844 ; gain = 436.188 ; free physical = 339 ; free virtual = 3209
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               21 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+Module regs 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module cpu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'c/r/r_reg[2][5]' (FDE) to 'c/r/r_reg[1][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[1][5] )
+INFO: [Synth 8-3886] merging instance 'c/r/r_reg[2][4]' (FDE) to 'c/r/r_reg[1][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[1][4] )
+INFO: [Synth 8-3886] merging instance 'c/r/r_reg[2][7]' (FDE) to 'c/r/r_reg[1][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[1][7] )
+INFO: [Synth 8-3886] merging instance 'c/r/r_reg[2][6]' (FDE) to 'c/r/r_reg[1][6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[1][6] )
+INFO: [Synth 8-3886] merging instance 'c/r/r_reg[2][0]' (FDE) to 'c/r/r_reg[1][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[1][0] )
+INFO: [Synth 8-3886] merging instance 'c/r/r_reg[2][1]' (FDE) to 'c/r/r_reg[1][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[1][1] )
+INFO: [Synth 8-3886] merging instance 'c/r/r_reg[2][2]' (FDE) to 'c/r/r_reg[1][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[1][2] )
+INFO: [Synth 8-3886] merging instance 'c/r/r_reg[2][3]' (FDE) to 'c/r/r_reg[1][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[1][3] )
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[1][5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[1][4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[1][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[1][6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[1][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[1][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[1][2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[1][3]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1367.844 ; gain = 436.188 ; free physical = 312 ; free virtual = 3185
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1381.844 ; gain = 450.188 ; free physical = 275 ; free virtual = 3155
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1392.859 ; gain = 461.203 ; free physical = 265 ; free virtual = 3145
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[3][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[3][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[3][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[3][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\c/r/r_reg[3][3] )
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[3][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[3][6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[3][5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[3][4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[3][3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[3][2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[3][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (c/r/r_reg[3][0]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1402.883 ; gain = 471.227 ; free physical = 255 ; free virtual = 3135
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.883 ; gain = 471.227 ; free physical = 255 ; free virtual = 3135
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.883 ; gain = 471.227 ; free physical = 255 ; free virtual = 3135
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.883 ; gain = 471.227 ; free physical = 255 ; free virtual = 3135
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.883 ; gain = 471.227 ; free physical = 255 ; free virtual = 3135
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.883 ; gain = 471.227 ; free physical = 255 ; free virtual = 3135
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.883 ; gain = 471.227 ; free physical = 255 ; free virtual = 3135
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |    21|
+|4     |LUT2   |    11|
+|5     |LUT3   |     1|
+|6     |LUT4   |    25|
+|7     |LUT5   |    29|
+|8     |LUT6   |    39|
+|9     |FDRE   |    45|
+|10    |IBUF   |     5|
+|11    |OBUF   |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+-------+------+
+|      |Instance         |Module |Cells |
++------+-----------------+-------+------+
+|1     |top              |       |   188|
+|2     |  c              |cpu    |   127|
+|3     |    a            |alu    |     2|
+|4     |    instructions |i_mem  |    10|
+|5     |    r            |regs   |   115|
++------+-----------------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.883 ; gain = 471.227 ; free physical = 255 ; free virtual = 3135
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1402.883 ; gain = 131.504 ; free physical = 254 ; free virtual = 3134
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1402.891 ; gain = 471.234 ; free physical = 254 ; free virtual = 3134
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 120 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1402.891 ; gain = 403.730 ; free physical = 255 ; free virtual = 3136
+INFO: [Common 17-1381] The checkpoint '/home/pingwin/Dokumenty/Verilog/cpu/cpu.runs/synth_1/top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1426.895 ; gain = 0.000 ; free physical = 253 ; free virtual = 3135
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 22 12:43:55 2017...

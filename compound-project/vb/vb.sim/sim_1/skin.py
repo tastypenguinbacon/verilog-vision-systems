@@ -6,9 +6,9 @@ from scipy.signal import medfilt2d
 
 import numpy as np
 
-image = imread('cudo1.png')
+image = imread('cudo64.ppm')
 image = imresize(image, (720, 1280))
-imsave('cudo64_64.ppm', image)
+imsave('cudo64.ppm', image)
 
 YCbCr_A = np.array([[0.299, 0.587, 0.114],
                     [-0.168736, -0.331264, 0.5],

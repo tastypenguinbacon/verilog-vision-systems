@@ -1,0 +1,11 @@
+0.6
+2016.4
+Jan 23 2017
+19:19:20
+/home/pingwin/Dokumenty/Verilog/cpu/cpu.sim/sim_1/behav/glbl.v,1485222234,verilog,,,,glbl,,,,,,,,
+/home/pingwin/Dokumenty/Verilog/cpu/d_mem.v,1498098273,verilog,,,,d_mem,,,,,,,,
+/home/pingwin/Dokumenty/Verilog/cpu/i_mem.v,1498105637,verilog,,,,i_mem,,,,,,,,
+/home/pingwin/Dokumenty/Verilog/cpu/src/alu.v,1497410951,verilog,,,,alu,,,,,,,,
+/home/pingwin/Dokumenty/Verilog/cpu/src/cpu.v,1498103654,verilog,,,,cpu,,,,,,,,
+/home/pingwin/Dokumenty/Verilog/cpu/src/regs.v,1498101402,verilog,,,,regs,,,,,,,,
+/home/pingwin/Dokumenty/Verilog/cpu/test/cpu_tb_2.v,1498106297,verilog,,,,cpu_tb_2,,,,,,,,
